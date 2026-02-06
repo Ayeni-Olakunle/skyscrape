@@ -97,7 +97,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="relative max-w-7xl mx-auto flex flex-col md:flex-row gap-8 justify-around items-center px-4 py-7 mb-5 rounded-[100px] bg-[#8080808f]">
+      {/* <div className="relative max-w-7xl mx-auto flex flex-col md:flex-row gap-8 justify-around items-center px-4 py-7 mb-5 rounded-[100px] bg-[#8080808f]">
         <div className="grayscale bg-contain bg-center bg-no-repeat w-[10%] h-[10%]">
           <img
             src={avana.src}
@@ -140,7 +140,7 @@ export default function Hero() {
             className="grayscale w-full h-full"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
