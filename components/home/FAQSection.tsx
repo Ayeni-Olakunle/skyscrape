@@ -3,6 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Plus, Minus } from "lucide-react";
+import PowerBody from "@/public/Power Body.jpg";
+import OfficeInterior from "@/public/Office Interior.jpg";
+import PowerBody from "@/public/Power Body.jpg";
 
 type FAQ = {
   question: string;
@@ -54,8 +57,8 @@ export default function FAQSection() {
             Got Questions? We've got Answers
           </h2>
           <p className="text-gray-600 mt-4">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit
-            tellus luctus nec ullamcorper mattis pulvinar dapibus leo.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit tellus luctus
+            nec ullamcorper mattis pulvinar dapibus leo.
           </p>
         </div>
 
@@ -65,7 +68,7 @@ export default function FAQSection() {
           <div className="grid grid-cols-2 gap-4">
             <div className="relative row-span-2 h-[420px] rounded-xl overflow-hidden">
               <Image
-                src="/images/faq1.jpg"
+                src={PowerBody}
                 alt="Building"
                 fill
                 className="object-cover"
@@ -74,7 +77,7 @@ export default function FAQSection() {
 
             <div className="relative h-[200px] rounded-xl overflow-hidden">
               <Image
-                src="/images/faq2.jpg"
+                src={OfficeInterior}
                 alt="Building"
                 fill
                 className="object-cover"
@@ -109,15 +112,9 @@ export default function FAQSection() {
                     onClick={() => toggleFAQ(index)}
                     className="w-full flex items-center justify-between px-6 py-4 text-left"
                   >
-                    <span className="font-medium">
-                      {faq.question}
-                    </span>
+                    <span className="font-medium">{faq.question}</span>
 
-                    {isActive ? (
-                      <Minus size={18} />
-                    ) : (
-                      <Plus size={18} />
-                    )}
+                    {isActive ? <Minus size={18} /> : <Plus size={18} />}
                   </button>
 
                   {/* Answer */}
@@ -126,9 +123,7 @@ export default function FAQSection() {
                       isActive ? "max-h-40 px-6 pb-6" : "max-h-0"
                     }`}
                   >
-                    <p className="text-sm opacity-90">
-                      {faq.answer}
-                    </p>
+                    <p className="text-sm opacity-90">{faq.answer}</p>
                   </div>
                 </div>
               );
