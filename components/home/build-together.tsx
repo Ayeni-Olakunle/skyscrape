@@ -53,7 +53,7 @@ export default function BuildTogether() {
                 <input
                   id="fullName"
                   placeholder="Your Name"
-                  className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-amber-500"
+                  className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
                 />
               </div>
 
@@ -67,7 +67,7 @@ export default function BuildTogether() {
                 <input
                   id="email"
                   placeholder="Your Email Address"
-                  className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1"
+                  className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
                 />
               </div>
 
@@ -81,7 +81,7 @@ export default function BuildTogether() {
                 <input
                   id="phone"
                   placeholder="Your Phone Number"
-                  className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1"
+                  className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
                 />
               </div>
 
@@ -96,7 +96,7 @@ export default function BuildTogether() {
                   id="Message"
                   placeholder="Your Message"
                   rows={4}
-                  className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1"
+                  className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
                 />
               </div>
 
