@@ -9,6 +9,7 @@ import BuildTogether from "../components/home/build-together";
 import MeetTeam from "@/components/home/meet-team";
 import Testimonials from "@/components/home/testimonials";
 import FAQSection from "@/components/home/FAQSection";
+import Footer from "../common/footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <MeetTeam />
       <Testimonials />
       <FAQSection />
+      <Footer />
     </div>
   );
 }
