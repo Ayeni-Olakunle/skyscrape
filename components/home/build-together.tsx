@@ -39,7 +39,7 @@ export default function BuildTogether() {
           </div>
 
           {/* Quote Form */}
-          <div className="hidden lg:block bg-white rounded-xl shadow-xl p-6 mt-64 w-[30rem]">
+          <div className="hidden lg:block bg-white rounded-xl shadow-xl p-6 mt-64 min-w-96">
             <h3 className="text-lg font-semibold mb-4">Get a free Quote</h3>
 
             <form className="space-y-3">
@@ -53,7 +53,7 @@ export default function BuildTogether() {
                 <input
                   id="fullName"
                   placeholder="Your Name"
-                  className="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-yellow-400 mt-1"
+                  className="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:ring-2 mt-1"
                 />
               </div>
 
