@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Plus, Minus } from "lucide-react";
 import PowerBody from "@/public/Power Body.jpg";
 import OfficeInterior from "@/public/Office Interior.jpg";
-import PowerBody from "@/public/Power Body.jpg";
+import vila from "@/public/Vila.jpg";
 
 type FAQ = {
   question: string;
@@ -85,12 +85,7 @@ export default function FAQSection() {
             </div>
 
             <div className="relative h-[200px] rounded-xl overflow-hidden">
-              <Image
-                src="/images/faq3.jpg"
-                alt="Building"
-                fill
-                className="object-cover"
-              />
+              <Image src={vila} alt="Building" fill className="object-cover" />
             </div>
           </div>
 
