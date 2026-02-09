@@ -28,51 +28,80 @@ export default function BuildTogether() {
             </h2>
 
             <p className="text-gray-200 mb-6">
-              Ready to bring your vision to life? Caspira is here to
-              deliver quality, efficiency, and excellence in every
-              project. Contact us today.
+              Ready to bring your vision to life? Caspira is here to deliver
+              quality, efficiency, and excellence in every project. Contact us
+              today.
             </p>
 
             <button className="bg-yellow-500 text-white px-6 py-3 rounded-full font-medium hover:bg-yellow-600 transition">
-              (566)-456-7890
+              09155063486
             </button>
           </div>
 
           {/* Quote Form */}
-          <div className="hidden lg:block bg-white rounded-xl shadow-xl p-6 w-[360px]">
-            <h3 className="text-lg font-semibold mb-4">
-              Get a free Quote
-            </h3>
+          <div className="hidden lg:block bg-white rounded-xl shadow-xl p-6 mt-64 w-[30rem]">
+            <h3 className="text-lg font-semibold mb-4">Get a free Quote</h3>
 
             <form className="space-y-3">
-              <input
-                placeholder="Your Name"
-                className="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-yellow-400"
-              />
+              <div className="mb-6">
+                <label
+                  htmlFor="fullName"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Full Name
+                </label>
+                <input
+                  id="fullName"
+                  placeholder="Your Name"
+                  className="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-yellow-400 mt-1"
+                />
+              </div>
 
-              <input
-                placeholder="Type your email address"
-                className="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-yellow-400"
-              />
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Email Address
+                </label>
+                <input
+                  id="email"
+                  placeholder="Your Email Address"
+                  className="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-yellow-400 mt-1"
+                />
+              </div>
 
-              <input
-                placeholder="Phone Number"
-                className="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-yellow-400"
-              />
+              <div>
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Phone Number
+                </label>
+                <input
+                  id="phone"
+                  placeholder="Your Phone Number"
+                  className="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-yellow-400 mt-1"
+                />
+              </div>
 
-              <input
-                placeholder="Subject"
-                className="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-yellow-400"
-              />
-
-              <textarea
-                placeholder="Message"
-                rows={3}
-                className="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-yellow-400"
-              />
+              <div>
+                <label
+                  htmlFor="Message"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="Message"
+                  placeholder="Your Message"
+                  rows={3}
+                  className="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-yellow-400 mt-1"
+                />
+              </div>
 
               <button className="w-full bg-yellow-500 text-white py-3 rounded-full font-medium hover:bg-yellow-600 transition">
-                Free Consultation
+                SUBMIT
               </button>
             </form>
           </div>

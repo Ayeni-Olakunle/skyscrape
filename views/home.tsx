@@ -6,6 +6,7 @@ import AboutSkyscape from "../components/home/about-skyscape";
 import ServicesSection from "../components/home/services-section";
 import WhyChooseUs from "../components/home/why-choose-us";
 import BuildTogether from "../components/home/build-together";
+import MeetTeam from "@/components/home/meet-team";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ServicesSection />
       <WhyChooseUs />
       <BuildTogether />
+      <MeetTeam />
     </div>
   );
 }
