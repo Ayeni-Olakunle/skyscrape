@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { HardHat, ShoppingCart, Network } from "lucide-react";
+import building1 from "@/public/building1.jpg";
+import building2 from "@/public/building2.jpg";
+import building3 from "@/public/building3.jpg";
 
 type FeatureCardProps = {
   icon: React.ReactNode;
@@ -22,9 +25,7 @@ const FeatureCard = ({
         {icon}
       </div>
 
-      <h3 className="text-xl font-semibold text-gray-900 mb-3">
-        {title}
-      </h3>
+      <h3 className="text-xl font-semibold text-gray-900 mb-3">{title}</h3>
 
       <p className="text-gray-600 text-sm leading-relaxed mb-6">
         {description}
@@ -44,15 +45,13 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <p className="text-yellow-500 font-medium mb-2">
-            Why Choose Us
-          </p>
+          <p className="text-yellow-500 font-medium mb-2">Why Choose Us</p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Why We're Your Best Choice
           </h2>
           <p className="text-gray-600 mt-4">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit.
-            Tellus luctus nec ullamcorper mattis pulvinar dapibus leo.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Tellus
+            luctus nec ullamcorper mattis pulvinar dapibus leo.
           </p>
         </div>
 
@@ -70,7 +69,7 @@ export default function WhyChooseUs() {
           {/* Center Image */}
           <div className="relative rounded-xl overflow-hidden min-h-[320px]">
             <Image
-              src="/images/building1.jpg"
+              src={building1}
               alt="Building"
               fill
               className="object-cover"
@@ -89,7 +88,7 @@ export default function WhyChooseUs() {
           {/* Left Bottom Image */}
           <div className="relative rounded-xl overflow-hidden min-h-[320px]">
             <Image
-              src="/images/building2.jpg"
+              src={building2}
               alt="Apartment"
               fill
               className="object-cover"
@@ -108,7 +107,7 @@ export default function WhyChooseUs() {
           {/* Right Bottom Image */}
           <div className="relative rounded-xl overflow-hidden min-h-[320px]">
             <Image
-              src="/images/building3.jpg"
+              src={building3}
               alt="Highrise"
               fill
               className="object-cover"
