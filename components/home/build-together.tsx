@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function BuildTogether() {
   return (
-    <section className="relative w-full mb-20 bg-white">
+    <section className="relative w-full pb-20 bg-white">
       {/* Background */}
       <div className="relative h-[500px] w-full">
         <Image
@@ -34,7 +34,7 @@ export default function BuildTogether() {
             </p>
 
             <button className="bg-yellow-500 text-white px-6 py-3 rounded-full font-medium hover:bg-yellow-600 transition">
-              09155063486
+              Call Us Now
             </button>
           </div>
 
