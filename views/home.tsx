@@ -7,6 +7,7 @@ import ServicesSection from "../components/home/services-section";
 import WhyChooseUs from "../components/home/why-choose-us";
 import BuildTogether from "../components/home/build-together";
 import MeetTeam from "@/components/home/meet-team";
+import Testimonials from "@/components/home/testimonials";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyChooseUs />
       <BuildTogether />
       <MeetTeam />
+      <Testimonials />
     </div>
   );
 }
