@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function BuildTogether() {
   return (
-    <section className="relative w-full">
+    <section className="relative w-full mb-20 bg-white">
       {/* Background */}
       <div className="relative h-[500px] w-full">
         <Image
