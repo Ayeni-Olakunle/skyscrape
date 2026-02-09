@@ -5,6 +5,7 @@ import Hero from "../components/home/Hero";
 import AboutSkyscape from "../components/home/about-skyscape";
 import ServicesSection from "../components/home/services-section";
 import WhyChooseUs from "../components/home/why-choose-us";
+import BuildTogether from "../components/home/build-together";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutSkyscape />
       <ServicesSection />
       <WhyChooseUs />
+      <BuildTogether />
     </div>
   );
 }
