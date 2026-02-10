@@ -4,6 +4,7 @@
 // import React from "react";
 // import Image from "next/image";
 import Menu from "@/common/menu";
+import serviceImage from "@/public/service.webp";
 
 export default function ServiceHero() {
   return (
@@ -12,12 +13,12 @@ export default function ServiceHero() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/residential-construction.jpg')",
+          backgroundImage: `url('${serviceImage.src}')`,
         }}
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#0b1c39]/80" />
+      <div className="absolute inset-0" />
 
       {/* Navbar */}
       <Menu />
