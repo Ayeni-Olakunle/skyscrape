@@ -18,10 +18,10 @@ export default function Menu() {
         <Link href="#" className="hover:opacity-80">
           Home
         </Link>
-        <Link href="#" className="hover:opacity-80">
+        <Link href="/services" className="hover:opacity-80">
           Services
         </Link>
-        <Link href="#" className="hover:opacity-80">
+        <Link href="/about" className="hover:opacity-80">
           About
         </Link>
         <Link href="#" className="hover:opacity-80">
