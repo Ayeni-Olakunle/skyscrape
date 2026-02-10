@@ -19,10 +19,10 @@ export default function Menu() {
           Home
         </Link>
         <Link href="#" className="hover:opacity-80">
-          About
+          Services
         </Link>
         <Link href="#" className="hover:opacity-80">
-          Services
+          About
         </Link>
         <Link href="#" className="hover:opacity-80">
           Contact us
