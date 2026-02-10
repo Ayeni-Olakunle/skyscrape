@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import { Facebook, Linkedin, Twitter } from "lucide-react";
 import chairman from "@/public/chairman.png";
 import CEO from "@/public/ceo.png";
+import MD from "@/public/samuel.jpeg";
 
 type TeamProps = {
   name: string;
@@ -77,8 +78,7 @@ export default function MeetTeam() {
           <TeamCard
             name="Adewole Samuel"
             role="MD SkyScape Facility Management"
-            image="/images/team3.jpg"
-            active
+            image={MD}
           />
         </div>
       </div>

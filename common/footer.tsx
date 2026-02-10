@@ -9,6 +9,8 @@ import {
   Linkedin,
   Send,
 } from "lucide-react";
+import logo from "@/public/logo.jpg";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -17,22 +19,26 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo & About */}
           <div>
-            <h2 className="text-white text-2xl font-bold mb-4">
+            <Image
+              src={logo}
+              alt="Sky Scape Logo"
+              width={150}
+              height={50}
+              className="text-transparent rounded mb-4"
+            />
+            {/* <h2 className="text-white text-2xl font-bold mb-4">
               CASPIRA
-            </h2>
+            </h2> */}
 
             <p className="text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit
-              amet consec tetur adipiscing elit tellus luctus nec
-              ullam.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit amet consec
+              tetur adipiscing elit tellus luctus nec ullam.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">
-              Quick Link
-            </h3>
+            <h3 className="text-white font-semibold mb-4">Quick Link</h3>
 
             <div className="grid grid-cols-2 gap-y-2 text-sm">
               <Link href="#">Home</Link>
@@ -48,9 +54,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-white font-semibold mb-4">
-              Contact info
-            </h3>
+            <h3 className="text-white font-semibold mb-4">Contact info</h3>
 
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-3">
@@ -72,9 +76,7 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-white font-semibold mb-4">
-              Newsletter
-            </h3>
+            <h3 className="text-white font-semibold mb-4">Newsletter</h3>
 
             <div className="flex items-center bg-white rounded-full overflow-hidden">
               <input
