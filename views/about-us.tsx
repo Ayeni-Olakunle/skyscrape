@@ -9,7 +9,11 @@ export default function AboutUs() {
   return (
     <div>
       {/* <Menu /> */}
-      <ServiceHero />
+      <ServiceHero
+        title="About Us"
+        imageUrl="/about-us.webp"
+        description="Learn more about our company and our commitment to excellence in construction."
+      />
       <ServiceDetails />
       <Footer />
     </div>

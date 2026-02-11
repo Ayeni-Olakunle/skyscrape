@@ -5,15 +5,20 @@
 // import Image from "next/image";
 import Menu from "@/common/menu";
 import serviceImage from "@/public/service.webp";
+import { StaticImageData } from "next/image";
 
-export default function ServiceHero() {
+export default function ServiceHero(props: {
+  title: string;
+  imageUrl?: string | StaticImageData;
+  description?: string;
+}) {
   return (
     <section className="relative w-full h-[420px] md:h-[500px] overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('${serviceImage.src}')`,
+          backgroundImage: `url('${props.imageUrl}')`,
         }}
       />
 
@@ -55,12 +60,12 @@ export default function ServiceHero() {
       <div className="relative z-20 max-w-7xl mx-auto px-6 h-full flex flex-col justify-center">
         {/* Breadcrumb */}
         <p className="text-gray-200 text-sm mb-3">
-          Home <span className="mx-2">|</span> Services Details
+          Home <span className="mx-2">|</span> {props.title}
         </p>
 
         {/* Title */}
         <h1 className="text-white text-3xl md:text-5xl font-semibold">
-          Residential Construction
+          {props.description}
         </h1>
       </div>
     </section>
