@@ -15,14 +15,14 @@ export default function Menu() {
       </div>
 
       <nav className="hidden md:flex gap-6 items-center text-sm text-white">
-        <Link href="#" className="hover:opacity-80">
+        <Link href="/" className="hover:opacity-80">
           Home
         </Link>
         <Link href="/services" className="hover:opacity-80">
           Services
         </Link>
-        <Link href="/about" className="hover:opacity-80">
-          About
+        <Link href="/about-us" className="hover:opacity-80">
+          About us
         </Link>
         <Link href="#" className="hover:opacity-80">
           Contact us
