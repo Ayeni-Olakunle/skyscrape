@@ -5,6 +5,7 @@ import Footer from "../common/footer";
 import ServiceHero from "@/components/service/hero";
 import ServiceDetails from "@/components/service/service-details";
 import aboutsky from "@/public/aboutsky.webp";
+import AboutSection from "@/components/about-us/about0section";
 
 export default function AboutUs() {
   return (
@@ -15,7 +16,7 @@ export default function AboutUs() {
         imageUrl={aboutsky.src}
         description="Learn more about our company and our commitment to excellence in construction."
       />
-      <ServiceDetails />
+      <AboutSection />
       <Footer />
     </div>
   );
