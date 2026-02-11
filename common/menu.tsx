@@ -24,7 +24,7 @@ export default function Menu() {
         <Link href="/about-us" className="hover:opacity-80">
           About us
         </Link>
-        <Link href="#" className="hover:opacity-80">
+        <Link href="/contact-us" className="hover:opacity-80">
           Contact us
         </Link>
       </nav>
