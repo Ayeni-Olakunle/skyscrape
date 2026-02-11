@@ -4,6 +4,7 @@ import Menu from "../common/menu";
 import Footer from "../common/footer";
 import ServiceHero from "@/components/service/hero";
 import ServiceDetails from "@/components/service/service-details";
+import aboutsky from "@/public/aboutsky.webp";
 
 export default function AboutUs() {
   return (
@@ -11,7 +12,7 @@ export default function AboutUs() {
       {/* <Menu /> */}
       <ServiceHero
         title="About Us"
-        imageUrl="/about-us.webp"
+        imageUrl={aboutsky.src}
         description="Learn more about our company and our commitment to excellence in construction."
       />
       <ServiceDetails />

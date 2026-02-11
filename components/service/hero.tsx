@@ -65,8 +65,10 @@ export default function ServiceHero(props: {
 
         {/* Title */}
         <h1 className="text-white text-3xl md:text-5xl font-semibold">
-          {props.description}
+          {props.title}
         </h1>
+        {/* Description */}
+        {/* <p className="text-gray-200 mt-4 max-w-2xl">{props.description}</p> */}
       </div>
     </section>
   );
