@@ -19,12 +19,14 @@ export default function Testimonials() {
             <p className="text-yellow-400 font-medium mb-3">Testimonials</p>
 
             <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
-              What People are <br /> Saying About Us
+              What Our Clients Are Saying
             </h2>
 
             <p className="text-gray-300 mb-6">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit tellus
-              luctus nec ullamcorper mattis pulvinar dapibus leo.
+              We take pride in delivering reliable facility management services
+              that improve the comfort, safety, and efficiency of every property
+              we manage. Here’s what our clients say about working with
+              Skyscape.
             </p>
 
             {/* <button className="bg-yellow-500 hover:bg-yellow-600 transition px-6 py-3 rounded-full font-medium">
@@ -60,10 +62,10 @@ export default function Testimonials() {
 
               {/* Text */}
               <p className="text-gray-600 leading-relaxed mb-6">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut elit
-                tellus Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                Ut elit tellus luctus nec ullamcorper mattis pulvinar dapibus
-                leo luctus nec ullam.
+                “Skyscape has consistently delivered professional and dependable
+                facility management services. Their team is responsive,
+                efficient, and committed to maintaining high standards across
+                our property.”
               </p>
 
               {/* Navigation */}

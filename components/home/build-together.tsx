@@ -24,13 +24,14 @@ export default function BuildTogether() {
             </p>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-4">
-              Let’s Build Something <br /> Great Together
+              Let’s Manage Your Space Better, Together
             </h2>
 
             <p className="text-gray-200 mb-6">
-              Ready to bring your vision to life? Caspira is here to deliver
-              quality, efficiency, and excellence in every project. Contact us
-              today.
+              Ready to improve the efficiency and comfort of your property?
+              Skyscape delivers reliable facility management solutions designed
+              to keep your space running smoothly. Contact us today to get
+              started.
             </p>
 
             <button className="bg-yellow-500 text-white px-6 py-3 rounded-full font-medium hover:bg-yellow-600 transition">
@@ -59,7 +60,7 @@ export default function BuildTogether() {
 function QuoteForm() {
   return (
     <>
-      <h3 className="text-lg font-semibold mb-4">Get a free Quote</h3>
+      <h3 className="text-lg font-semibold mb-4">Send us a Message</h3>
 
       <form className="space-y-3">
         <div>

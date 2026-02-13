@@ -49,11 +49,13 @@ export default function MeetTeam() {
         <div className="max-w-xl mb-10">
           <p className="text-yellow-500 font-medium mb-2">Meet The Team</p>
           <h2 className="text-3xl font-bold text-gray-900">
-            Meet the Caspira Team
+            Meet the Skyscape Team
           </h2>
           <p className="text-gray-600 mt-3">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit tellus luctus
-            nec ullamcorper mattis pulvinar.
+            Our team of experienced professionals is dedicated to delivering
+            reliable facility management services with excellence,
+            professionalism, and attention to detail. Together, we ensure every
+            property under our care operates smoothly and efficiently.
           </p>
 
           <button className="mt-6 bg-yellow-500 text-white px-6 py-2 rounded-full hover:bg-yellow-600 transition">
