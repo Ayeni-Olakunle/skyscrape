@@ -60,79 +60,8 @@ function QuoteForm() {
   return (
     <>
       <h3 className="text-lg font-semibold mb-4">Get a free Quote</h3>
-      <div className="hidden lg:block bg-white rounded-xl shadow-xl p-6 mt-64 w-[30rem]">
-        {" "}
-        <h3 className="text-lg font-semibold mb-4">Get a free Quote</h3>{" "}
-        <form className="space-y-3">
-          {" "}
-          <div className="mb-6">
-            {" "}
-            <label
-              htmlFor="fullName"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              {" "}
-              Full Name{" "}
-            </label>{" "}
-            <input
-              id="fullName"
-              placeholder="Your Name"
-              className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
-            />{" "}
-          </div>{" "}
-          <div className="mb-6">
-            {" "}
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              {" "}
-              Email Address{" "}
-            </label>{" "}
-            <input
-              id="email"
-              placeholder="Your Email Address"
-              className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
-            />{" "}
-          </div>{" "}
-          <div className="mb-6">
-            {" "}
-            <label
-              htmlFor="phone"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              {" "}
-              Phone Number{" "}
-            </label>{" "}
-            <input
-              id="phone"
-              placeholder="Your Phone Number"
-              className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
-            />{" "}
-          </div>{" "}
-          <div className="mb-6">
-            {" "}
-            <label
-              htmlFor="Message"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              {" "}
-              Message{" "}
-            </label>{" "}
-            <textarea
-              id="Message"
-              placeholder="Your Message"
-              rows={4}
-              className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
-            />{" "}
-          </div>{" "}
-          <button className="w-full bg-yellow-500 text-white py-3 rounded-full font-medium hover:bg-yellow-600 transition">
-            {" "}
-            SUBMIT{" "}
-          </button>{" "}
-        </form>{" "}
-      </div>
-      {/* <form className="space-y-3">
+
+      <form className="space-y-3">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Full Name
@@ -177,7 +106,7 @@ function QuoteForm() {
         <button className="w-full bg-yellow-500 text-white py-3 rounded-full font-medium hover:bg-yellow-600 transition">
           SUBMIT
         </button>
-      </form> */}
+      </form>
     </>
   );
 }

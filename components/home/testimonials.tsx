@@ -4,8 +4,8 @@ import contrustion from "@/public/Contractor.jpg";
 
 export default function Testimonials() {
   return (
-    <section className="relative overflow-hidden h-screen">
-      <div className="grid lg:grid-cols-2 h-screen">
+    <section className="relative overflow-hidden h-auto md:h-screen">
+      <div className="grid lg:grid-cols-2 h-auto md:h-screen">
         {/* LEFT SIDE */}
         <div className="relative bg-[#1e2a4a] text-white py-24 px-6 lg:px-16">
           {/* Circle Background Effect */}
@@ -16,18 +16,15 @@ export default function Testimonials() {
           </div>
 
           <div className="relative max-w-lg">
-            <p className="text-yellow-400 font-medium mb-3">
-              Testimonials
-            </p>
+            <p className="text-yellow-400 font-medium mb-3">Testimonials</p>
 
             <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
               What People are <br /> Saying About Us
             </h2>
 
             <p className="text-gray-300 mb-6">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit
-              tellus luctus nec ullamcorper mattis pulvinar dapibus
-              leo.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit tellus
+              luctus nec ullamcorper mattis pulvinar dapibus leo.
             </p>
 
             {/* <button className="bg-yellow-500 hover:bg-yellow-600 transition px-6 py-3 rounded-full font-medium">
@@ -63,11 +60,10 @@ export default function Testimonials() {
 
               {/* Text */}
               <p className="text-gray-600 leading-relaxed mb-6">
-                Lorem ipsum dolor sit amet consectetur adipiscing
-                elit. Ut elit tellus Lorem ipsum dolor sit amet
-                consectetur adipiscing elit. Ut elit tellus luctus
-                nec ullamcorper mattis pulvinar dapibus leo luctus
-                nec ullam.
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut elit
+                tellus Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                Ut elit tellus luctus nec ullamcorper mattis pulvinar dapibus
+                leo luctus nec ullam.
               </p>
 
               {/* Navigation */}
@@ -84,7 +80,7 @@ export default function Testimonials() {
         </div>
 
         {/* RIGHT SIDE IMAGE */}
-        <div className="relative min-h-[500px]">
+        <div className="md:relative min-h-[500px] hidden">
           <Image
             src={contrustion}
             alt="Construction worker"
