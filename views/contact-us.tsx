@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
-import Menu from "../common/menu";
+// import Menu from "../common/menu-bar";
 import Footer from "../common/footer";
 import ServiceHero from "@/components/service/hero";
-import ServiceDetails from "@/components/service/service-details";
 import serviceImage from "@/public/service.webp";
 import ContactSection from "@/components/contact-us/contact-section";
 

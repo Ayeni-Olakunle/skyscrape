@@ -1,9 +1,9 @@
 "use client";
 
+import MenuBar from "@/common/menu-bar";
 // import Link from "next/link";
 // import React from "react";
 // import Image from "next/image";
-import Menu from "@/common/menu";
 import serviceImage from "@/public/service.webp";
 import { StaticImageData } from "next/image";
 
@@ -26,7 +26,7 @@ export default function ServiceHero(props: {
       <div className="absolute inset-0" />
 
       {/* Navbar */}
-      <Menu />
+      <MenuBar />
       {/* <header className="relative z-20">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           Logo

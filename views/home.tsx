@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Menu from "../common/menu";
+import MenuBar from "../common/menu-bar";
 import Hero from "../components/home/Hero";
 import AboutSkyscape from "../components/home/about-skyscape";
 import ServicesSection from "../components/home/services-section";
@@ -14,7 +14,7 @@ import Footer from "../common/footer";
 export default function Home() {
   return (
     <div>
-      <Menu />
+      <MenuBar />
       <Hero />
       <AboutSkyscape />
       <ServicesSection />
