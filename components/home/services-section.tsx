@@ -9,6 +9,11 @@ import CustomConstruction from "@/public/Custom Construction.jpg";
 import SustainableBuilding from "@/public/Sustainable Building.jpg";
 import CommercialBuild from "@/public/Commercial Build.jpg";
 import Link from "next/link";
+import service1 from "@/public/service1.jpg";
+import clean from "@/public/clean.jpg";
+import security from "@/public/security man.jpg";
+import eletricity from "@/public/Circuit Breaker.jpg";
+import waste from "@/public/waste.jpg";
 
 type Service = {
   title: string;
@@ -21,7 +26,7 @@ const services: Service[] = [
     title: "Facility Operations & Support",
     description:
       "Day-to-day operational management ensuring smooth coordination of all facility services and activities.",
-    image: AspenHeights,
+    image: service1,
   },
   {
     title: "Property Maintenance",
@@ -33,25 +38,25 @@ const services: Service[] = [
     title: "Cleaning & Janitorial Services",
     description:
       "Professional cleaning solutions that promote hygiene, comfort, and a healthy environment for occupants.",
-    image: BaysideResidences,
+    image: clean,
   },
   {
     title: "Security Management",
     description:
       "Integrated security solutions including access control, monitoring, and personnel management for safer facilities.",
-    image: CustomConstruction,
+    image: security,
   },
   {
     title: "Electrical & Plumbing Services",
     description:
       "Prompt and reliable technical support to maintain essential building systems and prevent disruptions.",
-    image: SustainableBuilding,
+    image: eletricity,
   },
   {
     title: "Waste Management",
     description:
       "Efficient waste collection and disposal services that support cleanliness and environmental responsibility.",
-    image: CommercialBuild,
+    image: waste,
   },
 ];
 
