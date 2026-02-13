@@ -12,7 +12,7 @@ export default function MenuBar() {
     <header className="w-full px-6 py-4 flex items-center justify-between absolute z-50">
       {/* LOGO */}
       <div className="flex items-center gap-3">
-        <Image src={logo} alt="logo" className="w-36" />
+        <Image src={logo} alt="logo" className="w-36 rounded" />
       </div>
 
       {/* DESKTOP NAV */}

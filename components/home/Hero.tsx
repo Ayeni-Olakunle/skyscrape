@@ -71,7 +71,7 @@ export default function Hero() {
         </div>
 
         <div className="md:w-1/2 flex justify-end">
-          <div className="bg-white rounded-2xl p-4 shadow-lg -mt-12 md:mt-0 w-[70%] h-[30rem]">
+          <div className="bg-white rounded-2xl p-4 shadow-lg -mt-12 md:mt-0 md:w-[70%] md:h-[30rem] h-auto w-full">
             <img
               src={heroCleaning.src}
               alt="project"
