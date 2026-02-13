@@ -50,8 +50,7 @@ export default function WhyChooseUs() {
             Why We're Your Best Choice
           </h2>
           <p className="text-gray-600 mt-4">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Tellus
-            luctus nec ullamcorper mattis pulvinar dapibus leo.
+            We deliver dependable, professional facility management solutions designed to keep your properties operating efficiently, safely, and without disruption.
           </p>
         </div>
 
@@ -60,10 +59,10 @@ export default function WhyChooseUs() {
           {/* Left Top */}
           <FeatureCard
             icon={<HardHat className="w-6 h-6 text-gray-700" />}
-            title="Expert Craftsmanship"
-            description="We bring precision and quality to every project. Lorem ipsum dolor sit amet consectetur adipiscing elit."
+            title="Expert Facility Management"
+            description="Our experienced team ensures every property is maintained to the highest standards, with attention to detail and proactive service delivery."
             stat="800+"
-            statLabel="Complete Project"
+            statLabel="Facilities Managed"
           />
 
           {/* Center Image */}
@@ -79,10 +78,10 @@ export default function WhyChooseUs() {
           {/* Right Top */}
           <FeatureCard
             icon={<ShoppingCart className="w-6 h-6 text-gray-700" />}
-            title="Reliable & On-Time"
-            description="We meet deadlines without compromising excellence. Lorem ipsum dolor sit amet consectetur."
+            title="Reliable & On-Time Service"
+            description="We respond quickly and complete tasks efficiently, ensuring smooth operations without delays or compromises."
             stat="950+"
-            statLabel="Incoming Project"
+            statLabel="Service Requests Handled"
           />
 
           {/* Left Bottom Image */}
@@ -98,10 +97,10 @@ export default function WhyChooseUs() {
           {/* Center Bottom */}
           <FeatureCard
             icon={<Network className="w-6 h-6 text-gray-700" />}
-            title="Innovative Solutions"
-            description="Modern designs and smart construction techniques. Lorem ipsum dolor sit amet consectetur."
+            title="Innovative & Smart Solutions"
+            description="We use modern systems and strategic management approaches to improve building performance and long-term value."
             stat="600+"
-            statLabel="Expert Team"
+            statLabel="Skilled Professionals"
           />
 
           {/* Right Bottom Image */}
