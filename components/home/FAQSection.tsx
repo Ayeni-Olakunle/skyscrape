@@ -14,29 +14,29 @@ type FAQ = {
 
 const faqData: FAQ[] = [
   {
-    question: "What services does Caspira offer?",
+    question: "What services does Skyscape offer?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
+      "Skyscape provides comprehensive facility management services, including property maintenance, cleaning and janitorial services, security management, electrical and plumbing support, waste management, and day-to-day facility operations.",
   },
   {
-    question: "How long does a construction project take?",
+    question: "How quickly do you respond to service requests?",
     answer:
-      "Project duration depends on scope, location, and design complexity. Most residential projects range between 3 to 12 months.",
+      "Response time depends on the urgency of the request. Emergency issues are handled immediately, while routine maintenance is scheduled promptly to ensure minimal disruption.",
   },
   {
-    question: "Is Caspira licensed and insured?",
+    question: "Is Skyscape licensed and insured?",
     answer:
-      "Yes, we are fully licensed and insured to handle residential, commercial, and industrial construction projects.",
+      "Yes, we operate professionally and in compliance with industry standards, ensuring all services are delivered safely and responsibly.",
   },
   {
-    question: "Do you provide cost estimates?",
+    question: "Do you provide service quotations?",
     answer:
-      "Yes, we provide detailed cost estimates after reviewing your project requirements and specifications.",
+      "Yes, we provide detailed quotations after assessing your property needs and service requirements to ensure transparent pricing.",
   },
   {
     question: "How do I get started?",
     answer:
-      "Simply contact us through our consultation form or call our team to schedule an initial discussion.",
+      "Simply contact us through our inquiry form or call our team to schedule a consultation. We’ll assess your needs and recommend the right facility management solution for your property.",
   },
 ];
 
@@ -57,8 +57,9 @@ export default function FAQSection() {
             Got Questions? We've got Answers
           </h2>
           <p className="text-gray-600 mt-4">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit tellus luctus
-            nec ullamcorper mattis pulvinar dapibus leo.
+            We understand that choosing the right facility management partner is
+            important. Here are answers to some common questions about
+            Skyscape’s services and operations.
           </p>
         </div>
 
