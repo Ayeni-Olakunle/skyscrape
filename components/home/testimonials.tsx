@@ -80,7 +80,7 @@ export default function Testimonials() {
         </div>
 
         {/* RIGHT SIDE IMAGE */}
-        <div className="md:relative min-h-[500px] hidden">
+        <div className="relative md:block min-h-[500px] hidden">
           <Image
             src={contrustion}
             alt="Construction worker"
