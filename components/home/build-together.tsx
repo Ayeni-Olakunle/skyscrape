@@ -4,7 +4,7 @@ export default function BuildTogether() {
   return (
     <section className="relative w-full pb-20 bg-white">
       {/* Background */}
-      <div className="relative h-[500px] w-full">
+      <div className="relative h-[600px] md:h-[500px] w-full">
         <Image
           src="/images/hero-bg.jpg"
           alt="Construction"
@@ -16,14 +16,14 @@ export default function BuildTogether() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-900/90 to-transparent" />
 
         {/* Content */}
-        <div className="relative max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
-          {/* Left Content */}
-          <div className="max-w-lg text-white">
+        <div className="relative max-w-7xl mx-auto px-6 h-full flex flex-col lg:flex-row items-center lg:items-center justify-between gap-10">
+          {/* LEFT CONTENT */}
+          <div className="max-w-lg text-white pt-20 lg:pt-0 text-center lg:text-left">
             <p className="text-yellow-400 mb-3 font-medium">
               Get started today
             </p>
 
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-4">
               Let’s Build Something <br /> Great Together
             </h2>
 
@@ -38,75 +38,146 @@ export default function BuildTogether() {
             </button>
           </div>
 
-          {/* Quote Form */}
+          {/* DESKTOP FORM */}
           <div className="hidden lg:block bg-white rounded-xl shadow-xl p-6 mt-64 w-[30rem]">
-            <h3 className="text-lg font-semibold mb-4">Get a free Quote</h3>
-
-            <form className="space-y-3">
-              <div className="mb-6">
-                <label
-                  htmlFor="fullName"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  Full Name
-                </label>
-                <input
-                  id="fullName"
-                  placeholder="Your Name"
-                  className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
-                />
-              </div>
-
-              <div className="mb-6">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  Email Address
-                </label>
-                <input
-                  id="email"
-                  placeholder="Your Email Address"
-                  className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
-                />
-              </div>
-
-              <div className="mb-6">
-                <label
-                  htmlFor="phone"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  Phone Number
-                </label>
-                <input
-                  id="phone"
-                  placeholder="Your Phone Number"
-                  className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
-                />
-              </div>
-
-              <div className="mb-6">
-                <label
-                  htmlFor="Message"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="Message"
-                  placeholder="Your Message"
-                  rows={4}
-                  className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
-                />
-              </div>
-
-              <button className="w-full bg-yellow-500 text-white py-3 rounded-full font-medium hover:bg-yellow-600 transition">
-                SUBMIT
-              </button>
-            </form>
+            <QuoteForm />
           </div>
         </div>
       </div>
+
+      {/* MOBILE FORM (shows below hero) */}
+      <div className="lg:hidden max-w-xl mx-auto px-6 md:-mt-16 -mt-56 relative">
+        <div className="bg-white rounded-xl shadow-xl p-6">
+          <QuoteForm />
+        </div>
+      </div>
     </section>
+  );
+}
+
+/* Extracted form for reuse */
+function QuoteForm() {
+  return (
+    <>
+      <h3 className="text-lg font-semibold mb-4">Get a free Quote</h3>
+      <div className="hidden lg:block bg-white rounded-xl shadow-xl p-6 mt-64 w-[30rem]">
+        {" "}
+        <h3 className="text-lg font-semibold mb-4">Get a free Quote</h3>{" "}
+        <form className="space-y-3">
+          {" "}
+          <div className="mb-6">
+            {" "}
+            <label
+              htmlFor="fullName"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              {" "}
+              Full Name{" "}
+            </label>{" "}
+            <input
+              id="fullName"
+              placeholder="Your Name"
+              className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
+            />{" "}
+          </div>{" "}
+          <div className="mb-6">
+            {" "}
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              {" "}
+              Email Address{" "}
+            </label>{" "}
+            <input
+              id="email"
+              placeholder="Your Email Address"
+              className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
+            />{" "}
+          </div>{" "}
+          <div className="mb-6">
+            {" "}
+            <label
+              htmlFor="phone"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              {" "}
+              Phone Number{" "}
+            </label>{" "}
+            <input
+              id="phone"
+              placeholder="Your Phone Number"
+              className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
+            />{" "}
+          </div>{" "}
+          <div className="mb-6">
+            {" "}
+            <label
+              htmlFor="Message"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              {" "}
+              Message{" "}
+            </label>{" "}
+            <textarea
+              id="Message"
+              placeholder="Your Message"
+              rows={4}
+              className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 mt-1 border-gray-500"
+            />{" "}
+          </div>{" "}
+          <button className="w-full bg-yellow-500 text-white py-3 rounded-full font-medium hover:bg-yellow-600 transition">
+            {" "}
+            SUBMIT{" "}
+          </button>{" "}
+        </form>{" "}
+      </div>
+      {/* <form className="space-y-3">
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            Full Name
+          </label>
+          <input
+            placeholder="Your Name"
+            className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 border-gray-500"
+          />
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            Email Address
+          </label>
+          <input
+            placeholder="Your Email Address"
+            className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 border-gray-500"
+          />
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            Phone Number
+          </label>
+          <input
+            placeholder="Your Phone Number"
+            className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 border-gray-500"
+          />
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            Message
+          </label>
+          <textarea
+            rows={4}
+            placeholder="Your Message"
+            className="w-full border rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-gray-300 border-gray-500"
+          />
+        </div>
+
+        <button className="w-full bg-yellow-500 text-white py-3 rounded-full font-medium hover:bg-yellow-600 transition">
+          SUBMIT
+        </button>
+      </form> */}
+    </>
   );
 }
