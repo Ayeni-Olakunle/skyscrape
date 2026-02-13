@@ -10,6 +10,7 @@ import arizonlogo from "@/public/Arizonlogo.png";
 import lekki from "@/public/Lekki-Pride2.jpg";
 import tiwa from "@/public/TIWA-1.png";
 import bolton from "@/public/The-Bolton.png";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -37,18 +38,18 @@ export default function Hero() {
           </p>
 
           <div className="flex items-center gap-7">
-            <a
+            <Link
               className="inline-flex items-center bg-yellow-500 text-white px-10 py-4 rounded-full shadow font-bold"
-              href="#"
+              href="/services"
             >
               Explore Now
-            </a>
-            <a
+            </Link>
+            <Link
               className="inline-flex items-center px-10 py-4 rounded-full shadow bg-[white] text-[#f0b100] font-bold"
-              href="#"
+              href="/contact-us"
             >
               Contact us
-            </a>
+            </Link>
           </div>
 
           <div className="flex mt-8 gap-4 bg-[white] rounded-2xl overflow-hidden">
@@ -86,12 +87,12 @@ export default function Hero() {
                 productivity, comfort, and a higher standard of living.
               </p>
               <div className="mt-3">
-                <a
-                  href="#"
+                <Link
+                  href="/contact-us"
                   className="inline-block text-sm bg-slate-800 text-white px-4 py-2 rounded-md"
                 >
                   Get Started →
-                </a>
+                </Link>
               </div>
             </div>
           </div>

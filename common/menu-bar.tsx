@@ -33,12 +33,12 @@ export default function MenuBar() {
 
       {/* DESKTOP BUTTON */}
       <div className="hidden md:block">
-        <Link
-          href="#"
+        <a
+          href="https://wa.me/+2347063454191"
           className="rounded-full shadow-md hover:opacity-90 px-8 py-4 bg-[#f0b100] text-white"
         >
           Message Us
-        </Link>
+        </a>
       </div>
 
       {/* MOBILE MENU BUTTON */}

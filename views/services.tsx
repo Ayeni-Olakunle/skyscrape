@@ -5,6 +5,7 @@ import Footer from "../common/footer";
 import ServiceHero from "@/components/service/hero";
 import ServiceDetails from "@/components/service/service-details";
 import serviceImage from "@/public/service.webp";
+import service1 from "@/public/service1.jpg";
 
 export default function Services() {
   return (

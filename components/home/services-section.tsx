@@ -8,6 +8,7 @@ import BaysideResidences from "@/public/Bayside Residences.jpg";
 import CustomConstruction from "@/public/Custom Construction.jpg";
 import SustainableBuilding from "@/public/Sustainable Building.jpg";
 import CommercialBuild from "@/public/Commercial Build.jpg";
+import Link from "next/link";
 
 type Service = {
   title: string;
@@ -17,33 +18,39 @@ type Service = {
 
 const services: Service[] = [
   {
-    title: "Aspen Heights",
-    description: "Lorem ipsum dolor sit amet conse ctetur adip scing",
+    title: "Facility Operations & Support",
+    description:
+      "Day-to-day operational management ensuring smooth coordination of all facility services and activities.",
     image: AspenHeights,
   },
   {
-    title: "Forest Hill Towers",
-    description: "Lorem ipsum dolor sit amet conse ctetur adip scing",
+    title: "Property Maintenance",
+    description:
+      "Routine inspections and preventive maintenance to ensure buildings remain in excellent condition at all times.",
     image: ForestHillTowers,
   },
   {
-    title: "Bayside Residences",
-    description: "Lorem ipsum dolor sit amet conse ctetur adip scing",
+    title: "Cleaning & Janitorial Services",
+    description:
+      "Professional cleaning solutions that promote hygiene, comfort, and a healthy environment for occupants.",
     image: BaysideResidences,
   },
   {
-    title: "Custom Construction",
-    description: "Lorem ipsum dolor sit amet conse ctetur adip scing",
+    title: "Security Management",
+    description:
+      "Integrated security solutions including access control, monitoring, and personnel management for safer facilities.",
     image: CustomConstruction,
   },
   {
-    title: "Sustainable Building",
-    description: "Lorem ipsum dolor sit amet conse ctetur adip scing",
+    title: "Electrical & Plumbing Services",
+    description:
+      "Prompt and reliable technical support to maintain essential building systems and prevent disruptions.",
     image: SustainableBuilding,
   },
   {
-    title: "Commercial Build",
-    description: "Lorem ipsum dolor sit amet conse ctetur adip scing",
+    title: "Waste Management",
+    description:
+      "Efficient waste collection and disposal services that support cleanliness and environmental responsibility.",
     image: CommercialBuild,
   },
 ];
@@ -58,19 +65,23 @@ export default function ServicesSection() {
             <p className="text-yellow-500 font-medium mb-2">Our Services</p>
 
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Our Construction Services
+              Our Facility Management Solutions
             </h2>
           </div>
 
           <div className="max-w-md text-right">
             <p className="text-gray-600 mb-4">
-              Lorem ipsum dolor sit amet conse ctetur adipiscing elit tellus
-              luctus nec ullam corper mattis pulvinar.
+              At Skyscape, we deliver reliable facility management solutions
+              that keep residential and commercial properties safe, efficient,
+              and well maintained.
             </p>
 
-            <button className="bg-yellow-500 hover:bg-yellow-600 transition text-white px-6 py-3 rounded-full font-medium">
+            <Link
+              href="/services"
+              className="bg-yellow-500 hover:bg-yellow-600 transition text-white px-6 py-3 rounded-full font-medium"
+            >
               EXPLORE ALL SERVICES →
-            </button>
+            </Link>
           </div>
         </div>
 
