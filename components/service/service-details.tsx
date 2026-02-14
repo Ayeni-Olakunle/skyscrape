@@ -15,23 +15,27 @@ export default function ServiceDetails() {
             </h2>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              At Caspira, we specialize in high-quality residential construction
-              that blends style, functionality, and durability. Whether you're
-              building your dream home from the ground up or renovating an
-              existing space, we bring expert craftsmanship and innovative
-              solutions to every project.
+              At Skyscape, we specialize in comprehensive facility management
+              solutions that enhance the efficiency, safety, and long-term value
+              of residential and commercial properties. Whether you require
+              routine maintenance, operational support, or integrated building
+              management, our team delivers professional and reliable services
+              tailored to your needs.
             </p>
 
             <ul className="space-y-3">
+              <h2 className="text-3xl font-semibold text-[#0b1c39] mb-4">
+                Our Core Services
+              </h2>
               {[
-                "Custom Home Construction – We design and build homes tailored to your unique vision and lifestyle.",
-                "Home Renovations & Additions – Upgrade your space with seamless renovations and expansions.",
-                "Luxury Home Builds – High-end designs with premium materials and superior finishes.",
-                "Sustainable & Smart Homes – Energy-efficient and technology-integrated homes for modern living.",
-                "Project Management – From permits to final finishes, we handle every detail with precision.",
+                "Property Maintenance – Preventive and corrective maintenance to keep facilities operating smoothly and efficiently.",
+                "Cleaning & Janitorial Services – Professional cleaning solutions that promote hygiene, comfort, and a healthy environment.",
+                "Security Management – Access control, monitoring, and security personnel coordination to ensure safe and secure premises.",
+                "Technical Services (Electrical & Plumbing) – Reliable system inspections, repairs, and maintenance to prevent downtime.",
+                "Facility Operations & Management – End-to-end coordination of daily building operations for seamless service delivery.",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-gray-700">
-                  <Check className="text-green-500 mt-1" size={18} />
+                  <Check className="text-blue-500 mt-1" size={18} />
                   {item}
                 </li>
               ))}
@@ -41,43 +45,45 @@ export default function ServiceDetails() {
           {/* TESTIMONIAL */}
           <div className="bg-gray-100 rounded-2xl p-8">
             <p className="text-gray-600 italic mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut elit
-              tellus luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              “Skyscape has consistently delivered professional and dependable
+              facility management services. Their team is responsive, efficient,
+              and committed to maintaining high standards across our property.”
             </p>
 
-            <h4 className="font-semibold text-[#0b1c39]">John Doe</h4>
-            <span className="text-sm text-yellow-600">Designer</span>
+            <h4 className="font-semibold text-[#0b1c39]">John Carter</h4>
+            <span className="text-sm text-yellow-600">Client</span>
           </div>
 
           {/* WHY CHOOSE */}
           <div>
             <h2 className="text-3xl font-semibold text-[#0b1c39] mb-4">
-              Why Choose Caspira?
+              Why Choose Skyscape?
             </h2>
 
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
               <li>
-                Experienced Team – Skilled professionals dedicated to
-                excellence.
+                Experienced Professionals – A skilled team dedicated to
+                maintaining high service standards.
               </li>
               <li>
-                Quality Materials – Durable, high-quality materials that stand
-                the test of time.
+                Reliable & Proactive Service – We prevent issues before they
+                become costly problems.
               </li>
               <li>
-                On-Time & On-Budget – Transparent timelines and cost-effective
-                solutions.
+                Efficient & Transparent Processes – Clear communication,
+                structured timelines, and dependable execution.
               </li>
               <li>
-                Client-Centered Approach – Your satisfaction is our priority.
+                Client-Focused Approach – Your property’s performance and
+                occupant satisfaction are our top priorities.
               </li>
             </ul>
 
             <p className="text-gray-600 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut elit
-              tellus luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
+              Skyscape delivers reliable facility management solutions focused
+              on efficiency, safety, and long-term property value. Our team
+              ensures every space is properly maintained to provide comfort and
+              seamless daily operations.
             </p>
           </div>
         </div>
