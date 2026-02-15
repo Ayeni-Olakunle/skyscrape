@@ -3,7 +3,7 @@ import React from "react";
 // import Menu from "../common/menu-bar";
 import Footer from "../common/footer";
 import ServiceHero from "@/components/service/hero";
-import serviceImage from "@/public/service.webp";
+import contact from "@/public/contact-us.jpeg";
 import ContactSection from "@/components/contact-us/contact-section";
 
 export default function ContactUs() {
@@ -12,7 +12,7 @@ export default function ContactUs() {
       {/* <Menu /> */}
       <ServiceHero
         title="Contact Us"
-        imageUrl={serviceImage.src}
+        imageUrl={contact.src}
         description="We provide a wide range of construction services tailored to meet your specific needs."
       />
       <ContactSection />

@@ -43,7 +43,7 @@ export default function ContactSection() {
           {/* MAP */}
           <div className="w-full h-[320px] rounded-xl overflow-hidden">
             <iframe
-              src="https://maps.google.com/maps?q=london%20eye&t=&z=12&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.591526926177!2d3.4719413750512444!3d6.446458493544882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf5339cbe4d37%3A0xb0635ac40d91ea5d!2sThe%20Zylus%20Place!5e0!3m2!1sen!2sng!4v1771143625702!5m2!1sen!2sng"
               className="w-full h-full border-0"
               loading="lazy"
             ></iframe>
