@@ -31,11 +31,11 @@ const TeamCard = ({ name, role, image, active }: TeamProps) => {
         <h3 className="text-lg font-semibold">{name}</h3>
         <p className="text-sm mb-3">{role}</p>
 
-        <div className="flex gap-3">
+        {/* <div className="flex gap-3">
           <Facebook size={18} />
           <Twitter size={18} />
           <Linkedin size={18} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

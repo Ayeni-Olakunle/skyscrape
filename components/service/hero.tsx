@@ -23,7 +23,7 @@ export default function ServiceHero(props: {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0" />
+      <div className="absolute inset-0 bg-[#000000a6]" />
 
       {/* Navbar */}
       <MenuBar />
