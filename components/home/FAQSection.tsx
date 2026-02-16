@@ -48,7 +48,12 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section
+      className="py-20 bg-gray-50"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-duration="4000"
+    >
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">

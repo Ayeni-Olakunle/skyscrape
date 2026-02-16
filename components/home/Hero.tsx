@@ -24,7 +24,12 @@ export default function Hero() {
           className="opacity-60"
         />
       </div>
-      <div className="relative max-w-7xl mx-auto px-6 py-28 pb-16 flex flex-col md:flex-row items-center gap-8">
+      <div
+        className="relative max-w-7xl mx-auto px-6 py-28 pb-16 flex flex-col md:flex-row items-center gap-8"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-duration="4000"
+      >
         <div className="md:w-1/2">
           <p className="text-sm text-yellow-300 mb-4">Welcome SkyScape</p>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">

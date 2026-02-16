@@ -59,12 +59,22 @@ export default function ServiceHero(props: {
       {/* Hero Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-6 h-full flex flex-col justify-center">
         {/* Breadcrumb */}
-        <p className="text-gray-200 text-sm mb-3">
+        <p
+          className="text-gray-200 text-sm mb-3"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="4000"
+        >
           Home <span className="mx-2">|</span> {props.title}
         </p>
 
         {/* Title */}
-        <h1 className="text-white text-3xl md:text-5xl font-semibold">
+        <h1
+          className="text-white text-3xl md:text-5xl font-semibold"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="4000"
+        >
           {props.title}
         </h1>
         {/* Description */}

@@ -9,10 +9,15 @@ export default function MenuBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full px-6 py-4 flex items-center justify-between absolute z-50">
+    <header
+      className="w-full px-6 py-4 flex items-center justify-between absolute z-50"
+      data-aos="slide-up"
+    >
       {/* LOGO */}
       <div className="flex items-center gap-3">
-        <Image src={logo} alt="logo" className="w-36 rounded" />
+        <Link href="/">
+          <Image src={logo} alt="logo" className="w-36 rounded" />
+        </Link>
       </div>
 
       {/* DESKTOP NAV */}

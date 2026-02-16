@@ -7,14 +7,29 @@ export default function ServiceDetails() {
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-10">
         {/* LEFT CONTENT */}
-        <div className="lg:col-span-2 space-y-12">
+        <div
+          className="lg:col-span-2 space-y-12"
+          data-aos="slide-right"
+          data-aos-offset="200"
+          data-aos-duration="4000"
+        >
           {/* WHAT WE OFFER */}
           <div>
-            <h2 className="text-3xl font-semibold text-[#0b1c39] mb-4">
+            <h2
+              className="text-3xl font-semibold text-[#0b1c39] mb-4"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="4000"
+            >
               What We Offer
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p
+              className="text-gray-600 leading-relaxed mb-6"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="4000"
+            >
               SKYSCAPE FACILITIES AND PROPERTY MANAGEMENT LTD is a
               forwardthinking facility management firm committed to creating a n
               d maintaining safe, efficient, a n d sustainable environments. We
@@ -45,7 +60,12 @@ export default function ServiceDetails() {
               matters m o s t
             </p>
 
-            <ul className="space-y-3">
+            <ul
+              className="space-y-3"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="4000"
+            >
               <h2 className="text-3xl font-semibold text-[#0b1c39] mb-4">
                 Our Core Services
               </h2>
@@ -65,7 +85,12 @@ export default function ServiceDetails() {
           </div>
 
           {/* TESTIMONIAL */}
-          <div className="bg-gray-100 rounded-2xl p-8">
+          <div
+            className="bg-gray-100 rounded-2xl p-8"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="4000"
+          >
             <p className="text-gray-600 italic mb-4">
               “Skyscape has consistently delivered professional and dependable
               facility management services. Their team is responsive, efficient,
@@ -77,7 +102,11 @@ export default function ServiceDetails() {
           </div>
 
           {/* WHY CHOOSE */}
-          <div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="4000"
+          >
             <h2 className="text-3xl font-semibold text-[#0b1c39] mb-4">
               Why Choose Skyscape?
             </h2>
@@ -111,7 +140,12 @@ export default function ServiceDetails() {
         </div>
 
         {/* RIGHT SIDEBAR */}
-        <div className="space-y-8">
+        <div
+          className="space-y-8"
+          data-aos="slide-left"
+          data-aos-offset="200"
+          data-aos-duration="4000"
+        >
           {/* EXPLORE MORE */}
           <div className="bg-[#0b1c39] text-white rounded-2xl p-6">
             <h3 className="text-lg font-semibold mb-4">Explore More</h3>

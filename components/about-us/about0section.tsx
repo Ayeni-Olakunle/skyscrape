@@ -10,7 +10,12 @@ export default function AboutSection() {
         {/* TOP CONTENT */}
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* LEFT SIDE */}
-          <div>
+          <div
+            className="space-y-6"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-duration="4000"
+          >
             <span className="text-yellow-600 font-medium flex items-center gap-2 mb-3">
               <span className="w-5 h-[2px] bg-yellow-600 inline-block"></span>
               About
@@ -42,7 +47,12 @@ export default function AboutSection() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div>
+          <div
+            className="space-y-6"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-duration="4000"
+          >
             <h3 className="text-2xl font-semibold text-[#0b1c39] mb-4">
               Our Value
             </h3>
@@ -68,7 +78,12 @@ export default function AboutSection() {
         </div>
 
         {/* BOTTOM HIGHLIGHT */}
-        <div className="relative grid lg:grid-cols-2 items-center">
+        <div
+          className="relative grid lg:grid-cols-2 items-center"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="4000"
+        >
           {/* TEXT CARD */}
           <div className="bg-yellow-600 text-white rounded-2xl p-10 relative z-10">
             <h3 className="text-2xl font-semibold mb-3">

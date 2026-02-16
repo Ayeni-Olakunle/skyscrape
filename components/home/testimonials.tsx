@@ -4,7 +4,12 @@ import contrustion from "@/public/Contractor.jpg";
 
 export default function Testimonials() {
   return (
-    <section className="relative overflow-hidden h-auto md:h-screen">
+    <section
+      className="relative overflow-hidden h-auto md:h-screen"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-duration="4000"
+    >
       <div className="grid lg:grid-cols-2 h-auto md:h-screen">
         {/* LEFT SIDE */}
         <div className="relative bg-[#1e2a4a] text-white py-24 px-6 lg:px-16">

@@ -6,10 +6,20 @@ import Link from "next/link";
 
 export default function AboutSkyscape() {
   return (
-    <section className="w-full bg-gray-50 py-20">
+    <section
+      className="w-full bg-gray-50 py-20"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-duration="4000"
+    >
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
         {/* LEFT IMAGE */}
-        <div className="relative">
+        <div
+          className="relative"
+          data-aos="slide-right"
+          data-aos-offset="200"
+          data-aos-duration="4000"
+        >
           <div className="rounded-2xl overflow-hidden">
             <Image
               src={union}
@@ -23,7 +33,12 @@ export default function AboutSkyscape() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="relative">
+        <div
+          className="relative"
+          data-aos="slide-left"
+          data-aos-offset="200"
+          data-aos-duration="4000"
+        >
           {/* Small Label */}
           <p className="text-yellow-500 font-medium mb-3">About SkyScape</p>
 

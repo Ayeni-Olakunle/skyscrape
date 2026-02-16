@@ -41,7 +41,12 @@ const FeatureCard = ({
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section
+      className="py-20 bg-gray-50"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-duration="4000"
+    >
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
@@ -50,7 +55,9 @@ export default function WhyChooseUs() {
             Why We're Your Best Choice
           </h2>
           <p className="text-gray-600 mt-4">
-            We deliver dependable, professional facility management solutions designed to keep your properties operating efficiently, safely, and without disruption.
+            We deliver dependable, professional facility management solutions
+            designed to keep your properties operating efficiently, safely, and
+            without disruption.
           </p>
         </div>
 

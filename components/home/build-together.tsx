@@ -2,7 +2,12 @@ import Image from "next/image";
 
 export default function BuildTogether() {
   return (
-    <section className="relative w-full pb-20 bg-white">
+    <section
+      className="relative w-full pb-20 bg-white"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-duration="4000"
+    >
       {/* Background */}
       <div className="relative h-[600px] md:h-[500px] w-full">
         <Image

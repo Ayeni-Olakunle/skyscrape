@@ -62,7 +62,12 @@ const services: Service[] = [
 
 export default function ServicesSection() {
   return (
-    <section className="bg-gray-50 py-20">
+    <section
+      className="bg-gray-50 py-20"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-duration="4000"
+    >
       <div className="max-w-7xl mx-auto px-6">
         {/* HEADER */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12 gap-6">

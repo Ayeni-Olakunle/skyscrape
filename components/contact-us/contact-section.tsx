@@ -5,7 +5,12 @@ export default function ContactSection() {
     <section className="bg-[#0f2238] py-20 text-white">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start">
         {/* LEFT SIDE */}
-        <div>
+        <div
+          className="space-y-8"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-duration="4000"
+        >
           <p className="text-yellow-400 mb-3">Contact Us</p>
 
           <h2 className="text-4xl font-semibold mb-4">
@@ -51,7 +56,12 @@ export default function ContactSection() {
         </div>
 
         {/* RIGHT SIDE - FORM */}
-        <div className="bg-[#132a44] rounded-2xl p-8 shadow-lg">
+        <div
+          className="bg-[#132a44] rounded-2xl p-8 shadow-lg"
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-duration="4000"
+        >
           <h3 className="text-3xl font-semibold mb-3">Get In Touch With Us.</h3>
 
           <p className="text-gray-300 mb-6">

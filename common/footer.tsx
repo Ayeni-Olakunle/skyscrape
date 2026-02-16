@@ -14,7 +14,12 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1e2a4a] text-gray-300">
+    <footer
+      className="bg-[#1e2a4a] text-gray-300"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-duration="4000"
+    >
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo & About */}
