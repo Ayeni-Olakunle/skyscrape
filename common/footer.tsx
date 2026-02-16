@@ -118,7 +118,7 @@ export default function Footer() {
 
         {/* Divider */}
         <div className="border-t border-gray-600 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between text-sm">
-          <p>© Templateorbit.com</p>
+          <p>© skyscapefacilities.com</p>
 
           <div className="flex gap-6 mt-3 md:mt-0">
             <Link href="#">Privacy Policy</Link>
