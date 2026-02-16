@@ -45,11 +45,11 @@ export default function Footer() {
 
             <div className="grid grid-cols-2 gap-y-2 text-sm">
               <Link href="/">Home</Link>
-              <Link href="/team">Team</Link>
-              <Link href="/about">About</Link>
-              <Link href="/blog">Blog</Link>
+              <Link href="/">Team</Link>
+              <Link href="/about-us">About</Link>
+              <Link href="/">Blog</Link>
               <Link href="/services">Services</Link>
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact-us">Contact</Link>
               <Link href="/">Project's</Link>
               <Link href="/">404 Page</Link>
             </div>
@@ -61,13 +61,13 @@ export default function Footer() {
 
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-3">
-                <Phone size={18} className="text-yellow-400" />
-                (+234) 0706 345 4191
+                <Phone size={18} className="text-yellow-400" />+ (123) 0901 991
+                0747
               </li>
 
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-yellow-400" />
-                help@email.com
+                Info@skyscape.com
               </li>
 
               <li className="flex items-start gap-3">

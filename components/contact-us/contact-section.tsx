@@ -25,7 +25,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-yellow-400 font-medium">Call Us Now</p>
-                <p className="text-sm text-gray-300">+ (123) 456 78910</p>
+                <p className="text-sm text-gray-300">+ (123) 0901 991 0747</p>
               </div>
             </div>
 
@@ -35,7 +35,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-yellow-400 font-medium">Email Address</p>
-                <p className="text-sm text-gray-300">support@domain.com</p>
+                <p className="text-sm text-gray-300">Info@skyscape.com</p>
               </div>
             </div>
           </div>
@@ -86,13 +86,19 @@ export default function ContactSection() {
               />
             </div>
 
-            <select className="w-full rounded-lg px-4 py-3 bg-white text-black outline-none">
+            <input
+              type="text"
+              placeholder="Subject"
+              className="w-full rounded-lg px-4 py-3 bg-white text-black outline-none"
+            />
+
+            {/* <select className="w-full rounded-lg px-4 py-3 bg-white text-black outline-none">
               <option>Select Your Requirement</option>
               <option>Residential Construction</option>
               <option>Commercial Construction</option>
               <option>Renovation</option>
               <option>Property Investment</option>
-            </select>
+            </select> */}
 
             <textarea
               rows={5}

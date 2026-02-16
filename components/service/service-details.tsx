@@ -15,12 +15,34 @@ export default function ServiceDetails() {
             </h2>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              At Skyscape, we specialize in comprehensive facility management
-              solutions that enhance the efficiency, safety, and long-term value
-              of residential and commercial properties. Whether you require
-              routine maintenance, operational support, or integrated building
-              management, our team delivers professional and reliable services
-              tailored to your needs.
+              SKYSCAPE FACILITIES AND PROPERTY MANAGEMENT LTD is a
+              forwardthinking facility management firm committed to creating a n
+              d maintaining safe, efficient, a n d sustainable environments. We
+              specialize in the comprehensive management of facilities across
+              various sectors commercial, residential, industrial, a n d
+              institutional ensuring that t h e spaces our clients d e p e n d o
+              n function seamlessly, every single day.
+              <br />
+              <br />
+              With our t e a m of highly skilled professionals a n d a strong
+              focus o n quality, reliability, a n d innovation, w e offer
+              integrated solutions t h a t span from maintenance a n d
+              operations t o cleaning, security, landscaping, and energy
+              management. Our approach is proactive and client-focused, aiming
+              not just t o maintain buildings, b u t t o e n h a n c e their
+              performance a n d value over time.
+              <br />
+              <br />
+              We understand t h a t every facility is unique. That's why w e
+              tailor our services t o m e e t t h e specific n e e d s of e a c
+              h client, using data-driven insights and industry best practices t
+              o deliver measurable results.
+              <br />
+              <br />
+              Whether w e r e managing a single site or a n extensive property
+              portfolio, our goal remains the same: to provide peace of mind,
+              optimize resources, a n d h e l p our clients focus o n w h a t
+              matters m o s t
             </p>
 
             <ul className="space-y-3">
