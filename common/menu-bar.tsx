@@ -26,7 +26,7 @@ export default function MenuBar() {
         </div>
 
         {/* DESKTOP NAV */}
-        <nav className="hidden md:flex gap-6 items-center text-sm text-black">
+        <nav className="hidden md:flex gap-6 items-center text-sm text-[#474747] font-bold">
           <Link href="/" className="hover:opacity-80">
             Home
           </Link>

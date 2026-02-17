@@ -9,6 +9,7 @@ import ade from "@/public/ade.jpeg";
 import arizonlogo from "@/public/Arizonlogo.png";
 import lekki from "@/public/Lekki-Pride2.jpg";
 import tiwa from "@/public/TIWA-1.png";
+import hero from "@/public/hero1.jpeg";
 import bolton from "@/public/The-Bolton.png";
 import Link from "next/link";
 
@@ -31,12 +32,15 @@ export default function Hero() {
         data-aos-duration="4000"
       >
         <div className="md:w-1/2">
-          <p className="text-sm text-yellow-300 mb-4">Welcome SkyScape</p>
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+          <p className="text-shadow-md text-yellow-500 mb-4 font-bold flex items-center gap-2">
+            <span className="bg-yellow-500 w-32 h-1 block rounded"></span>
+            Welcome SkyScape
+          </p>
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6 text-[#1e2a4a]">
             Where Vision Meets Reliable Facility Management
             {/* <br />  */}
           </h1>
-          <p className="text-gray-200 max-w-lg mb-6">
+          <p className="text-gray-700 max-w-lg mb-6">
             At Skyscape, we deliver expertise, precision, and innovation in
             every facility we manage. From planning to daily operations, we
             ensure efficiency, reliability, and excellence at every stage.
@@ -44,13 +48,13 @@ export default function Hero() {
 
           <div className="flex items-center gap-7">
             <Link
-              className="inline-flex items-center bg-yellow-500 text-white px-10 py-4 rounded-full shadow font-bold"
+              className="inline-flex items-center text-white bg-yellow-500 text-shadow-2xs px-10 py-4 rounded-full shadow font-bold hover:opacity-90 hover:text-white hover:bg-yellow-600 transition hover:shadow-lg hover:scale-105 hover:-translate-y-1 hover:shadow-gray-300 hover:animate-bounce"
               href="/services"
             >
               Explore Now
             </Link>
             <Link
-              className="inline-flex items-center px-10 py-4 rounded-full shadow bg-[white] text-[#f0b100] font-bold"
+              className="inline-flex items-center px-10 py-4 rounded-full shadow bg-gray-800 text-white font-bold hover:opacity-90 hover:text-white hover:bg-gray-800 transition hover:shadow-lg hover:scale-105 hover:-translate-y-1 hover:shadow-gray-300 hover:animate-bounce"
               href="/contact-us"
             >
               Contact us
@@ -77,7 +81,14 @@ export default function Hero() {
         </div>
 
         <div className="md:w-1/2 flex justify-end">
-          <div className="bg-white rounded-2xl p-4 shadow-lg -mt-12 md:mt-0 md:w-[70%] md:h-[30rem] h-auto w-full">
+          <div>
+            <Image
+              src={hero}
+              alt="Hero Image"
+              className="rounded-lg w-full h-auto object-cover"
+            />
+          </div>
+          {/* <div className="bg-white rounded-2xl p-4 shadow-lg -mt-12 md:mt-0 md:w-[70%] md:h-[30rem] h-auto w-full">
             <img
               src={heroCleaning.src}
               alt="project"
@@ -100,53 +111,9 @@ export default function Hero() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
-      {/* <div className="relative max-w-7xl mx-auto flex flex-col md:flex-row gap-8 justify-around items-center px-4 py-7 mb-5 rounded-[100px] bg-[#8080808f]">
-        <div className="grayscale bg-contain bg-center bg-no-repeat w-[10%] h-[10%]">
-          <img
-            src={avana.src}
-            alt="Hero Image"
-            className="grayscale w-full h-full"
-          />
-        </div>
-        <div className="grayscale bg-contain bg-center bg-no-repeat w-[10%] h-[10%]">
-          <img
-            src={tiwa.src}
-            alt="Hero Image"
-            className="grayscale w-full h-full"
-          />
-        </div>
-        <div className="grayscale bg-contain bg-center bg-no-repeat w-[10%] h-[10%]">
-          <img
-            src={bolton.src}
-            alt="Hero Image"
-            className="grayscale w-full h-full"
-          />
-        </div>
-        <div className="grayscale bg-contain bg-center bg-no-repeat w-[10%] h-[10%]">
-          <img
-            src={arizonlogo.src}
-            alt="Hero Image"
-            className="grayscale w-full h-full"
-          />
-        </div>
-        <div className="grayscale bg-contain bg-center bg-no-repeat w-[10%] h-[10%]">
-          <img
-            src={lekki.src}
-            alt="Hero Image"
-            className="grayscale w-full h-full"
-          />
-        </div>
-        <div className="grayscale bg-contain bg-center bg-no-repeat w-[10%] h-[10%]">
-          <img
-            src={ade.src}
-            alt="Hero Image"
-            className="grayscale w-full h-full"
-          />
-        </div>
-      </div> */}
     </section>
   );
 }
