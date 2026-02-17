@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../public/logo.jpg";
-import { Menu, X } from "lucide-react";
+import { Building2, Menu, X } from "lucide-react";
 
 export default function MenuBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,12 +17,16 @@ export default function MenuBar() {
         {/* LOGO */}
         <div className="flex items-center gap-3">
           <Link href="/">
-            <Image src={logo} alt="logo" className="w-36 rounded" />
+            <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-300">
+              <Building2 className="inline-block mr-2 text-amber-400" />
+              <span className="text-[#3d5495]">SKY</span>SCAPE
+            </h1>
+            {/* <Image src={logo} alt="logo" className="w-36 rounded" /> */}
           </Link>
         </div>
 
         {/* DESKTOP NAV */}
-        <nav className="hidden md:flex gap-6 items-center text-sm text-white">
+        <nav className="hidden md:flex gap-6 items-center text-sm text-black">
           <Link href="/" className="hover:opacity-80">
             Home
           </Link>

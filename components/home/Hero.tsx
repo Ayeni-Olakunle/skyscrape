@@ -14,8 +14,8 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative bg-black text-white">
-      <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-60">
+    <section className="relative bg-white text-black">
+      {/* <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-60">
         <Image
           src={heroImage}
           alt="Hero Background"
@@ -23,7 +23,7 @@ export default function Hero() {
           objectFit="cover"
           className="opacity-60"
         />
-      </div>
+      </div> */}
       <div
         className="relative max-w-7xl mx-auto px-6 py-28 pb-16 flex flex-col md:flex-row items-center gap-8"
         data-aos="fade-up"
