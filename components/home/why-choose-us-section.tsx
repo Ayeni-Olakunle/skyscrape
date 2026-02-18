@@ -60,16 +60,16 @@ export default function WhyChooseUsSection() {
         </div>
 
         {/* Content */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-1 gap-12 items-center">
           {/* Left Side */}
-          <div className="space-y-6">
+          <div className="space-y-6 grid lg:grid-cols-2 gap-8">
             {features.map((item, index) => (
               <FeatureCard key={index} {...item} />
             ))}
           </div>
 
           {/* Right Image */}
-          <div className="relative">
+          {/* <div className="relative">
             <div className="relative overflow-hidden">
               <Image
                 src={whyme}
@@ -80,9 +80,9 @@ export default function WhyChooseUsSection() {
               />
             </div>
 
-            {/* Decorative Shape */}
-            {/* <div className="absolute -right-4 top-6 bottom-6 w-6 bg-blue-400 rounded-full hidden lg:block" /> */}
-          </div>
+            Decorative Shape
+            <div className="absolute -right-4 top-6 bottom-6 w-6 bg-blue-400 rounded-full hidden lg:block" />
+          </div> */}
         </div>
       </div>
     </section>

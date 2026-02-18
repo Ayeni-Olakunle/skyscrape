@@ -8,6 +8,7 @@ import {
   Instagram,
   Linkedin,
   Send,
+  Building2,
 } from "lucide-react";
 import logo from "@/public/logo.jpg";
 import Image from "next/image";
@@ -24,13 +25,22 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo & About */}
           <div>
-            <Image
+            <div className="flex items-center gap-3 mb-2">
+              <Link href="/">
+                <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-300">
+                  <Building2 className="inline-block mr-2 text-amber-400" />
+                  <span className="text-[#3d5495]">SKY</span>SCAPE
+                </h1>
+                {/* <Image src={logo} alt="logo" className="w-36 rounded" /> */}
+              </Link>
+            </div>
+            {/* <Image
               src={logo}
               alt="Sky Scape Logo"
               width={150}
               height={50}
               className="text-transparent rounded mb-4"
-            />
+            /> */}
             {/* <h2 className="text-white text-2xl font-bold mb-4">
               CASPIRA
             </h2> */}

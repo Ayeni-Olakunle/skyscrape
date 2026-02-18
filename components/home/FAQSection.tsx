@@ -49,7 +49,7 @@ export default function FAQSection() {
 
   return (
     <section
-      className="py-20 bg-gray-50"
+      className="py-20 bg-white"
       data-aos="fade-up"
       data-aos-offset="200"
       data-aos-duration="4000"

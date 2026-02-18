@@ -14,6 +14,7 @@ import MissionVision from "@/components/home/mission-vision";
 import AboutSection from "@/components/home/about-section";
 import ServicesRedesignSection from "@/components/home/sercive-redesign";
 import WhyChooseUsSection from "@/components/home/why-choose-us-section";
+import Testimonial from "@/components/home/testimonial";
 
 
 export default function Home() {
@@ -24,13 +25,14 @@ export default function Home() {
       <AboutSection />
       <ServicesRedesignSection />
       <WhyChooseUsSection />
+      <Testimonial />
       {/* <MissionVision /> */}
       {/* <AboutSkyscape /> */}
       {/* <ServicesSection /> */}
       {/* <WhyChooseUs /> */}
-      <BuildTogether />
-      <MeetTeam />
-      <Testimonials />
+      {/* <BuildTogether /> */}
+      {/* <MeetTeam /> */}
+      {/* <Testimonials /> */}
       <FAQSection />
       <Footer />
     </div>
