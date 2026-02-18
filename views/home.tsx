@@ -27,7 +27,7 @@ export default function Home() {
       {/* <MissionVision /> */}
       {/* <AboutSkyscape /> */}
       {/* <ServicesSection /> */}
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       <BuildTogether />
       <MeetTeam />
       <Testimonials />
