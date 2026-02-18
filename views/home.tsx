@@ -12,6 +12,8 @@ import FAQSection from "@/components/home/FAQSection";
 import Footer from "../common/footer";
 import MissionVision from "@/components/home/mission-vision";
 import AboutSection from "@/components/home/about-section";
+import ServicesRedesignSection from "@/components/home/sercive-redesign";
+
 
 export default function Home() {
   return (
@@ -19,9 +21,10 @@ export default function Home() {
       <MenuBar />
       <Hero />
       <AboutSection />
+      <ServicesRedesignSection />
       {/* <MissionVision /> */}
       {/* <AboutSkyscape /> */}
-      <ServicesSection />
+      {/* <ServicesSection /> */}
       <WhyChooseUs />
       <BuildTogether />
       <MeetTeam />

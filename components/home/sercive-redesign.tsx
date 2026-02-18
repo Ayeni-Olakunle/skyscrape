@@ -20,7 +20,7 @@ const services: Service[] = [
   {
     title: "Renovation Services",
     description:
-      "Once you decide to proceed with a renovation project, offers a simple and convenient way to get in touch with us.",
+      "Once you decide to proceed with a renovation project, we provide a simple and convenient way to get started with us.",
     icon: <Wrench size={22} />,
     featured: true,
   },
@@ -33,38 +33,43 @@ const services: Service[] = [
   {
     title: "Electrical Services",
     description:
-      "They will discuss any available options, provide accurate cost estimates, and answer any questions you may have.",
+      "We discuss available options, provide accurate estimates, and answer all your questions.",
     icon: <Zap size={22} />,
   },
   {
     title: "Home Maintenance",
     description:
-      "They will listen to your concerns, conduct thorough inspections, and identify any areas that may require attention.",
+      "We conduct detailed inspections and identify areas that require professional attention.",
     icon: <Home size={22} />,
   },
   {
     title: "Painting and Drywall",
     description:
-      "They will listen to your concerns, conduct thorough inspections, and identify any areas that may require attention.",
+      "Our team ensures smooth finishing and quality results that enhance your space.",
     icon: <Paintbrush size={22} />,
   },
   {
     title: "Wood & Flooring",
     description:
-      "We will provide you with a detailed explanation of the recommended wood or flooring services.",
+      "We provide expert guidance and detailed explanations for the best flooring solutions.",
     icon: <Hammer size={22} />,
   },
 ];
 
-export default function ServicesSection() {
+export default function ServicesRedesignSection() {
   return (
-    <section className="w-full bg-[#f7f7f7] py-20 px-6">
-      <div className="max-w-7xl mx-auto">
-
+    <section className="w-full bg-white py-24 px-6">
+      <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-center text-4xl md:text-5xl font-semibold text-gray-800 mb-14">
-          Our Services
-        </h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-semibold text-[#0e253a]">
+            Our Services
+          </h2>
+          <p className="text-gray-500 mt-4 max-w-xl mx-auto">
+            We provide reliable solutions designed to improve comfort,
+            functionality, and long-term value for your property.
+          </p>
+        </div>
 
         {/* Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -85,19 +90,21 @@ function ServiceCard({
 }: Service) {
   return (
     <div
-      className={`rounded-2xl p-8 transition duration-300 shadow-sm
-        ${
-          featured
-            ? "bg-orange-500 text-white rotate-[-2deg]"
-            : "bg-white hover:shadow-lg"
-        }
-      `}
+      className={`group relative rounded-2xl p-8 transition-all duration-300
+      ${
+        featured
+          ? "bg-gradient-to-br from-[#0e253a] to-[#163a59] text-white shadow-xl scale-[1.03] rotate-3"
+          : "bg-white border border-gray-100 hover:shadow-xl hover:-translate-y-2"
+      }`}
     >
       {/* Icon */}
       <div
-        className={`w-12 h-12 rounded-full flex items-center justify-center mb-6
-          ${featured ? "bg-white text-orange-500" : "bg-orange-500 text-white"}
-        `}
+        className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 transition-all duration-300
+        ${
+          featured
+            ? "bg-white/15 text-white"
+            : "bg-[#0e253a] text-white group-hover:bg-[#0e253a]"
+        } group-hover:rotate-3 group-hover:scale-110`}
       >
         {icon}
       </div>
@@ -108,11 +115,16 @@ function ServiceCard({
       {/* Description */}
       <p
         className={`text-sm leading-relaxed ${
-          featured ? "text-orange-100" : "text-gray-600"
+          featured ? "text-white/80" : "text-gray-600"
         }`}
       >
         {description}
       </p>
+
+      {/* subtle glow for featured */}
+      {featured && (
+        <div className="absolute inset-0 rounded-2xl ring-1 ring-white/10 pointer-events-none" />
+      )}
     </div>
   );
 }
