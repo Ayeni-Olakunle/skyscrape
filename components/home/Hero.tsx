@@ -9,7 +9,7 @@ import ade from "@/public/ade.jpeg";
 import arizonlogo from "@/public/Arizonlogo.png";
 import lekki from "@/public/Lekki-Pride2.jpg";
 import tiwa from "@/public/TIWA-1.png";
-import hero from "@/public/hero1.jpeg";
+import hero from "@/public/hore2.png";
 import bolton from "@/public/The-Bolton.png";
 import Link from "next/link";
 
@@ -32,11 +32,11 @@ export default function Hero() {
         data-aos-duration="4000"
       >
         <div className="md:w-1/2">
-          <p className="text-shadow-md text-yellow-500 mb-4 font-bold flex items-center gap-2">
+          <p className="text-shadow-md text-yellow-500 mb-4 font-bold flex items-center gap-2 text-lg">
             <span className="bg-yellow-500 w-32 h-1 block rounded"></span>
             Welcome SkyScape
           </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6 text-[#1e2a4a]">
+          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-[#1e2a4a]">
             Where Vision Meets Reliable Facility Management
             {/* <br />  */}
           </h1>
@@ -61,7 +61,7 @@ export default function Hero() {
             </Link>
           </div>
 
-          <div className="flex mt-8 gap-4 bg-[white] rounded-2xl overflow-hidden">
+          {/* <div className="flex mt-8 gap-4 bg-[white] rounded-2xl overflow-hidden">
             <img
               src={building.src}
               alt="Hero Image"
@@ -77,11 +77,11 @@ export default function Hero() {
                 daily operations for residents and property owners.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="md:w-1/2 flex justify-end">
-          <div>
+          <div className="bg-white rounded-2xl p-4 w-full h-auto">
             <Image
               src={hero}
               alt="Hero Image"
