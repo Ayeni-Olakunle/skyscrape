@@ -17,10 +17,8 @@ export default function AboutSection() {
   return (
     <section className="w-full bg-[#ffffff] py-20 px-6">
       <div className="max-w-7xl mx-auto">
-
         {/* Top Section */}
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-
           {/* LEFT IMAGE SIDE */}
           <div className="relative flex justify-center">
             {/* Decorative dots */}
@@ -53,7 +51,8 @@ export default function AboutSection() {
             <p className="text-sm text-yellow-500 font-semibold uppercase tracking-wider flex items-center gap-2">
               <div>
                 <div className="w-16 h-1 bg-yellow-500 mb-1 rounded-full" />
-                </div> About Us
+              </div>{" "}
+              About Us
             </p>
 
             <h2 className="text-4xl lg:text-5xl font-bold text-[#1d2340] mt-4 leading-tight">
@@ -61,7 +60,13 @@ export default function AboutSection() {
             </h2>
 
             <p className="text-gray-600 mt-6 leading-relaxed">
-                At Skyscape, we are committed to delivering excellence in facility management through expertise, innovation, and integrity. With years of industry experience, we provide reliable solutions that ensure residential and commercial spaces operate efficiently, safely, and comfortably. Our dedicated team focuses on maintaining high standards while enhancing the value and performance of every property we manage.
+              At Skyscape, we are committed to delivering excellence in facility
+              management through expertise, innovation, and integrity. With
+              years of industry experience, we provide reliable solutions that
+              ensure residential and commercial spaces operate efficiently,
+              safely, and comfortably. Our dedicated team focuses on maintaining
+              high standards while enhancing the value and performance of every
+              property we manage.
             </p>
 
             {/* Mission */}
@@ -74,7 +79,8 @@ export default function AboutSection() {
                   Our Mission
                 </h4>
                 <p className="text-gray-600 text-sm mt-1">
-                    To bring a breath of fresh air to facility management practices in the real estate sector.
+                  To bring a breath of fresh air to facility management
+                  practices in the real estate sector.
                 </p>
               </div>
             </div>
@@ -89,14 +95,16 @@ export default function AboutSection() {
                   Our Vision
                 </h4>
                 <p className="text-gray-600 text-sm mt-1">
-                    To be the foremost facility and property management company, using technology and innovations in the country, to serve Nigerians better.
+                  To be the foremost facility and property management company,
+                  using technology and innovations in the country, to serve
+                  Nigerians better.
                 </p>
               </div>
             </div>
 
             {/* Button */}
             <button className="mt-8 bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600 transition">
-                <Link href="/about-us">Read More</Link>
+              <Link href="/about-us">Read More</Link>
             </button>
           </div>
         </div>
