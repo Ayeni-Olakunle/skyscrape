@@ -12,7 +12,7 @@ const MissionVision = () => {
 
         <div className="w-20 h-1 bg-yellow-500 mx-auto mt-4 rounded-full" />
 
-        <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-sm">
+        <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-sm">
           We at SKYSCAPE FACILITIES AND PROPERTY MANAGEMENT LTD are dedicated to
           the protection of our environment. We are committed to sustainable
           practices in our work being careful to reuse, reduce, recycle, and
@@ -23,12 +23,9 @@ const MissionVision = () => {
         {/* Cards */}
         <div className="mt-16 grid md:grid-cols-2 gap-10">
           {/* Mission Card */}
-          <div>
-            <div className="flex justify-center mb-6">
-              <Target className="text-white w-10 h-10" />
-            </div>
-          </div>
           <div className="bg-white rounded-2xl shadow-lg p-10 text-center relative">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-3 bg-yellow-500 rounded-b-xl" />
+
             <div className="flex justify-center mb-6">
               <Target className="text-yellow-500 w-10 h-10" />
             </div>
@@ -45,7 +42,7 @@ const MissionVision = () => {
 
           {/* Vision Card */}
           <div className="bg-white rounded-2xl shadow-lg p-10 text-center relative">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-16 h-3 bg-yellow-500 rounded-b-xl" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-3 bg-yellow-500 rounded-b-xl" />
 
             <div className="flex justify-center mb-6">
               <Lightbulb className="text-yellow-500 w-10 h-10" />

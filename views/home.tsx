@@ -11,14 +11,16 @@ import Testimonials from "@/components/home/testimonials";
 import FAQSection from "@/components/home/FAQSection";
 import Footer from "../common/footer";
 import MissionVision from "@/components/home/mission-vision";
+import AboutSection from "@/components/home/about-section";
 
 export default function Home() {
   return (
     <div>
       <MenuBar />
       <Hero />
-      <MissionVision />
-      <AboutSkyscape />
+      <AboutSection />
+      {/* <MissionVision /> */}
+      {/* <AboutSkyscape /> */}
       <ServicesSection />
       <WhyChooseUs />
       <BuildTogether />
