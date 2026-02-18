@@ -56,7 +56,7 @@ export default function WhyChooseUsSection() {
           <h2 className="text-3xl md:text-4xl font-semibold text-[#0e253a]">
             Why Choose Us?
           </h2>
-          <div className="w-14 h-1 bg-orange-500 mx-auto mt-3 rounded-full" />
+          <div className="w-14 h-1 bg-yellow-500 mx-auto mt-3 rounded-full" />
         </div>
 
         {/* Content */}
