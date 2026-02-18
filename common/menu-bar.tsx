@@ -10,10 +10,10 @@ export default function MenuBar() {
 
   return (
     <header
-      className="w-full px-6 py-4 flex items-center justify-between z-50 fixed bg-[#ffffff54] backdrop-blur-sm"
+      className="w-full py-4 flex items-center justify-between z-50 fixed bg-[#ffffff54] backdrop-blur-sm"
       data-aos="slide-up"
     >
-      <div className="w-[89%] max-w-7xl mx-auto flex items-center justify-between">
+      <div className="w-[89%] max-w-6xl mx-auto flex items-center justify-between">
         {/* LOGO */}
         <div className="flex items-center gap-3">
           <Link href="/">

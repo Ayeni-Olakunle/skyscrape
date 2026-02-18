@@ -13,6 +13,7 @@ import Footer from "../common/footer";
 import MissionVision from "@/components/home/mission-vision";
 import AboutSection from "@/components/home/about-section";
 import ServicesRedesignSection from "@/components/home/sercive-redesign";
+import WhyChooseUsSection from "@/components/home/why-choose-us-section";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <ServicesRedesignSection />
+      <WhyChooseUsSection />
       {/* <MissionVision /> */}
       {/* <AboutSkyscape /> */}
       {/* <ServicesSection /> */}
