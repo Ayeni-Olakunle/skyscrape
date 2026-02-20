@@ -1,218 +1,203 @@
 "use client";
 
-import { Check, ChevronRight } from "lucide-react";
+import { Check, ChevronRight, Phone, Mail, User } from "lucide-react";
 
 export default function ServiceDetails() {
+  const services = [
+    "Property Maintenance – Preventive and corrective maintenance.",
+    "Cleaning & Janitorial Services – Professional hygiene solutions.",
+    "Security Management – Access control and monitoring.",
+    "Technical Services – Electrical and plumbing maintenance.",
+    "Facility Operations – Complete building operations management.",
+  ];
+
+  const explore = [
+    "Commercial Construction",
+    "Renovations & Remodeling",
+    "Custom Construction Solutions",
+    "Smart & Sustainable Buildings",
+  ];
+
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-10">
+    <section className="bg-gradient-to-b from-slate-50 to-white py-20">
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
         {/* LEFT CONTENT */}
-        <div
-          className="lg:col-span-2 space-y-12"
-          data-aos="slide-right"
-          data-aos-offset="200"
-          data-aos-duration="4000"
-        >
-          {/* WHAT WE OFFER */}
+        <div className="lg:col-span-2 space-y-16">
+          {/* HEADER */}
           <div>
-            <h2
-              className="text-3xl font-semibold text-[#0b1c39] mb-4"
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-duration="4000"
-            >
+            <span className="text-yellow-600 font-semibold tracking-wide uppercase text-sm">
               What We Offer
-            </h2>
+            </span>
 
-            <p
-              className="text-gray-600 leading-relaxed mb-6"
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-duration="4000"
-            >
-              SKYSCAPE FACILITIES AND PROPERTY MANAGEMENT LTD is a
-              forwardthinking facility management firm committed to creating a n
-              d maintaining safe, efficient, a n d sustainable environments. We
-              specialize in the comprehensive management of facilities across
-              various sectors commercial, residential, industrial, a n d
-              institutional ensuring that t h e spaces our clients d e p e n d o
-              n function seamlessly, every single day.
-              <br />
-              <br />
-              With our t e a m of highly skilled professionals a n d a strong
-              focus o n quality, reliability, a n d innovation, w e offer
-              integrated solutions t h a t span from maintenance a n d
-              operations t o cleaning, security, landscaping, and energy
-              management. Our approach is proactive and client-focused, aiming
-              not just t o maintain buildings, b u t t o e n h a n c e their
-              performance a n d value over time.
-              <br />
-              <br />
-              We understand t h a t every facility is unique. That's why w e
-              tailor our services t o m e e t t h e specific n e e d s of e a c
-              h client, using data-driven insights and industry best practices t
-              o deliver measurable results.
-              <br />
-              <br />
-              Whether w e r e managing a single site or a n extensive property
-              portfolio, our goal remains the same: to provide peace of mind,
-              optimize resources, a n d h e l p our clients focus o n w h a t
-              matters m o s t
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mt-2 leading-tight">
+              Smart Facility Management Solutions
+            </h1>
+
+            <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-3xl">
+              SKYSCAPE Facilities and Property Management delivers reliable,
+              efficient, and sustainable facility solutions. We ensure your
+              buildings operate seamlessly while enhancing performance, safety,
+              and long-term value.
             </p>
-
-            <ul
-              className="space-y-3"
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-duration="4000"
-            >
-              <h2 className="text-3xl font-semibold text-[#0b1c39] mb-4">
-                Our Core Services
-              </h2>
-              {[
-                "Property Maintenance – Preventive and corrective maintenance to keep facilities operating smoothly and efficiently.",
-                "Cleaning & Janitorial Services – Professional cleaning solutions that promote hygiene, comfort, and a healthy environment.",
-                "Security Management – Access control, monitoring, and security personnel coordination to ensure safe and secure premises.",
-                "Technical Services (Electrical & Plumbing) – Reliable system inspections, repairs, and maintenance to prevent downtime.",
-                "Facility Operations & Management – End-to-end coordination of daily building operations for seamless service delivery.",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-gray-700">
-                  <Check className="text-blue-500 mt-1" size={18} />
-                  {item}
-                </li>
-              ))}
-            </ul>
           </div>
 
-          {/* TESTIMONIAL */}
-          <div
-            className="bg-gray-100 rounded-2xl p-8"
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-duration="4000"
-          >
-            <p className="text-gray-600 italic mb-4">
+          {/* SERVICES GRID */}
+          <div>
+            <h2 className="text-2xl font-semibold text-slate-900 mb-6">
+              Our Core Services
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-5">
+              {services.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex gap-4 p-5 rounded-xl border border-slate-200 hover:border-yellow-500 hover:shadow-md transition group"
+                >
+                  <div className="bg-yellow-100 text-yellow-600 p-2 rounded-lg group-hover:bg-yellow-500 group-hover:text-white transition">
+                    <Check size={18} />
+                  </div>
+
+                  <p className="text-slate-700">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* TESTIMONIAL CARD */}
+          <div className="bg-gradient-to-r from-slate-900 to-slate-800 text-white p-8 rounded-2xl shadow-lg relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-500/10 rounded-full blur-2xl" />
+
+            <p className="text-lg italic text-slate-300">
               “Skyscape has consistently delivered professional and dependable
-              facility management services. Their team is responsive, efficient,
-              and committed to maintaining high standards across our property.”
+              facility management services. Their team is responsive and highly
+              reliable.”
             </p>
 
-            <h4 className="font-semibold text-[#0b1c39]">John Carter</h4>
-            <span className="text-sm text-yellow-600">Client</span>
+            <div className="mt-6">
+              <h4 className="font-semibold text-yellow-400">John Carter</h4>
+              <span className="text-sm text-slate-400">Property Owner</span>
+            </div>
           </div>
 
           {/* WHY CHOOSE */}
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-duration="4000"
-          >
-            <h2 className="text-3xl font-semibold text-[#0b1c39] mb-4">
+          <div>
+            <h2 className="text-2xl font-semibold text-slate-900 mb-6">
               Why Choose Skyscape?
             </h2>
 
-            <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-              <li>
-                Experienced Professionals – A skilled team dedicated to
-                maintaining high service standards.
-              </li>
-              <li>
-                Reliable & Proactive Service – We prevent issues before they
-                become costly problems.
-              </li>
-              <li>
-                Efficient & Transparent Processes – Clear communication,
-                structured timelines, and dependable execution.
-              </li>
-              <li>
-                Client-Focused Approach – Your property’s performance and
-                occupant satisfaction are our top priorities.
-              </li>
-            </ul>
-
-            <p className="text-gray-600 leading-relaxed">
-              Skyscape delivers reliable facility management solutions focused
-              on efficiency, safety, and long-term property value. Our team
-              ensures every space is properly maintained to provide comfort and
-              seamless daily operations.
-            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                "Experienced and professional team",
+                "Reliable and proactive maintenance",
+                "Transparent and efficient processes",
+                "Client-focused service approach",
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="p-6 rounded-xl bg-slate-50 border hover:shadow-md transition"
+                >
+                  <Check className="text-yellow-600 mb-2" size={20} />
+                  <p className="text-slate-700 font-medium">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
         {/* RIGHT SIDEBAR */}
-        <div
-          className="space-y-8"
-          data-aos="slide-left"
-          data-aos-offset="200"
-          data-aos-duration="4000"
-        >
-          {/* EXPLORE MORE */}
-          <div className="bg-[#0b1c39] text-white rounded-2xl p-6">
-            <h3 className="text-lg font-semibold mb-4">Explore More</h3>
+        <div className="space-y-8 lg:sticky top-24 h-fit">
+          {/* EXPLORE CARD */}
+          <div className="bg-slate-900 text-white rounded-2xl p-6 shadow-lg">
+            <h3 className="font-semibold text-lg mb-4">Explore Services</h3>
 
-            <ul className="space-y-3">
-              {[
-                "Commercial Construction",
-                "Renovations & Remodeling",
-                "Custom Construction Solutions",
-                "Sustainable & Smart Building",
-              ].map((item, i) => (
-                <li
-                  key={i}
-                  className="flex items-center justify-between border-b border-white/10 pb-2"
+            <div className="space-y-3">
+              {explore.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex justify-between items-center p-3 rounded-lg hover:bg-white/10 cursor-pointer transition"
                 >
                   <span>{item}</span>
-                  <ChevronRight size={16} />
-                </li>
+                  <ChevronRight size={18} />
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
 
           {/* CONTACT FORM */}
-          <div className="bg-white rounded-2xl shadow-sm p-6">
-            <h3 className="text-lg font-semibold text-[#0b1c39] mb-4">
-              Contact us today
+          <div className="bg-white border rounded-2xl p-6 shadow-sm">
+            <h3 className="text-xl font-semibold text-slate-900 mb-4">
+              Request Consultation
             </h3>
 
             <form className="space-y-4">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full border rounded-full px-4 py-3 outline-none focus:ring-2 focus:ring-yellow-500"
-              />
+              <div className="relative">
+                <User
+                  size={16}
+                  className="absolute left-4 top-4 text-slate-400"
+                />
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="w-full pl-10 pr-4 py-3 rounded-lg border focus:ring-2 focus:ring-yellow-500 outline-none"
+                />
+              </div>
 
-              <input
-                type="email"
-                placeholder="Type your email address"
-                className="w-full border rounded-full px-4 py-3 outline-none focus:ring-2 focus:ring-yellow-500"
-              />
+              <div className="relative">
+                <Mail
+                  size={16}
+                  className="absolute left-4 top-4 text-slate-400"
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full pl-10 pr-4 py-3 rounded-lg border focus:ring-2 focus:ring-yellow-500 outline-none"
+                />
+              </div>
 
-              <input
-                type="text"
-                placeholder="Phone Number"
-                className="w-full border rounded-full px-4 py-3 outline-none focus:ring-2 focus:ring-yellow-500"
-              />
-
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full border rounded-full px-4 py-3 outline-none focus:ring-2 focus:ring-yellow-500"
-              />
+              <div className="relative">
+                <Phone
+                  size={16}
+                  className="absolute left-4 top-4 text-slate-400"
+                />
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  className="w-full pl-10 pr-4 py-3 rounded-lg border focus:ring-2 focus:ring-yellow-500 outline-none"
+                />
+              </div>
 
               <textarea
                 placeholder="Message"
                 rows={4}
-                className="w-full border rounded-2xl px-4 py-3 outline-none focus:ring-2 focus:ring-yellow-500"
+                className="w-full p-3 rounded-lg border focus:ring-2 focus:ring-yellow-500 outline-none"
               />
 
               <button
                 type="submit"
-                className="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3 rounded-full font-medium transition"
+                className="w-full bg-yellow-500 hover:bg-yellow-600 text-white py-3 rounded-lg font-semibold transition shadow-md hover:shadow-lg"
               >
-                Free Consultation
+                Get Free Consultation
               </button>
             </form>
           </div>
+        </div>
+      </div>
+
+      {/* CTA SECTION */}
+      <div className="mt-20">
+        <div className="max-w-5xl mx-auto bg-gradient-to-r from-yellow-500 to-yellow-600 text-white rounded-3xl p-10 text-center shadow-xl">
+          <h2 className="text-3xl font-bold mb-4">
+            Ready to Transform Your Facility?
+          </h2>
+
+          <p className="text-white/90 mb-6">
+            Partner with Skyscape for professional, efficient, and reliable
+            facility management solutions.
+          </p>
+
+          <button className="bg-white text-yellow-600 px-8 py-3 rounded-lg font-semibold hover:bg-slate-100 transition">
+            Contact Our Team
+          </button>
         </div>
       </div>
     </section>
