@@ -29,7 +29,7 @@ export default function ServiceDetails() {
               What We Offer
             </span>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mt-2 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mt-2 leading-tight">
               Smart Facility Management Solutions
             </h1>
 
@@ -53,7 +53,7 @@ export default function ServiceDetails() {
                   key={index}
                   className="flex gap-4 p-5 rounded-xl border border-slate-200 hover:border-yellow-500 hover:shadow-md transition group"
                 >
-                  <div className="bg-yellow-100 text-yellow-600 p-2 rounded-lg group-hover:bg-yellow-500 group-hover:text-white transition">
+                  <div className="bg-yellow-100 text-yellow-600 p-2 rounded-lg group-hover:bg-yellow-500 group-hover:text-white transition h-fit">
                     <Check size={18} />
                   </div>
 
