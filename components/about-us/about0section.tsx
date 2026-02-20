@@ -1,110 +1,159 @@
 "use client";
 
 import Image from "next/image";
+import { ShieldCheck, Target, Building2 } from "lucide-react";
 import about from "@/public/aboutcom.jpeg";
 
 export default function AboutSection() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 space-y-16">
-        {/* TOP CONTENT */}
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* LEFT SIDE */}
-          <div
-            className="space-y-6"
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-duration="4000"
-          >
-            <span className="text-yellow-600 font-medium flex items-center gap-2 mb-3">
-              <span className="w-5 h-[2px] bg-yellow-600 inline-block"></span>
-              About
+    <section className="py-24 bg-gradient-to-b from-white to-slate-50">
+      <div className="max-w-7xl mx-auto px-6 space-y-20">
+        {/* TOP SECTION */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* LEFT CONTENT */}
+          <div>
+            <span className="text-yellow-600 font-semibold uppercase tracking-wider text-sm">
+              About Skyscape
             </span>
 
-            <h2 className="text-4xl font-semibold text-[#0b1c39] mb-6">
-              About Skyscape
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-3 leading-tight">
+              Excellence in Facility &
+              <span className="block text-yellow-600">Property Management</span>
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-6">
-              At SKYSCAPE FACILITIES AND PROPERTY MANAGEMENT, where excellence
-              meets reliability, innovation, and integrity.We are proud to be
-              your trusted partner in delivering comprehensive and customized
-              facility management solutions that ensure operational efficiency,
-              safety, and comfort for your assets and environments.
-              <br />
-              <br />
-              W e understand that every property is unique, a n d s o a r e t h
-              e n e e d s of its occupants. That's why we are committed
-              toproviding top-tier services ranging from maintenance a n d
-              cleaning t o security, energy management, and technical support
-              all tailored to suit your specific r e q u i r e m e n t s .
-              <br />
-              <br />
-              Our team of dedicated professionals brings a wealth of experience,
-              industry expertise, and a proactive approach to managing your
-              facilities, allowing our clients focus o n w h a t matters most.
+            <p className="mt-6 text-lg text-slate-600 leading-relaxed">
+              SKYSCAPE Facilities and Property Management delivers reliable,
+              innovative, and customized facility management solutions. We help
+              businesses and property owners maintain efficient, secure, and
+              comfortable environments.
+            </p>
+
+            <p className="mt-4 text-slate-600 leading-relaxed">
+              Our experienced professionals ensure seamless operations through
+              proactive maintenance, technical expertise, and client-focused
+              service delivery, allowing you to focus on what matters most.
+            </p>
+
+            {/* FEATURE POINTS */}
+            <div className="mt-8 space-y-4">
+              <div className="flex gap-4 items-start">
+                <ShieldCheck className="text-yellow-600 mt-1" size={22} />
+                <p className="text-slate-700">
+                  Trusted and reliable facility management professionals
+                </p>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <Building2 className="text-yellow-600 mt-1" size={22} />
+                <p className="text-slate-700">
+                  Customized solutions for residential and commercial properties
+                </p>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <Target className="text-yellow-600 mt-1" size={22} />
+                <p className="text-slate-700">
+                  Focused on efficiency, safety, and long-term property value
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="relative">
+            <div className="relative h-[420px] rounded-3xl overflow-hidden shadow-xl">
+              <Image
+                src={about}
+                alt="Facility management"
+                fill
+                className="object-cover"
+              />
+
+              {/* overlay gradient */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            </div>
+
+            {/* floating card */}
+            <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-lg border max-w-xs">
+              <p className="text-3xl font-bold text-yellow-600">5+</p>
+
+              <p className="text-slate-600 font-medium">Years of Experience</p>
+            </div>
+          </div>
+        </div>
+
+        {/* MISSION / VISION / VALUE */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* VALUE */}
+          <div className="bg-white p-8 rounded-2xl shadow-sm border hover:shadow-lg transition">
+            <div className="bg-yellow-100 w-fit p-3 rounded-xl mb-4">
+              <Building2 className="text-yellow-600" />
+            </div>
+
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">
+              Our Vision
+            </h3>
+
+            <p className="text-slate-600">
+              To be Nigeria’s leading facility and property management company,
+              delivering excellence through innovation and technology.
             </p>
           </div>
 
-          {/* RIGHT SIDE */}
-          <div
-            className="space-y-6"
-            data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-duration="4000"
-          >
-            <h3 className="text-2xl font-semibold text-[#0b1c39] mb-4">
-              Our Value
-            </h3>
+          {/* MISSION */}
+          <div className="bg-white p-8 rounded-2xl shadow-sm border hover:shadow-lg transition">
+            <div className="bg-yellow-100 w-fit p-3 rounded-xl mb-4">
+              <Target className="text-yellow-600" />
+            </div>
 
-            <p className="text-gray-600 leading-relaxed">
-              To be the foremost facility and property management company, using
-              technology a n d innovations i n t h e country, t o serve
-              Nigerians better.
-            </p>
-
-            <br />
-            <br />
-
-            <h3 className="text-2xl font-semibold text-[#0b1c39] mb-3">
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">
               Our Mission
             </h3>
 
-            <p className="text-gray-600 leading-relaxed">
-              To bring a breath of fresh air to facility m a n a g e m e n t
-              practices in t h e real e s t a t e s e c t o r
+            <p className="text-slate-600">
+              To redefine facility management through professional service,
+              innovation, and client-focused solutions.
+            </p>
+          </div>
+
+          {/* VALUE */}
+          <div className="bg-white p-8 rounded-2xl shadow-sm border hover:shadow-lg transition">
+            <div className="bg-yellow-100 w-fit p-3 rounded-xl mb-4">
+              <ShieldCheck className="text-yellow-600" />
+            </div>
+
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">
+              Our Values
+            </h3>
+
+            <p className="text-slate-600">
+              Integrity, reliability, innovation, and excellence drive
+              everything we do for our clients.
             </p>
           </div>
         </div>
 
-        {/* BOTTOM HIGHLIGHT */}
-        <div
-          className="relative grid lg:grid-cols-2 items-center"
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-duration="4000"
-        >
-          {/* TEXT CARD */}
-          <div className="bg-yellow-600 text-white rounded-2xl p-10 relative z-10">
-            <h3 className="text-2xl font-semibold mb-3">
-              Building Timeless Structures with Innovation & Excellence.
-            </h3>
+        {/* BOTTOM CTA CARD */}
+        <div className="relative">
+          <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-3xl p-12 text-white shadow-xl grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <h3 className="text-3xl font-bold mb-4">
+                Building Better Managed Environments
+              </h3>
 
-            <p className="text-white/90 leading-relaxed">
-              At Skyscape, we are dedicated to creating well-managed
-              environments that support productivity, comfort, and a higher
-              standard of living.
-            </p>
-          </div>
+              <p className="text-white/90 text-lg">
+                We create efficient, safe, and productive environments that
+                enhance property value and client satisfaction.
+              </p>
 
-          {/* IMAGE */}
-          <div className="relative h-[320px] lg:h-[380px] lg:-ml-20 mt-6 lg:mt-0">
-            <Image
-              src={about}
-              alt="Construction Team"
-              fill
-              className="object-cover rounded-2xl"
-            />
+              <button className="mt-6 bg-white text-yellow-600 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition">
+                Learn More
+              </button>
+            </div>
+
+            <div className="relative h-[250px] rounded-2xl overflow-hidden">
+              <Image src={about} alt="Facility" fill className="object-cover" />
+            </div>
           </div>
         </div>
       </div>
