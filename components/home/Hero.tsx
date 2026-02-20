@@ -80,7 +80,7 @@ export default function Hero() {
           </div> */}
         </div>
 
-        <div className="md:w-1/2 flex justify-end">
+        <div className="md:w-1/2 flex justify-end md:block hidden">
           <div className="bg-white rounded-2xl p-4 w-full h-auto">
             <Image
               src={hero}

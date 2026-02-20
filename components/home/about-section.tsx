@@ -71,7 +71,7 @@ export default function AboutSection() {
 
             {/* Mission */}
             <div className="flex gap-4 mt-8">
-              <div className="w-13 h-12 bg-yellow-100 flex items-center justify-center rounded-lg">
+              <div className="md:w-13 w-20 h-12 bg-yellow-100 flex items-center justify-center rounded-lg">
                 <DoorOpen className="text-yellow-500" />
               </div>
               <div>
@@ -87,7 +87,7 @@ export default function AboutSection() {
 
             {/* Vision */}
             <div className="flex gap-4 mt-6">
-              <div className="w-20 h-12 bg-yellow-100 flex items-center justify-center rounded-lg">
+              <div className="w-20 h-12 bg-yellow-100 flex items-center justify-center rounded-lg md:w-32">
                 <Lightbulb className="text-yellow-500" />
               </div>
               <div>
