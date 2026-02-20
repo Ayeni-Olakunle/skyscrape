@@ -54,7 +54,7 @@ export default function MenuBar() {
         {/* MOBILE MENU BUTTON */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-white"
+          className="md:hidden text-[#474747] focus:outline-none"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
