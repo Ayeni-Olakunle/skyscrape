@@ -48,12 +48,12 @@ export default function AboutSection() {
 
           {/* RIGHT CONTENT SIDE */}
           <div>
-            <p className="text-sm text-yellow-500 font-semibold uppercase tracking-wider flex items-center gap-2">
+            <div className="text-sm text-yellow-500 font-semibold uppercase tracking-wider flex items-center gap-2">
               <div>
                 <div className="w-16 h-1 bg-yellow-500 mb-1 rounded-full" />
               </div>{" "}
               About Us
-            </p>
+            </div>
 
             <h2 className="text-4xl lg:text-5xl font-bold text-[#1d2340] mt-4 leading-tight">
               Expertise in windows & door for every style
@@ -87,7 +87,7 @@ export default function AboutSection() {
 
             {/* Vision */}
             <div className="flex gap-4 mt-6">
-              <div className="w-20 h-12 bg-yellow-100 flex items-center justify-center rounded-lg md:w-32">
+              <div className="w-32 md:w-20 h-12 bg-yellow-100 flex items-center justify-center rounded-lg">
                 <Lightbulb className="text-yellow-500" />
               </div>
               <div>

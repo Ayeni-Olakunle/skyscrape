@@ -98,18 +98,14 @@ function FeatureCard({
   return (
     <div className="flex gap-4 bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
       <div
-        className={`w-25 h-12 flex items-center justify-center rounded-xl ${bg}`}
+        className={`w-40 md:w-25 h-12 flex items-center justify-center rounded-xl ${bg}`}
       >
         {icon}
       </div>
 
       <div>
-        <h3 className="font-semibold text-[#0e253a] mb-1">
-          {title}
-        </h3>
-        <p className="text-sm text-gray-600 leading-relaxed">
-          {description}
-        </p>
+        <h3 className="font-semibold text-[#0e253a] mb-1">{title}</h3>
+        <p className="text-sm text-gray-600 leading-relaxed">{description}</p>
       </div>
     </div>
   );
