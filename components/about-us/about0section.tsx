@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { ShieldCheck, Target, Building2 } from "lucide-react";
 import about from "@/public/aboutcom.jpeg";
+import pic5 from "@/public/hero.png";
 
 export default function AboutSection() {
   return (
@@ -63,10 +64,10 @@ export default function AboutSection() {
           <div className="relative">
             <div className="relative h-[420px] rounded-3xl overflow-hidden shadow-xl">
               <Image
-                src={about}
+                src={pic5}
                 alt="Facility management"
                 fill
-                className="object-cover"
+                className="object-contain w-full h-full"
               />
 
               {/* overlay gradient */}
@@ -75,7 +76,7 @@ export default function AboutSection() {
 
             {/* floating card */}
             <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-lg border max-w-xs">
-              <p className="text-3xl font-bold text-yellow-600">5+</p>
+              <p className="text-3xl font-bold text-yellow-600">2+</p>
 
               <p className="text-slate-600 font-medium">Years of Experience</p>
             </div>
@@ -134,7 +135,7 @@ export default function AboutSection() {
         </div>
 
         {/* BOTTOM CTA CARD */}
-        <div className="relative">
+        {/* <div className="relative">
           <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-3xl p-12 text-white shadow-xl grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <h3 className="text-3xl font-bold mb-4">
@@ -155,7 +156,7 @@ export default function AboutSection() {
               <Image src={about} alt="Facility" fill className="object-cover" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
