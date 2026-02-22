@@ -79,7 +79,7 @@ export default function AboutSkyscape() {
             mixed-use properties, our experienced team ensures every detail is
             handled with precision. We prioritize safety, operational
             efficiency, and seamless service delivery — turning complex facility
-            needs into simple, reliable solutions.
+            needs into simple, reliable solutions
           </p>
 
           {/* CTA + Contact */}
