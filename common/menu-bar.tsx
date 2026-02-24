@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../public/logo.jpg";
-import { Building2, Menu, X, ArrowDown } from "lucide-react";
+import { Building2, Menu, X, ChevronDown } from "lucide-react";
 
 export default function MenuBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +31,8 @@ export default function MenuBar() {
             Home
           </Link>
           <Link href="/services" className="hover:opacity-80 group relative">
-            Our Services <ArrowDown className="inline-block ml-1 text-xs" />
+            Our Services{" "}
+            <ChevronDown className="inline-block ml-0 text-[10px]" />
             <ul className="absolute mt-0 bg-white shadow-lg rounded hidden group-hover:block p-0 w-44">
               <li className="text-xs text-gray-500 mt-1 block">
                 <Link
@@ -60,8 +61,8 @@ export default function MenuBar() {
             </ul>
           </Link>
           <Link href="/about-us" className="hover:opacity-80 group relative">
-            About us
-            <ul className="absolute mt-0 bg-white shadow-lg rounded hidden group-hover:block p-0 w-44">
+            About us <ChevronDown className="inline-block ml-0 text-[10px]" />
+            <ul className="absolute mt-0 bg-white shadow-lg rounded hidden group-hover:block p-0 w-34">
               <li className="text-xs text-gray-500 mt-1 block">
                 <Link
                   href="/why-choose-us"
