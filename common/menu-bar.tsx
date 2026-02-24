@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../public/logo.jpg";
-import { Building2, Menu, X } from "lucide-react";
+import { Building2, Menu, X, ArrowDown } from "lucide-react";
 
 export default function MenuBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,11 +30,55 @@ export default function MenuBar() {
           <Link href="/" className="hover:opacity-80">
             Home
           </Link>
-          <Link href="/services" className="hover:opacity-80">
-            Our Services
+          <Link href="/services" className="hover:opacity-80 group relative">
+            Our Services <ArrowDown className="inline-block ml-1 text-xs" />
+            <ul className="absolute mt-0 bg-white shadow-lg rounded hidden group-hover:block p-0 w-44">
+              <li className="text-xs text-gray-500 mt-1 block">
+                <Link
+                  href="/residential-facility-management"
+                  className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
+                >
+                  Property Management
+                </Link>
+              </li>
+              <li className="text-xs text-gray-500 mt-1">
+                <Link
+                  href="/residential-facility-management"
+                  className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
+                >
+                  Facility Management
+                </Link>
+              </li>
+              <li className="text-xs text-gray-500 mt-1">
+                <Link
+                  href="/residential-facility-management"
+                  className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
+                >
+                  Environment Service
+                </Link>
+              </li>
+            </ul>
           </Link>
-          <Link href="/about-us" className="hover:opacity-80">
+          <Link href="/about-us" className="hover:opacity-80 group relative">
             About us
+            <ul className="absolute mt-0 bg-white shadow-lg rounded hidden group-hover:block p-0 w-44">
+              <li className="text-xs text-gray-500 mt-1 block">
+                <Link
+                  href="/why-choose-us"
+                  className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
+                >
+                  Why Choose Us
+                </Link>
+              </li>
+              <li className="text-xs text-gray-500 mt-1">
+                <Link
+                  href="/residential-facility-management"
+                  className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
+                >
+                  Meet Our Team
+                </Link>
+              </li>
+            </ul>
           </Link>
           <Link href="/contact-us" className="hover:opacity-80">
             Contact us
