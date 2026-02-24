@@ -36,7 +36,7 @@ export default function MenuBar() {
             <ul className="absolute mt-0 bg-white shadow-lg rounded hidden group-hover:block p-0 w-44">
               <li className="text-xs text-gray-500 mt-1 block">
                 <Link
-                  href="/residential-facility-management"
+                  href="/services/property-management"
                   className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
                 >
                   Property Management
@@ -44,7 +44,7 @@ export default function MenuBar() {
               </li>
               <li className="text-xs text-gray-500 mt-1">
                 <Link
-                  href="/residential-facility-management"
+                  href="/services/facility-management"
                   className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
                 >
                   Facility Management
@@ -52,10 +52,10 @@ export default function MenuBar() {
               </li>
               <li className="text-xs text-gray-500 mt-1">
                 <Link
-                  href="/residential-facility-management"
+                  href="/services/environmental-services"
                   className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
                 >
-                  Environment Service
+                  Environmental Services
                 </Link>
               </li>
             </ul>
