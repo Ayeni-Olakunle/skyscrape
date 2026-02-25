@@ -1,8 +1,10 @@
 "use client";
 
 import { Check, ChevronRight, Phone, Mail, User } from "lucide-react";
+import { useState } from "react";
 
 export default function ServiceDetails() {
+  const [currentTab, setCurrentTab] = useState("Property Management");
   const services = [
     "Property Maintenance – Preventive and corrective maintenance.",
     "Cleaning & Janitorial Services – Professional hygiene solutions.",
@@ -12,10 +14,39 @@ export default function ServiceDetails() {
   ];
 
   const explore = [
-    "Commercial Construction",
-    "Renovations & Remodeling",
-    "Custom Construction Solutions",
-    "Smart & Sustainable Buildings",
+    "Property Management",
+    "Facility Management",
+    "Environmental Services",
+  ];
+
+  const explore2 = [
+    {
+      name: "Property Management",
+      description: [
+        "Tenant screening and management",
+        "Lease administration and renewal",
+        "Financial reporting and accounting",
+        "Maintenance coordination and scheduling",
+      ],
+    },
+    {
+      name: "Facility Management",
+      description: [
+        "Building operations and maintenance",
+        "Space planning and optimization",
+        "Asset lifecycle management",
+        "Compliance and safety protocols",
+      ],
+    },
+    {
+      name: "Environmental Services",
+      description: [
+        "Waste management and recycling programs",
+        "Sustainability initiatives and green practices",
+        "Energy efficiency improvements",
+        "Indoor air quality monitoring and control",
+      ],
+    },
   ];
 
   return (
@@ -111,13 +142,49 @@ export default function ServiceDetails() {
             <h3 className="font-semibold text-lg mb-4">Explore Services</h3>
 
             <div className="space-y-3">
-              {explore.map((item, index) => (
+              {/* {explore.map((item, index) => (
                 <div
                   key={index}
                   className="flex justify-between items-center p-3 rounded-lg hover:bg-white/10 cursor-pointer transition"
                 >
                   <span>{item}</span>
                   <ChevronRight size={18} />
+                </div>
+              ))} */}
+              {explore2.map((item, index) => (
+                <div key={index}>
+                  <div
+                    key={index}
+                    className="flex justify-between items-center"
+                  >
+                    <div
+                      className="flex items-center gap-2 p-3 rounded-lg hover:bg-white/10 cursor-pointer transition w-full justify-between"
+                      onClick={() => setCurrentTab(item.name)}
+                    >
+                      <span>{item.name}</span>
+                      <ChevronRight size={18} />
+                    </div>
+                  </div>
+                  {currentTab === item.name && (
+                    <div className="mt-2 text-sm text-gray-400">
+                      {item.description.length > 0 && (
+                        <ul className="mt-2 text-sm text-gray-400">
+                          {item.description.map((desc, idx) => (
+                            <li key={idx} className="ml-4 list-none py-2">
+                              {desc}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  )}
+                  {/* <ul className="mt-2 text-sm text-gray-400">
+                    {item.description.map((desc, idx) => (
+                      <li key={idx} className="ml-4 list-disc">
+                        {desc}
+                      </li>
+                    ))}
+                  </ul> */}
                 </div>
               ))}
             </div>
