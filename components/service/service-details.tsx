@@ -23,28 +23,31 @@ export default function ServiceDetails() {
     {
       name: "Property Management",
       description: [
-        "Tenant screening and management",
-        "Lease administration and renewal",
-        "Financial reporting and accounting",
-        "Maintenance coordination and scheduling",
+        "Leasing and Property Management",
+        "Shortlets and Rental Management",
       ],
     },
     {
       name: "Facility Management",
       description: [
-        "Building operations and maintenance",
-        "Space planning and optimization",
-        "Asset lifecycle management",
-        "Compliance and safety protocols",
+        "Electrical Systems",
+        "Maintenance Services",
+        "Planned Preventive Maintenance",
+        "Plumbing Systems",
+        "Refurbishments and Fit Outs",
+        "Life Safety Systems",
+        "HVAC Systems",
+        "Lighting Systems",
       ],
     },
     {
       name: "Environmental Services",
       description: [
-        "Waste management and recycling programs",
-        "Sustainability initiatives and green practices",
-        "Energy efficiency improvements",
-        "Indoor air quality monitoring and control",
+        "Waste MManagement",
+        "Litter CControl",
+        "Vegetation Control",
+        "Health, Safety and Environment Services",
+        "Sustainability",
       ],
     },
   ];
