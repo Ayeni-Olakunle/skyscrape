@@ -1,236 +1,201 @@
 "use client";
 
 import {
-  Leaf,
-  Recycle,
+  Building2,
+  Users,
+  TrendingUp,
   ShieldCheck,
-  Trees,
-  Trash2,
+  Clock,
   CheckCircle,
-  Globe,
-  Factory,
+  ArrowRight,
 } from "lucide-react";
 
 export default function PropertyManagementLandingPage() {
   return (
     <main className="bg-white">
+      {/* HERO - Split Layout */}
+      <section className="relative overflow-hidden bg-slate-950 text-white">
+        {/* subtle glow */}
+        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-blue-600/20 blur-[140px]" />
 
-      {/* HERO */}
-      <section className="relative overflow-hidden">
-
-        {/* background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-green-950 via-emerald-900 to-slate-900" />
-
-        {/* glow */}
-        <div className="absolute w-[700px] h-[350px] bg-green-500/20 blur-[120px] top-0 left-1/2 -translate-x-1/2" />
-
-        <div className="relative max-w-6xl mx-auto py-32">
-
-          <div className="max-w-3xl">
-
-            <div className="flex items-center gap-3 text-green-400 mb-4">
-              <Leaf />
+        <div className="relative max-w-7xl mx-auto px-6 py-28 grid md:grid-cols-2 gap-16 items-center">
+          {/* LEFT CONTENT */}
+          <div>
+            <div className="flex items-center gap-3 text-blue-400 mb-6">
+              <Building2 size={24} />
               <span className="uppercase tracking-widest text-sm">
-                Skyscape Environmental Services
+                Property Management sdsdsd
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Environmental Services
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+              Modern Property
+              <br />
+              Management Solutions
             </h1>
 
-            <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              SKYSCAPE Facilities and Property Management Ltd provides
-              comprehensive environmental management solutions focused on
-              sustainability, safety, and environmental responsibility.
+            <p className="text-gray-300 text-lg leading-relaxed mb-8">
+              At SKYSCAPE Facilities and Property Management Ltd, we provide
+              strategic property management services that protect your assets,
+              maximize returns, and enhance tenant satisfaction.
             </p>
 
-            <p className="text-gray-400 leading-relaxed">
-              Our services help organizations maintain clean, safe, and
-              environmentally compliant facilities while supporting long-term
-              sustainability goals.
-            </p>
+            <div className="flex gap-4">
+              <button className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition">
+                Get Consultation
+                <ArrowRight size={18} />
+              </button>
 
+              <button className="border border-gray-600 hover:border-white px-8 py-4 rounded-lg transition">
+                Learn More
+              </button>
+            </div>
           </div>
 
-        </div>
-
-      </section>
-
-      {/* INTRO */}
-      <section className="py-24">
-
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
-
-          {/* LEFT */}
-          <div>
-
-            <h2 className="text-4xl font-bold mb-6">
-              Sustainable Environmental Management Solutions
-            </h2>
-
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Our environmental services are designed to ensure facilities remain
-              clean, compliant, and environmentally responsible. We implement
-              structured environmental programs that protect both people and the
-              environment.
-            </p>
-
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              We work with commercial, residential, industrial, and institutional
-              clients to implement sustainable environmental practices that
-              improve operational efficiency and reduce environmental impact.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed">
-              Our proactive approach ensures compliance with environmental
-              regulations while promoting sustainability and operational
-              excellence.
-            </p>
-
-          </div>
-
-          {/* RIGHT CARD */}
-          <div className="bg-gradient-to-br from-green-600 to-emerald-700 text-white p-10 rounded-2xl shadow-xl">
-
+          {/* RIGHT CARD PANEL */}
+          <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-10 rounded-2xl">
             <h3 className="text-2xl font-semibold mb-6">
-              Our Environmental Objectives
+              Why Clients Choose Us
             </h3>
 
-            <Feature text="Promote environmental sustainability" />
-            <Feature text="Ensure environmental compliance" />
-            <Feature text="Reduce environmental risks" />
-            <Feature text="Improve workplace safety" />
-            <Feature text="Support sustainable facility operations" />
-
+            <Feature text="Maximize property ROI" />
+            <Feature text="Reliable tenant management" />
+            <Feature text="Transparent financial oversight" />
+            <Feature text="Efficient maintenance coordination" />
+            <Feature text="Professional supervision & reporting" />
           </div>
-
         </div>
-
       </section>
 
-      {/* SERVICES */}
-      <section className="py-24 bg-gray-50">
+      {/* INTRO SECTION */}
+      <section className="py-24">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold mb-6">
+            End-to-End Asset Management
+          </h2>
 
+          <p className="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
+            Managing real estate assets requires expertise, structure, and
+            proactive decision-making. SKYSCAPE ensures that every property
+            under our management operates efficiently while increasing long-term
+            value.
+          </p>
+        </div>
+      </section>
+
+      {/* SERVICES GRID - Modern Card Pattern */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-
-          <div className="text-center mb-16">
-
-            <h2 className="text-4xl font-bold mb-4">
-              Our Environmental Services
-            </h2>
-
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We provide comprehensive environmental services to ensure clean,
-              safe, and sustainable environments.
-            </p>
-
-          </div>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
             <ServiceCard
-              icon={<Trash2 />}
-              title="Waste Management"
-              text="Efficient waste collection, disposal, and recycling solutions."
+              icon={<Users />}
+              title="Leasing Management"
+              text="Marketing, tenant screening, documentation, and contract management."
             />
 
             <ServiceCard
-              icon={<Recycle />}
-              title="Recycling Services"
-              text="Promoting recycling practices to reduce environmental impact."
+              icon={<Building2 />}
+              title="Shortlet Operations"
+              text="Full shortlet setup, booking coordination, and guest services."
             />
 
             <ServiceCard
-              icon={<Trees />}
-              title="Vegetation Control"
-              text="Landscaping and vegetation management for safe environments."
+              icon={<TrendingUp />}
+              title="Revenue Optimization"
+              text="Strategic pricing and vacancy reduction strategies."
             />
 
             <ServiceCard
               icon={<ShieldCheck />}
-              title="Health, Safety & Environment"
-              text="Ensuring compliance with environmental and safety standards."
+              title="Tenant Relations"
+              text="Professional communication and conflict resolution."
             />
 
             <ServiceCard
-              icon={<Globe />}
-              title="Sustainability Programs"
-              text="Implementing eco-friendly sustainability initiatives."
+              icon={<Clock />}
+              title="Routine Inspections"
+              text="Scheduled property inspections and supervision."
             />
 
             <ServiceCard
-              icon={<Factory />}
-              title="Environmental Compliance"
-              text="Ensuring facilities meet environmental regulations."
+              icon={<CheckCircle />}
+              title="Maintenance Coordination"
+              text="Efficient coordination of repairs and preventive services."
             />
-
           </div>
-
         </div>
-
       </section>
 
-      {/* BENEFITS */}
+      {/* VALUE SECTION - Side Accent */}
       <section className="py-24">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+          {/* LEFT */}
+          <div className="bg-blue-600 text-white p-12 rounded-3xl shadow-xl">
+            <h3 className="text-3xl font-bold mb-6">
+              Our Commitment to Excellence
+            </h3>
 
-        <div className="max-w-7xl mx-auto px-6">
+            <p className="text-blue-100 leading-relaxed mb-6">
+              We treat every property as a long-term investment. Our team
+              implements structured operational systems that ensure efficiency,
+              compliance, and profitability.
+            </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
-
-            <StatCard
-              number="100%"
-              text="Environmental Compliance Focus"
-            />
-
-            <StatCard
-              number="Eco"
-              text="Friendly Sustainable Solutions"
-            />
-
-            <StatCard
-              number="24/7"
-              text="Environmental Support"
-            />
-
+            <p className="text-blue-100 leading-relaxed">
+              Whether residential, commercial, or mixed-use, we ensure your
+              assets perform at peak level.
+            </p>
           </div>
 
-        </div>
+          {/* RIGHT */}
+          <div>
+            <h3 className="text-3xl font-bold mb-6">
+              Built for Performance & Growth
+            </h3>
 
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Our data-driven approach allows us to monitor occupancy,
+              maintenance trends, and financial performance — ensuring informed
+              decisions and consistent growth.
+            </p>
+
+            <p className="text-gray-600 leading-relaxed">
+              We focus not only on managing properties but on elevating their
+              long-term value and market competitiveness.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-slate-900 text-white text-center">
-
-        <h2 className="text-4xl font-bold mb-4">
-          Build a Sustainable Future with SKYSCAPE
+      <section className="py-24 bg-slate-950 text-white text-center">
+        <h2 className="text-4xl font-bold mb-6">
+          Ready to Elevate Your Property?
         </h2>
 
         <p className="text-gray-400 mb-8">
-          Let us help you maintain safe and sustainable environments.
+          Partner with SKYSCAPE for reliable, modern property management.
         </p>
 
-        <button className="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-lg font-semibold text-white transition">
-          Contact Us
+        <button className="bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-xl font-semibold transition">
+          Contact Our Team
         </button>
-
       </section>
-
     </main>
   );
 }
 
-/* FEATURE */
+/* Feature */
 function Feature({ text }: { text: string }) {
   return (
-    <div className="flex items-center gap-3 mb-3">
+    <div className="flex items-center gap-3 mb-4 text-gray-300">
       <CheckCircle size={18} />
       {text}
     </div>
   );
 }
 
-/* SERVICE CARD */
+/* Service Card */
 function ServiceCard({
   icon,
   title,
@@ -241,43 +206,12 @@ function ServiceCard({
   text: string;
 }) {
   return (
-    <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition">
+    <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300">
+      <div className="text-blue-600 mb-5">{icon}</div>
 
-      <div className="text-green-600 mb-4">
-        {icon}
-      </div>
+      <h3 className="text-xl font-semibold mb-3">{title}</h3>
 
-      <h3 className="text-xl font-semibold mb-3">
-        {title}
-      </h3>
-
-      <p className="text-gray-600">
-        {text}
-      </p>
-
-    </div>
-  );
-}
-
-/* STAT CARD */
-function StatCard({
-  number,
-  text,
-}: {
-  number: string;
-  text: string;
-}) {
-  return (
-    <div className="bg-green-900 text-white p-10 rounded-xl text-center">
-
-      <div className="text-4xl font-bold mb-2">
-        {number}
-      </div>
-
-      <div className="text-gray-300">
-        {text}
-      </div>
-
+      <p className="text-gray-600">{text}</p>
     </div>
   );
 }
