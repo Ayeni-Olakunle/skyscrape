@@ -1,5 +1,5 @@
 "use client";
-
+import PropertySolutionsSection from "./property-solutions-section";
 import { Check, ChevronRight, Phone, Mail, User } from "lucide-react";
 import { useState } from "react";
 
