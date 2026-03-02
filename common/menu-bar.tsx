@@ -36,6 +36,14 @@ export default function MenuBar() {
             <ul className="absolute mt-0 bg-white shadow-lg rounded hidden group-hover:block p-0 w-44">
               <li className="text-xs text-gray-500 mt-1 block">
                 <Link
+                  href="/services"
+                  className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
+                >
+                  Our Services
+                </Link>
+              </li>
+              <li className="text-xs text-gray-500 mt-1 block">
+                <Link
                   href="/services/property-management"
                   className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
                 >
