@@ -3,6 +3,7 @@ import { url } from "inspector";
 import PropertySolutionsSection from "./property-solutions-section";
 import { Check, ChevronRight, Phone, Mail, User } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function ServiceDetails() {
   const [currentTab, setCurrentTab] = useState("Property Management");
@@ -168,8 +169,9 @@ export default function ServiceDetails() {
                       <span onClick={() => setCurrentTab(item.name)}>
                         {item.name}
                       </span>
-                      <span></span>
-                      <ChevronRight size={18} />
+                      <Link href={item.url}>
+                        <ChevronRight size={18} />
+                      </Link>
                     </div>
                   </div>
                   {currentTab === item.name && (
