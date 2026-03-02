@@ -37,7 +37,7 @@ export default function MenuBar() {
               <li className="text-xs text-gray-500 mt-1 block">
                 <Link
                   href="/services"
-                  className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
+                  className="hover:text-gray-700 w-full block text-left p-[0.6rem] hover:bg-gray-100"
                 >
                   Our Services
                 </Link>
@@ -45,7 +45,7 @@ export default function MenuBar() {
               <li className="text-xs text-gray-500 mt-1 block">
                 <Link
                   href="/services/property-management"
-                  className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
+                  className="hover:text-gray-700 w-full block text-left p-[0.6rem] hover:bg-gray-100"
                 >
                   Property Management
                 </Link>
@@ -53,7 +53,7 @@ export default function MenuBar() {
               <li className="text-xs text-gray-500 mt-1">
                 <Link
                   href="/services/facility-management"
-                  className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
+                  className="hover:text-gray-700 w-full block text-left p-[0.6rem] hover:bg-gray-100"
                 >
                   Facility Management
                 </Link>
@@ -61,7 +61,7 @@ export default function MenuBar() {
               <li className="text-xs text-gray-500 mt-1">
                 <Link
                   href="/services/environmental-services"
-                  className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
+                  className="hover:text-gray-700 w-full block text-left p-[0.6rem] hover:bg-gray-100"
                 >
                   Environmental Services
                 </Link>
@@ -74,7 +74,7 @@ export default function MenuBar() {
               <li className="text-xs text-gray-500 mt-1 block">
                 <Link
                   href="/why-choose-us"
-                  className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
+                  className="hover:text-gray-700 w-full block text-left p-[0.6rem] hover:bg-gray-100"
                 >
                   Why Choose Us
                 </Link>
@@ -82,7 +82,7 @@ export default function MenuBar() {
               <li className="text-xs text-gray-500 mt-1">
                 <Link
                   href="/residential-facility-management"
-                  className="hover:text-gray-700 w-full block text-center p-[0.6rem] hover:bg-gray-100"
+                  className="hover:text-gray-700 w-full block text-left p-[0.6rem] hover:bg-gray-100"
                 >
                   Meet Our Team
                 </Link>
