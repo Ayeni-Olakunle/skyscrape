@@ -30,7 +30,7 @@ export default function MenuBar() {
           <Link href="/" className="hover:opacity-80">
             Home
           </Link>
-          <Link href="/services" className="hover:opacity-80 group relative">
+          <div className="hover:opacity-80 group relative">
             Our Services{" "}
             <ChevronDown className="inline-block ml-0 text-[10px]" />
             <ul className="absolute mt-0 bg-white shadow-lg rounded hidden group-hover:block p-0 w-44">
@@ -67,8 +67,8 @@ export default function MenuBar() {
                 </Link>
               </li>
             </ul>
-          </Link>
-          <Link href="/about-us" className="hover:opacity-80 group relative">
+          </div>
+          <div className="hover:opacity-80 group relative">
             About us <ChevronDown className="inline-block ml-0 text-[10px]" />
             <ul className="absolute mt-0 bg-white shadow-lg rounded hidden group-hover:block p-0 w-34">
               <li className="text-xs text-gray-500 mt-1 block">
@@ -88,7 +88,7 @@ export default function MenuBar() {
                 </Link>
               </li>
             </ul>
-          </Link>
+          </div>
           <Link href="/contact-us" className="hover:opacity-80">
             Contact us
           </Link>
