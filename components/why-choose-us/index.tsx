@@ -14,7 +14,6 @@ import whyme from "@/public/whyme.png";
 export default function WhyChooseUsPage() {
   return (
     <div className="bg-white text-slate-900">
-
       {/* ================= HERO ================= */}
       <section className="relative h-[420px] flex items-center justify-center overflow-hidden">
         <Image
@@ -45,10 +44,10 @@ export default function WhyChooseUsPage() {
           </h2>
 
           <p className="text-slate-600 leading-relaxed text-lg">
-            We combine industry expertise with structured operational systems
-            to deliver measurable value. Our mission is to protect assets,
-            optimize efficiency, and create sustainable property environments
-            built for long-term success.
+            We combine industry expertise with structured operational systems to
+            deliver measurable value. Our mission is to protect assets, optimize
+            efficiency, and create sustainable property environments built for
+            long-term success.
           </p>
         </div>
       </section>
@@ -56,15 +55,11 @@ export default function WhyChooseUsPage() {
       {/* ================= FEATURES GRID ================= */}
       <section className="bg-slate-50 py-24">
         <div className="max-w-7xl mx-auto px-6">
-
           <div className="text-center mb-16">
-            <h3 className="text-3xl font-semibold">
-              What Sets Us Apart
-            </h3>
+            <h3 className="text-3xl font-semibold">What Sets Us Apart</h3>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-
             {features.map((item, index) => (
               <div
                 key={index}
@@ -74,16 +69,13 @@ export default function WhyChooseUsPage() {
                   {item.icon}
                 </div>
 
-                <h4 className="text-xl font-semibold mb-4">
-                  {item.title}
-                </h4>
+                <h4 className="text-xl font-semibold mb-4">{item.title}</h4>
 
                 <p className="text-slate-600 leading-relaxed">
                   {item.description}
                 </p>
               </div>
             ))}
-
           </div>
         </div>
       </section>
@@ -91,17 +83,16 @@ export default function WhyChooseUsPage() {
       {/* ================= PERFORMANCE SECTION ================= */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-
           <div>
             <h3 className="text-3xl font-semibold mb-6">
               Structured Systems. Measurable Results.
             </h3>
 
             <p className="text-slate-600 leading-relaxed mb-6">
-              Our management framework ensures preventive maintenance,
-              financial clarity, and regulatory compliance across every asset.
-              We implement performance-driven strategies that minimize risk
-              and maximize long-term growth.
+              Our management framework ensures preventive maintenance, financial
+              clarity, and regulatory compliance across every asset. We
+              implement performance-driven strategies that minimize risk and
+              maximize long-term growth.
             </p>
 
             <ul className="space-y-4">
@@ -129,21 +120,19 @@ export default function WhyChooseUsPage() {
               className="object-cover"
             />
           </div>
-
         </div>
       </section>
 
       {/* ================= CTA ================= */}
       <section className="bg-slate-900 text-white py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-
           <h3 className="text-3xl font-semibold mb-6">
             Partner With a Team You Can Trust
           </h3>
 
           <p className="text-slate-300 mb-10">
-            Experience structured management, professional oversight,
-            and performance-driven property solutions.
+            Experience structured management, professional oversight, and
+            performance-driven property solutions.
           </p>
 
           <Link
@@ -152,10 +141,8 @@ export default function WhyChooseUsPage() {
           >
             Contact Us
           </Link>
-
         </div>
       </section>
-
     </div>
   );
 }
