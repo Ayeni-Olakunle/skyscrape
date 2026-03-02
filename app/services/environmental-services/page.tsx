@@ -2,7 +2,7 @@
 import Loader from "@/components/loader/loader";
 import dynamic from "next/dynamic";
 
-const HeavyComponent = dynamic(() => import("@/views/property-management"), {
+const HeavyComponent = dynamic(() => import("@/views/environmental-services"), {
   loading: () => <Loader />,
   ssr: false,
 });
