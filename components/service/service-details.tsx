@@ -1,4 +1,5 @@
 "use client";
+import { url } from "inspector";
 import PropertySolutionsSection from "./property-solutions-section";
 import { Check, ChevronRight, Phone, Mail, User } from "lucide-react";
 import { useState } from "react";
@@ -21,6 +22,7 @@ export default function ServiceDetails() {
 
   const explore2 = [
     {
+      url: "/services/property-management",
       name: "Property Management",
       description: [
         "Leasing and Property Management",
@@ -28,6 +30,7 @@ export default function ServiceDetails() {
       ],
     },
     {
+      url: "/services/facility-management",
       name: "Facility Management",
       description: [
         "Electrical Systems",
@@ -41,6 +44,7 @@ export default function ServiceDetails() {
       ],
     },
     {
+      url: "/services/environmental-services",
       name: "Environmental Services",
       description: [
         "Waste MManagement",
@@ -160,11 +164,11 @@ export default function ServiceDetails() {
                     key={index}
                     className="flex justify-between items-center"
                   >
-                    <div
-                      className="flex items-center gap-2 p-3 rounded-lg hover:bg-white/10 cursor-pointer transition w-full justify-between"
-                      onClick={() => setCurrentTab(item.name)}
-                    >
-                      <span>{item.name}</span>
+                    <div className="flex items-center gap-2 p-3 rounded-lg hover:bg-white/10 cursor-pointer transition w-full justify-between">
+                      <span onClick={() => setCurrentTab(item.name)}>
+                        {item.name}
+                      </span>
+                      <span></span>
                       <ChevronRight size={18} />
                     </div>
                   </div>
