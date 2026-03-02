@@ -81,7 +81,7 @@ export default function MenuBar() {
               </li>
               <li className="text-xs text-gray-500 mt-1">
                 <Link
-                  href="/residential-facility-management"
+                  href="/meet-our-team"
                   className="hover:text-gray-700 w-full block text-left p-[0.6rem] hover:bg-gray-100"
                 >
                   Meet Our Team

@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
 import MenuBar from "../common/menu-bar";
-import Index from "@/components/environmental-services";
+import WhyChooseUsPage from "@/components/why-choose-us";
 import Footer from "../common/footer";
 
 
-export default function EnvironmentalServicesPage() {
+export default function WhyChooseUsPageView() {
   return (
     <div>
       <MenuBar />
-        <Index />
+        <WhyChooseUsPage />
       <Footer />
     </div>
   );
