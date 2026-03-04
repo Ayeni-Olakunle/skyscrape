@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { Mail, Linkedin } from "lucide-react";
 import heroImage from "@/public/meet.jpeg";
+import chairman from "@/public/chairman.png";
+import ceo from "@/public/ceo.png";
+import samuel from "@/public/samuel.jpeg";
 
 export default function MeetOurTeamPage() {
   return (
@@ -127,26 +130,35 @@ const teamMembers = [
     role: "Managing Director",
     description:
       "Leads strategic direction and operational oversight with over 15 years of experience in property and facility management.",
-    image: "/images/team/member1.jpg",
+    image: chairman,
     email: "john@skyscape.com",
-    linkedin: "#"
+    linkedin: "#",
   },
   {
     name: "Sarah Thompson",
     role: "Head of Property Management",
     description:
       "Oversees leasing, asset performance, and tenant relations ensuring maximum occupancy and financial transparency.",
-    image: "/images/team/member2.jpg",
+    image: ceo,
     email: "sarah@skyscape.com",
-    linkedin: "#"
+    linkedin: "#",
   },
   {
     name: "Michael Roberts",
     role: "Facility Operations Manager",
     description:
       "Ensures operational efficiency, preventive maintenance, and compliance across all managed facilities.",
-    image: "/images/team/member3.jpg",
+    image: samuel,
     email: "michael@skyscape.com",
-    linkedin: "#"
-  }
+    linkedin: "#",
+  },
+  {
+    name: "Michael Roberts",
+    role: "Facility Operations Manager",
+    description:
+      "Ensures operational efficiency, preventive maintenance, and compliance across all managed facilities.",
+    image: samuel,
+    email: "michael@skyscape.com",
+    linkedin: "#",
+  },
 ];
