@@ -126,30 +126,30 @@ export default function MeetOurTeamPage() {
 
 const teamMembers = [
   {
-    name: "John A. Williams",
-    role: "Managing Director",
+    name: "Dr Oluwatosin Olatujoye",
+    role: "Group Chief Executive Officer",
     description:
-      "Leads strategic direction and operational oversight with over 15 years of experience in property and facility management.",
+      "Dr. Oluwatosin Olatujoye has over a decade of Sales and Marketing, Negotiation, Public Speaking, Management, Human Resource; Project Management and Development, sales and marketing experience.",
     image: chairman,
-    email: "john@skyscape.com",
+    email: "#",
     linkedin: "#",
   },
   {
-    name: "Sarah Thompson",
-    role: "Head of Property Management",
+    name: "Bukola Olatujoye",
+    role: "Chief Executive Officer",
     description:
-      "Oversees leasing, asset performance, and tenant relations ensuring maximum occupancy and financial transparency.",
+      "She is passionate about business and has continually used her over 12years experience to drive personal and career growth while helping other women build scalable and sustainable businesses.",
     image: ceo,
-    email: "sarah@skyscape.com",
+    email: "#",
     linkedin: "#",
   },
   {
-    name: "Michael Roberts",
-    role: "Facility Operations Manager",
+    name: "Engr Steven Ajayi-James",
+    role: "Executive Director, Construction and Facilities Management",
     description:
-      "Ensures operational efficiency, preventive maintenance, and compliance across all managed facilities.",
+      "MNICE – Managing Director at Folaven Limited: Steven is the Managing Director of Folaven Limited (A project management and construction firm).",
     image: samuel,
-    email: "michael@skyscape.com",
+    email: "#",
     linkedin: "#",
   },
   {
