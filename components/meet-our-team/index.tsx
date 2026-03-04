@@ -1,14 +1,14 @@
 import Image from "next/image";
 import { Mail, Linkedin } from "lucide-react";
+import heroImage from "@/public/meet.jpeg";
 
 export default function MeetOurTeamPage() {
   return (
     <div className="bg-white text-slate-900">
-
       {/* ================= HERO ================= */}
-      <section className="relative h-[380px] flex items-center justify-center text-center">
+      <section className="relative h-[380px] flex items-center justify-start text-center">
         <Image
-          src="/images/team-hero.jpg"
+          src={heroImage}
           alt="Our Team"
           fill
           priority
@@ -16,7 +16,7 @@ export default function MeetOurTeamPage() {
         />
         <div className="absolute inset-0 bg-black/60" />
 
-        <div className="relative text-white px-6">
+        <div className="relative text-white px-6 w-full max-w-6xl">
           <p className="text-sm mb-4">
             Home <span className="mx-2">|</span> Meet Our Team
           </p>
@@ -35,8 +35,8 @@ export default function MeetOurTeamPage() {
 
           <p className="text-slate-600 leading-relaxed text-lg">
             Our leadership team combines industry expertise, operational
-            discipline, and strategic vision to deliver world-class property
-            and facility management solutions. We are committed to integrity,
+            discipline, and strategic vision to deliver world-class property and
+            facility management solutions. We are committed to integrity,
             performance, and long-term value creation.
           </p>
         </div>
@@ -45,9 +45,7 @@ export default function MeetOurTeamPage() {
       {/* ================= TEAM GRID ================= */}
       <section className="bg-slate-50 py-24">
         <div className="max-w-7xl mx-auto px-6">
-
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
-
             {teamMembers.map((member, index) => (
               <div
                 key={index}
@@ -65,9 +63,7 @@ export default function MeetOurTeamPage() {
 
                 {/* Content */}
                 <div className="p-8">
-                  <h3 className="text-xl font-semibold mb-1">
-                    {member.name}
-                  </h3>
+                  <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
 
                   <p className="text-amber-600 text-sm font-medium mb-4">
                     {member.role}
@@ -97,7 +93,6 @@ export default function MeetOurTeamPage() {
                 </div>
               </div>
             ))}
-
           </div>
         </div>
       </section>
@@ -120,7 +115,6 @@ export default function MeetOurTeamPage() {
           </a>
         </div>
       </section>
-
     </div>
   );
 }
