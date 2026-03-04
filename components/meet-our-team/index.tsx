@@ -4,6 +4,7 @@ import heroImage from "@/public/meet.jpeg";
 import chairman from "@/public/chairman.png";
 import ceo from "@/public/ceo.png";
 import samuel from "@/public/samuel.jpeg";
+import steven from "@/public/steven.webp";
 
 export default function MeetOurTeamPage() {
   return (
@@ -148,7 +149,7 @@ const teamMembers = [
     role: "Executive Director, Construction and Facilities Management",
     description:
       "MNICE – Managing Director at Folaven Limited: Steven is the Managing Director of Folaven Limited (A project management and construction firm).",
-    image: samuel,
+    image: steven,
     email: "#",
     linkedin: "#",
   },
