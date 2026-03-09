@@ -113,7 +113,7 @@ export default function WhyChooseUsPage() {
             </ul>
           </div>
 
-          <div className="relative h-full">
+          <div className="relative h-full hidden md:block">
             <Image
               src={whyme}
               alt="Operational Excellence"
