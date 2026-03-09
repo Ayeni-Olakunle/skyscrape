@@ -104,7 +104,8 @@ export default function AboutSection() {
 
             {/* Button */}
             <button className="mt-8 bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600 transition">
-              <Link href="/about-us">Read More</Link>
+              {/* <Link href="/about-us">Read More</Link> */}
+              <Link href="/why-choose-us">Read More</Link>
             </button>
           </div>
         </div>
