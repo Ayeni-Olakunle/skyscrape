@@ -10,8 +10,6 @@ import {
   Send,
   Building2,
 } from "lucide-react";
-import logo from "@/public/logo.jpg";
-import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -77,7 +75,7 @@ export default function Footer() {
 
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-3">
-                <Phone size={18} className="text-yellow-400" />+ (123) 0901 991
+                <Phone size={18} className="text-yellow-400" />+ (234) 0901 991
                 0747
               </li>
 
