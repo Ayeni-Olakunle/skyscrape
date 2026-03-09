@@ -7,6 +7,8 @@ import { Building2, Menu, X, ChevronDown } from "lucide-react";
 
 export default function MenuBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   return (
     <header
@@ -115,24 +117,94 @@ export default function MenuBar() {
         {/* MOBILE MENU */}
         {isOpen && (
           <div className="absolute top-full left-0 w-full bg-black/95 backdrop-blur-md md:hidden">
-            <div className="flex flex-col items-center gap-6 py-8 text-white text-lg">
+            <div className="flex flex-col gap-4 py-8 px-6 text-white text-lg">
               <Link href="/" onClick={() => setIsOpen(false)}>
                 Home
               </Link>
-              <Link href="/services" onClick={() => setIsOpen(false)}>
-                Our Services
-              </Link>
-              <Link href="/about-us" onClick={() => setIsOpen(false)}>
-                About us
-              </Link>
+
+              {/* SERVICES */}
+              <div>
+                <button
+                  onClick={() => setServicesOpen(!servicesOpen)}
+                  className="flex justify-between items-center w-full"
+                >
+                  Our Services
+                  <ChevronDown
+                    size={18}
+                    className={`transition ${servicesOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+
+                {servicesOpen && (
+                  <div className="flex flex-col ml-4 mt-3 gap-3 text-base text-gray-300">
+                    <Link href="/services" onClick={() => setIsOpen(false)}>
+                      Core Service
+                    </Link>
+
+                    <Link
+                      href="/services/property-management"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Property Management
+                    </Link>
+
+                    <Link
+                      href="/services/facility-management"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Facility Management
+                    </Link>
+
+                    <Link
+                      href="/services/environmental-services"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Environmental Services
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* ABOUT */}
+              <div>
+                <button
+                  onClick={() => setAboutOpen(!aboutOpen)}
+                  className="flex justify-between items-center w-full"
+                >
+                  About Us
+                  <ChevronDown
+                    size={18}
+                    className={`transition ${aboutOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+
+                {aboutOpen && (
+                  <div className="flex flex-col ml-4 mt-3 gap-3 text-base text-gray-300">
+                    <Link
+                      href="/why-choose-us"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Why Choose Us
+                    </Link>
+
+                    <Link
+                      href="/meet-our-team"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Meet Our Team
+                    </Link>
+                  </div>
+                )}
+              </div>
+
               <Link href="/contact-us" onClick={() => setIsOpen(false)}>
-                Contact us
+                Contact Us
               </Link>
 
               <Link
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="rounded-full px-8 py-3 bg-[#f0b100] text-white"
+                className="mt-4 rounded-full px-8 py-3 bg-[#f0b100] text-white text-center"
               >
                 Message Us
               </Link>
