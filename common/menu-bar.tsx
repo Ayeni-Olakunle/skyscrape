@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import Image from "next/image";
-import logo from "../public/logo.jpg";
 import { Building2, Menu, X, ChevronDown } from "lucide-react";
 
 export default function MenuBar() {
