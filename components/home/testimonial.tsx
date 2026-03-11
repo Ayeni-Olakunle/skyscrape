@@ -8,16 +8,14 @@ import { Phone, Mail, MapPin, Send, CheckCircle, Building2, Clock, Shield, Users
 
 export default function Testimonial() {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    message: ''
-  })
-  
+    fullName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
   const [focusedField, setFocusedField] = useState<string | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [responseMessage, setResponseMessage] = useState("");
 
 
 

@@ -1,12 +1,75 @@
 "use client";
 import { url } from "inspector";
 import PropertySolutionsSection from "./property-solutions-section";
-import { Check, ChevronRight, Phone, Mail, User } from "lucide-react";
+import {
+  Check,
+  ChevronRight,
+  Phone,
+  Mail,
+  User,
+  Send,
+  CheckCircle,
+} from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 
 export default function ServiceDetails() {
   const [currentTab, setCurrentTab] = useState("Property Management");
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [focusedField, setFocusedField] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    setIsSubmitting(true);
+
+    try {
+      const res = await fetch("/api/message", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setIsSubmitted(true);
+
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 3000);
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   const services = [
     "Property Maintenance – Preventive and corrective maintenance.",
     "Cleaning & Janitorial Services – Professional hygiene solutions.",
@@ -205,7 +268,7 @@ export default function ServiceDetails() {
               Request Consultation
             </h3>
 
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="relative">
                 <User
                   size={16}
@@ -215,6 +278,12 @@ export default function ServiceDetails() {
                   type="text"
                   placeholder="Full Name"
                   className="w-full pl-10 pr-4 py-3 rounded-lg border focus:ring-2 focus:ring-yellow-500 outline-none"
+                  id="fullName"
+                  value={formData.fullName}
+                  onChange={handleChange}
+                  onFocus={() => setFocusedField("fullName")}
+                  onBlur={() => setFocusedField(null)}
+                  required
                 />
               </div>
 
@@ -227,6 +296,12 @@ export default function ServiceDetails() {
                   type="email"
                   placeholder="Email Address"
                   className="w-full pl-10 pr-4 py-3 rounded-lg border focus:ring-2 focus:ring-yellow-500 outline-none"
+                  id="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  onFocus={() => setFocusedField("email")}
+                  onBlur={() => setFocusedField(null)}
+                  required
                 />
               </div>
 
@@ -239,6 +314,12 @@ export default function ServiceDetails() {
                   type="text"
                   placeholder="Phone Number"
                   className="w-full pl-10 pr-4 py-3 rounded-lg border focus:ring-2 focus:ring-yellow-500 outline-none"
+                  id="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  onFocus={() => setFocusedField("phone")}
+                  onBlur={() => setFocusedField(null)}
+                  required
                 />
               </div>
 
@@ -246,14 +327,49 @@ export default function ServiceDetails() {
                 placeholder="Message"
                 rows={4}
                 className="w-full p-3 rounded-lg border focus:ring-2 focus:ring-yellow-500 outline-none"
+                id="message"
+                value={formData.message}
+                onChange={handleChange}
+                onFocus={() => setFocusedField("message")}
+                onBlur={() => setFocusedField(null)}
+                required
               />
 
-              <button
+              {/* <button
                 type="submit"
                 className="w-full bg-yellow-500 hover:bg-yellow-600 text-white py-3 rounded-lg font-semibold transition shadow-md hover:shadow-lg"
               >
                 Get Free Consultation
+              </button> */}
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-gradient-to-r from-[#1e2938] to-[#202e50] text-white py-4 px-6 rounded-xl font-semibold flex items-center justify-center gap-2"
+              >
+                {isSubmitting ? (
+                  <>
+                    <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                    Sending...
+                  </>
+                ) : isSubmitted ? (
+                  <>
+                    <CheckCircle className="w-5 h-5 text-green-400 animate-bounce" />
+                    Message Sent!
+                  </>
+                ) : (
+                  <>
+                    Send Message
+                    <Send className="w-5 h-5" />
+                  </>
+                )}
               </button>
+              {isSubmitted && (
+                <div className="mb-6 flex items-center gap-3 bg-green-100 text-green-700 px-4 py-3 rounded-lg animate-fade-in mt-2">
+                  <CheckCircle className="w-5 h-5" />
+                  Your message has been sent successfully!
+                </div>
+              )}
             </form>
           </div>
         </div>
