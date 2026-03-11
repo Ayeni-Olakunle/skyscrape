@@ -14,13 +14,7 @@ import {
 import { useState } from "react";
 
 export default function Footer() {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
+  const [email, setEmail] = useState("");
   const [focusedField, setFocusedField] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -37,7 +31,7 @@ export default function Footer() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ newsletter: email }),
       });
 
       const data = await res.json();
@@ -45,12 +39,7 @@ export default function Footer() {
       if (data.success) {
         setIsSubmitted(true);
 
-        setFormData({
-          fullName: "",
-          email: "",
-          phone: "",
-          message: "",
-        });
+        setEmail("");
 
         setTimeout(() => {
           setIsSubmitted(false);
@@ -149,22 +138,23 @@ export default function Footer() {
                 type="email"
                 placeholder="Enter Email address"
                 className="flex-1 px-4 py-2 text-sm text-gray-700 outline-none"
-                value={formData.email}
-                onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
-                }
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 onFocus={() => setFocusedField("email")}
                 onBlur={() => setFocusedField(null)}
                 required
               />
 
-              <button className="bg-yellow-500 hover:bg-yellow-600 transition w-10 h-10 flex items-center justify-center rounded-full mr-1">
+              <button
+                className="bg-yellow-500 hover:bg-yellow-600 transition w-10 h-10 flex items-center justify-center rounded-full mr-1"
+                onClick={handleSubmit}
+              >
                 {isSubmitting ? (
-                  <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                  <div className="w-5 h-5 border-2 text-white border-white border-t-transparent rounded-full animate-spin"></div>
                 ) : isSubmitted ? (
-                  <CheckCircle className="w-5 h-5 text-green-400 animate-bounce" />
+                  <CheckCircle className="w-5 h-5 text-white animate-bounce" />
                 ) : (
-                  <Send className="w-5 h-5" />
+                  <Send className="w-5 h-5 text-white" />
                 )}
               </button>
             </div>
