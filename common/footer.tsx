@@ -9,6 +9,7 @@ import {
   Linkedin,
   Send,
   Building2,
+  CheckCircle,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -158,7 +159,13 @@ export default function Footer() {
               />
 
               <button className="bg-yellow-500 hover:bg-yellow-600 transition w-10 h-10 flex items-center justify-center rounded-full mr-1">
-                <Send size={16} className="text-white" />
+                {isSubmitting ? (
+                  <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                ) : isSubmitted ? (
+                  <CheckCircle className="w-5 h-5 text-green-400 animate-bounce" />
+                ) : (
+                  <Send className="w-5 h-5" />
+                )}
               </button>
             </div>
 
