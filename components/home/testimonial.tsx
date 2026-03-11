@@ -4,6 +4,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Phone, Mail, MapPin, Send, CheckCircle, Building2, Clock, Shield, Users } from 'lucide-react'
+// import POST from "../../app/api/message/route"
 
 export default function Testimonial() {
   const [formData, setFormData] = useState({
@@ -15,13 +16,9 @@ export default function Testimonial() {
   
   const [focusedField, setFocusedField] = useState<string | null>(null)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [responseMessage, setResponseMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    setIsSubmitted(true)
-    setTimeout(() => setIsSubmitted(false), 3000)
-  }
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -29,6 +26,48 @@ export default function Testimonial() {
       [e.target.id]: e.target.value
     })
   }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitted(true);
+
+    try {
+      const scriptUrl =
+        "https://script.google.com/macros/s/AKfycbzi4SdzG25jEK-xbREXodSAYayUFAmBw-LWwPJ9SoMIPsr17hYiWuI44etKrjyiLhs_4w/exec";
+
+      const res = await fetch(scriptUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setResponseMessage("Form submitted successfully!");
+        setIsSubmitted(true);
+
+        // reset form
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+
+        setTimeout(() => setIsSubmitted(false), 3000);
+      } else {
+        setResponseMessage(data.message || "Something went wrong.");
+      }
+    } catch (error) {
+      console.error(error);
+      setResponseMessage("An error occurred. Please try again.");
+    } finally {
+      setIsSubmitted(false);
+    }
+  };
 
   return (
     <main className="min-h-screen bg-white">
@@ -250,3 +289,5 @@ export default function Testimonial() {
     </main>
   )
 }
+
+// https://script.google.com/macros/s/AKfycbyRIjCnZThbn3KsdwGlq24fUNGM_vQTzks-etsokTYJ1uBD21JAMS1nKHHqb590LXhuSw/exec
