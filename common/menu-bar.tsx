@@ -97,7 +97,9 @@ export default function MenuBar() {
         {/* DESKTOP BUTTON */}
         <div className="hidden md:block">
           <a
-            href="https://wa.me/+2347063454191"
+            href="https://wa.me/+2349019910747"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full shadow-md hover:opacity-90 px-8 py-4 bg-[#f0b100] text-white"
           >
             Message Us

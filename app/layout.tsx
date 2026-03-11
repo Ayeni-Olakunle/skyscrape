@@ -1,6 +1,6 @@
 "use client";
 
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "aos/dist/aos.css";
@@ -41,6 +41,41 @@ export default function RootLayout({
   // }, []);
   return (
     <html lang="en">
+      <link rel="icon" href="/favicon.jpg" />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charSet="UTF-8" />
+      <title>SkyScape</title>
+      <link rel="apple-touch-icon" href="/favicon.jpg" />
+      <meta name="theme-color" content="#317EFB" />
+
+      <meta name="keywords" content="Lekki, Lagos" />
+      <meta name="author" content="Ayeni O. Emmanuel" />
+      <meta name="robots" content="index, follow" />
+
+      <meta
+        name="description"
+        content="At Skyscape, we are committed to delivering excellence in facility management through expertise, innovation, and integrity. With years of industry experience, we provide reliable solutions that ensure residential and commercial spaces operate efficiently, safely, and comfortably. Our dedicated team focuses on maintaining high standards while enhancing the value and performance of every property we manage."
+      />
+
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="SkyScape" />
+      <meta
+        property="og:description"
+        content="At Skyscape, we are committed to delivering excellence in facility management through expertise, innovation, and integrity. With years of industry experience, we provide reliable solutions that ensure residential and commercial spaces operate efficiently, safely, and comfortably. Our dedicated team focuses on maintaining high standards while enhancing the value and performance of every property we manage."
+      />
+      <meta property="og:image" content="/favicon.jpg" />
+      <meta property="og:url" content="https://www.skyscape.com.ng/" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="SkyScape" />
+      <meta
+        name="twitter:description"
+        content="At Skyscape, we are committed to delivering excellence in facility management through expertise, innovation, and integrity. With years of industry experience, we provide reliable solutions that ensure residential and commercial spaces operate efficiently, safely, and comfortably. Our dedicated team focuses on maintaining high standards while enhancing the value and performance of every property we manage."
+      />
+      <meta name="twitter:image" content="/favicon.jpg" />
+      <meta name="twitter:url" content="https://www.skyscape.com.ng/" />
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
