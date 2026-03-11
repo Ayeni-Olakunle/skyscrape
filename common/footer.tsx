@@ -10,8 +10,57 @@ import {
   Send,
   Building2,
 } from "lucide-react";
+import { useState } from "react";
 
 export default function Footer() {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [focusedField, setFocusedField] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    setIsSubmitting(true);
+
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setIsSubmitted(true);
+
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 3000);
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <footer
       className="bg-[#1e2a4a] text-gray-300"
@@ -99,6 +148,13 @@ export default function Footer() {
                 type="email"
                 placeholder="Enter Email address"
                 className="flex-1 px-4 py-2 text-sm text-gray-700 outline-none"
+                value={formData.email}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
+                onFocus={() => setFocusedField("email")}
+                onBlur={() => setFocusedField(null)}
+                required
               />
 
               <button className="bg-yellow-500 hover:bg-yellow-600 transition w-10 h-10 flex items-center justify-center rounded-full mr-1">

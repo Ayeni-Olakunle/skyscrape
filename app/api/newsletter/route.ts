@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
 
   try {
     const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzi4SdzG25jEK-xbREXodSAYayUFAmBw-LWwPJ9SoMIPsr17hYiWuI44etKrjyiLhs_4w/exec",
+        "https://script.google.com/macros/s/AKfycby0vjMM2cAlrDNO9M4ojxKa7b1c1v9J-wfn-tyGHIW7ul97HyXeTpOm8XWTgpjgRrklag/exec",
       {
         method: 'POST',
         headers: {
