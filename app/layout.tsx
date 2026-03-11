@@ -6,7 +6,9 @@ import "./globals.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
-import logo from "@/public/logo.jpg";
+// import logo from "@/public/logo.jpg";
+import logo from "@/app/favicon.jpeg";
+
 
 
 const geistSans = Geist({
@@ -55,7 +57,7 @@ export default function RootLayout({
         <link rel="icon" href="@/public/favicon.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href={logo.src} />
         <link rel="apple-touch-icon" href="/favicon.png" />
 
         <link rel="icon" href="/favicon.jpg" />
