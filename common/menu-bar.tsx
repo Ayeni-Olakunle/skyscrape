@@ -66,6 +66,14 @@ export default function MenuBar() {
                   Environmental Services
                 </Link>
               </li>
+              <li className="text-xs text-gray-500 mt-1">
+                <Link
+                  href="/shortlets"
+                  className="hover:text-gray-700 w-full block text-left p-[0.6rem] hover:bg-gray-100"
+                >
+                  Shortlets
+                </Link>
+              </li>
             </ul>
           </Link>
           <div className="hover:opacity-80 group relative">
