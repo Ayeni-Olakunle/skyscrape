@@ -6,7 +6,7 @@ import Features from "@/components/shortlets/Features";
 import Stats from "@/components/shortlets/Stats";
 import Testimonials from "@/components/shortlets/Testimonials";
 import CTA from "@/components/shortlets/CTA";
-// import Footer from "@/components/shortlets/Footer";
+import Footer from "@/components/shortlets/Footer";
 
 
 
