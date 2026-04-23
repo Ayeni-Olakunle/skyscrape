@@ -28,7 +28,7 @@ export default function Shortlets() {
       <Properties />
       <Features />
       <Stats />
-      {/* <Testimonials /> */}
+      <Testimonials />
       {/* <CTA /> */}
       {/* <Footer /> */}
     </main>
