@@ -5,7 +5,7 @@ import Properties from "@/components/shortlets/Properties";
 import Features from "@/components/shortlets/Features";
 import Stats from "@/components/shortlets/Stats";
 import Testimonials from "@/components/shortlets/Testimonials";
-// import CTA from "@/components/shortlets/CTA";
+import CTA from "@/components/shortlets/CTA";
 // import Footer from "@/components/shortlets/Footer";
 
 
@@ -29,7 +29,7 @@ export default function Shortlets() {
       <Features />
       <Stats />
       <Testimonials />
-      {/* <CTA /> */}
+      <CTA />
       {/* <Footer /> */}
     </main>
   );
