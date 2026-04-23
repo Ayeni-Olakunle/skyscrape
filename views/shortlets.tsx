@@ -13,13 +13,15 @@ import Navbar from "@/components/shortlets/Navbar";
 
 export default function Shortlets() {
   return (
-    <section className="w-full py-20 flex items-center justify-center">
-      <div>
-        <h1 className="text-4xl font-bold mb-4">Shortlets</h1>
-        <p className="text-lg text-gray-600">
-          Welcome to our Shortlets page! Here, you can find a variety of short-term rental options that cater to your needs. Whether you're looking for a cozy apartment, a stylish studio, or a spacious house, we have something for everyone. Our shortlets are perfect for travelers, business professionals, or anyone in need of temporary accommodation. Browse through our listings and find the perfect shortlet for your next stay!
-        </p>
-      </div>
-    </section>
-  )
+    <main>
+      <Navbar />
+      {/* <Hero /> */}
+      {/* <Properties /> */}
+      {/* <Features /> */}
+      {/* <Stats /> */}
+      {/* <Testimonials /> */}
+      {/* <CTA /> */}
+      {/* <Footer /> */}
+    </main>
+  );
 }
