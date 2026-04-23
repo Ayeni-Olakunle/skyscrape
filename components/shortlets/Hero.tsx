@@ -1,4 +1,7 @@
 "use client";
+import pathment1 from "@/public/shortlets/lekki-avana1.jpg";
+import pathment2 from "@/public/shortlets/lekki-avana2.jpg";
+import pathment3 from "@/public/shortlets/lekki-avana3.jpg";
 
 export default function Hero() {
   return (
@@ -112,7 +115,7 @@ export default function Hero() {
               top: 0,
               right: 8,
               rotate: 3,
-              emoji: "🏙️",
+              emoji: pathment1,
               name: "The Grand Penthouse",
               loc: "Victoria Island, Lagos",
               price: "₦85,000",
@@ -122,12 +125,22 @@ export default function Hero() {
               top: 88,
               left: 0,
               rotate: -2,
-              emoji: "🌿",
+              emoji: pathment2,
               name: "Garden View Studio",
               loc: "Lekki Phase 1, Lagos",
               price: "₦45,000",
               rating: 4.8,
             },
+            // {
+            //   top: 200,
+            //   right: 2,
+            //   rotate: 2,
+            //   emoji: pathment3,
+            //   name: "City Lights Apartment",
+            //   loc: "Ikoyi, Lagos",
+            //   price: "₦65,000",
+            //   rating: 4.7,
+            // },
           ].map((card, i) => (
             <div
               key={i}
@@ -142,11 +155,16 @@ export default function Hero() {
             >
               <div
                 className="h-36 flex items-center justify-center text-6xl"
-                style={{
-                  background: "linear-gradient(135deg, #3d5496, #1e2d5a)",
-                }}
+                // style={{
+                //   background: "linear-gradient(135deg, #3d5496, #1e2d5a)",
+                // }}
               >
-                {card.emoji}
+                {/* {card.emoji} */}
+                <img
+                  src={card.emoji.src}
+                  alt={card.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-4">
                 <div className="text-white font-semibold text-sm">
