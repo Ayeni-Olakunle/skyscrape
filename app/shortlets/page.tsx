@@ -1,9 +1,16 @@
-import React from 'react'
+"use client";
+import Loader from "@/components/loader/loader";
+import dynamic from "next/dynamic";
+
+const HeavyComponent = dynamic(() => import("@/views/shortlets"), {
+  loading: () => <Loader />,
+  ssr: false,
+});
 
 export default function Page() {
   return (
     <main>
-      <h1>Shortles</h1>
+      <HeavyComponent />
     </main>
-  )
+  );
 }

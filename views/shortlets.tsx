@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from "@/components/shortlets/Navbar";
+import Hero from "@/components/shortlets/Hero";
 
 // import Navbar from '@/components/Navbar'
 // import Hero from '@/components/Hero'
@@ -15,7 +16,7 @@ export default function Shortlets() {
   return (
     <main>
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
       {/* <Properties /> */}
       {/* <Features /> */}
       {/* <Stats /> */}
