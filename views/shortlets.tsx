@@ -30,7 +30,7 @@ export default function Shortlets() {
       <Stats />
       <Testimonials />
       <CTA />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }
