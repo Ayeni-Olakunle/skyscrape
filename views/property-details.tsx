@@ -81,14 +81,27 @@ export default function PropertyDetails() {
   return (
     <>
       <Navbar />
-      <main style={{ background: '#fafaf8', minHeight: '100vh', paddingTop: 80 }}>
-
+      <main
+        style={{ background: "#fafaf8", minHeight: "100vh", paddingTop: 80 }}
+      >
         {/* Breadcrumb */}
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center gap-2 text-sm text-gray-400">
-            <a href="/" style={{ color: '#3d5496' }} className="hover:underline">Home</a>
+            <a
+              href="/"
+              style={{ color: "#3d5496" }}
+              className="hover:underline"
+            >
+              Home
+            </a>
             <span>/</span>
-            <a href="/#properties" style={{ color: '#3d5496' }} className="hover:underline">Properties</a>
+            <a
+              href="/#properties"
+              style={{ color: "#3d5496" }}
+              className="hover:underline"
+            >
+              Properties
+            </a>
             <span>/</span>
             <span className="text-gray-600">{property.name}</span>
           </div>
@@ -99,7 +112,9 @@ export default function PropertyDetails() {
           <div className="grid grid-cols-4 grid-rows-2 gap-3 h-96 rounded-3xl overflow-hidden">
             <div
               className="col-span-2 row-span-2 flex items-center justify-center text-8xl cursor-pointer transition-transform hover:scale-105"
-              style={{ background: 'linear-gradient(135deg, #3d5496, #1e2d5a)' }}
+              style={{
+                background: "linear-gradient(135deg, #3d5496, #1e2d5a)",
+              }}
               onClick={() => setActiveImage(0)}
             >
               {property.images[0]}
@@ -108,7 +123,12 @@ export default function PropertyDetails() {
               <div
                 key={i}
                 className="flex items-center justify-center text-5xl cursor-pointer transition-all hover:opacity-90"
-                style={{ background: i % 2 === 0 ? 'linear-gradient(135deg, #2a3d6e, #1a2d55)' : 'linear-gradient(135deg, #1e2d5a, #3d5496)' }}
+                style={{
+                  background:
+                    i % 2 === 0
+                      ? "linear-gradient(135deg, #2a3d6e, #1a2d55)"
+                      : "linear-gradient(135deg, #1e2d5a, #3d5496)",
+                }}
                 onClick={() => setActiveImage(i + 1)}
               >
                 {img}
@@ -119,16 +139,17 @@ export default function PropertyDetails() {
 
         {/* Content + Booking Sidebar */}
         <div className="max-w-7xl mx-auto px-6 pb-24 grid lg:grid-cols-3 gap-12">
-
           {/* Left — Details */}
           <div className="lg:col-span-2 space-y-10">
-
             {/* Header */}
             <div>
               <div className="flex items-start justify-between mb-3">
                 <div>
                   {property.tag && (
-                    <span className="text-xs font-bold px-3 py-1 rounded-full mr-3" style={{ background: '#f9cb01', color: '#3d5496' }}>
+                    <span
+                      className="text-xs font-bold px-3 py-1 rounded-full mr-3"
+                      style={{ background: "#f9cb01", color: "#3d5496" }}
+                    >
                       {property.tag}
                     </span>
                   )}
@@ -137,14 +158,19 @@ export default function PropertyDetails() {
                   ♡ Save
                 </button>
               </div>
-              <h1 className="text-3xl font-bold mb-2" style={{ fontFamily: 'Georgia, serif', color: '#3d5496' }}>
+              <h1
+                className="text-3xl font-bold mb-2"
+                style={{ fontFamily: "Georgia, serif", color: "#3d5496" }}
+              >
                 {property.name}
               </h1>
               <div className="flex items-center gap-4 text-sm text-gray-500 flex-wrap">
                 <span>📍 {property.location}</span>
                 <span className="flex items-center gap-1">
-                  <span style={{ color: '#f9cb01' }}>★</span>
-                  <strong style={{ color: '#1a1a2e' }}>{property.rating}</strong>
+                  <span style={{ color: "#f9cb01" }}>★</span>
+                  <strong style={{ color: "#1a1a2e" }}>
+                    {property.rating}
+                  </strong>
                   <span>({property.reviews} reviews)</span>
                 </span>
                 <span>🛏 {property.beds} Beds</span>
@@ -154,7 +180,7 @@ export default function PropertyDetails() {
             </div>
 
             {/* Host */}
-            <div className="flex items-center gap-4 p-5 rounded-2xl border border-gray-100 bg-white">
+            {/* <div className="flex items-center gap-4 p-5 rounded-2xl border border-gray-100 bg-white">
               <div className="w-14 h-14 rounded-full flex items-center justify-center text-3xl" style={{ background: 'rgba(61,84,150,0.08)' }}>
                 {property.host.avatar}
               </div>
@@ -170,21 +196,41 @@ export default function PropertyDetails() {
                 style={{ borderColor: '#3d5496', color: '#3d5496' }}>
                 Message
               </button>
-            </div>
+            </div> */}
 
             {/* Description */}
             <div>
-              <h2 className="text-xl font-bold mb-4" style={{ fontFamily: 'Georgia, serif', color: '#3d5496' }}>About this property</h2>
-              <p className="text-gray-600 leading-relaxed">{property.description}</p>
+              <h2
+                className="text-xl font-bold mb-4"
+                style={{ fontFamily: "Georgia, serif", color: "#3d5496" }}
+              >
+                About this property
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                {property.description}
+              </p>
             </div>
 
             {/* Amenities */}
             <div>
-              <h2 className="text-xl font-bold mb-5" style={{ fontFamily: 'Georgia, serif', color: '#3d5496' }}>Amenities</h2>
+              <h2
+                className="text-xl font-bold mb-5"
+                style={{ fontFamily: "Georgia, serif", color: "#3d5496" }}
+              >
+                Amenities
+              </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {property.amenities.map((a, i) => (
-                  <div key={i} className="flex items-center gap-3 p-3 rounded-xl bg-white border border-gray-100">
-                    <span className="w-8 h-8 rounded-lg flex items-center justify-center text-sm" style={{ background: 'rgba(61,84,150,0.08)' }}>✓</span>
+                  <div
+                    key={i}
+                    className="flex items-center gap-3 p-3 rounded-xl bg-white border border-gray-100"
+                  >
+                    <span
+                      className="w-8 h-8 rounded-lg flex items-center justify-center text-sm"
+                      style={{ background: "rgba(61,84,150,0.08)" }}
+                    >
+                      ✓
+                    </span>
                     <span className="text-sm text-gray-600">{a}</span>
                   </div>
                 ))}
@@ -193,11 +239,19 @@ export default function PropertyDetails() {
 
             {/* House Rules */}
             <div>
-              <h2 className="text-xl font-bold mb-4" style={{ fontFamily: 'Georgia, serif', color: '#3d5496' }}>House Rules</h2>
+              <h2
+                className="text-xl font-bold mb-4"
+                style={{ fontFamily: "Georgia, serif", color: "#3d5496" }}
+              >
+                House Rules
+              </h2>
               <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden">
                 {property.rules.map((rule, i) => (
-                  <div key={i} className={`flex items-center gap-3 px-5 py-4 text-sm text-gray-600 ${i < property.rules.length - 1 ? 'border-b border-gray-50' : ''}`}>
-                    <span style={{ color: '#f9cb01' }}>•</span>
+                  <div
+                    key={i}
+                    className={`flex items-center gap-3 px-5 py-4 text-sm text-gray-600 ${i < property.rules.length - 1 ? "border-b border-gray-50" : ""}`}
+                  >
+                    <span style={{ color: "#f9cb01" }}>•</span>
                     {rule}
                   </div>
                 ))}
@@ -207,27 +261,74 @@ export default function PropertyDetails() {
             {/* Reviews Section */}
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <h2 className="text-xl font-bold" style={{ fontFamily: 'Georgia, serif', color: '#3d5496' }}>Reviews</h2>
-                <div className="flex items-center gap-1 px-3 py-1 rounded-full text-sm font-semibold" style={{ background: 'rgba(61,84,150,0.08)', color: '#3d5496' }}>
-                  <span style={{ color: '#f9cb01' }}>★</span> {property.rating} · {property.reviews} reviews
+                <h2
+                  className="text-xl font-bold"
+                  style={{ fontFamily: "Georgia, serif", color: "#3d5496" }}
+                >
+                  Reviews
+                </h2>
+                <div
+                  className="flex items-center gap-1 px-3 py-1 rounded-full text-sm font-semibold"
+                  style={{
+                    background: "rgba(61,84,150,0.08)",
+                    color: "#3d5496",
+                  }}
+                >
+                  <span style={{ color: "#f9cb01" }}>★</span> {property.rating}{" "}
+                  · {property.reviews} reviews
                 </div>
               </div>
               <div className="grid sm:grid-cols-2 gap-5">
                 {[
-                  { name: 'Emeka N.', avatar: '👨🏾', text: 'Absolutely stunning property. Everything was exactly as described and the host was super responsive. Will definitely return!', date: 'March 2025' },
-                  { name: 'Sarah K.', avatar: '👩🏼', text: 'Perfect location and immaculate apartment. The amenities were top notch and check-in was seamless. Highly recommend.', date: 'February 2025' },
-                  { name: 'Bola A.', avatar: '👩🏾', text: 'Incredible views and a genuinely luxurious experience. LuxStay has raised the bar for shortlet apartments in Lagos.', date: 'January 2025' },
-                  { name: 'James O.', avatar: '👨🏻', text: 'Stayed for 2 weeks on a business trip. The workspace was ideal and the neighbourhood was quiet and safe. Loved it.', date: 'December 2024' },
+                  {
+                    name: "Emeka N.",
+                    avatar: "👨🏾",
+                    text: "Absolutely stunning property. Everything was exactly as described and the host was super responsive. Will definitely return!",
+                    date: "March 2025",
+                  },
+                  {
+                    name: "Sarah K.",
+                    avatar: "👩🏼",
+                    text: "Perfect location and immaculate apartment. The amenities were top notch and check-in was seamless. Highly recommend.",
+                    date: "February 2025",
+                  },
+                  {
+                    name: "Bola A.",
+                    avatar: "👩🏾",
+                    text: "Incredible views and a genuinely luxurious experience. LuxStay has raised the bar for shortlet apartments in Lagos.",
+                    date: "January 2025",
+                  },
+                  {
+                    name: "James O.",
+                    avatar: "👨🏻",
+                    text: "Stayed for 2 weeks on a business trip. The workspace was ideal and the neighbourhood was quiet and safe. Loved it.",
+                    date: "December 2024",
+                  },
                 ].map((r, i) => (
-                  <div key={i} className="bg-white p-5 rounded-2xl border border-gray-100">
+                  <div
+                    key={i}
+                    className="bg-white p-5 rounded-2xl border border-gray-100"
+                  >
                     <div className="flex items-center gap-3 mb-3">
-                      <div className="w-9 h-9 rounded-full flex items-center justify-center text-xl" style={{ background: 'rgba(61,84,150,0.06)' }}>{r.avatar}</div>
+                      <div
+                        className="w-9 h-9 rounded-full flex items-center justify-center text-xl"
+                        style={{ background: "rgba(61,84,150,0.06)" }}
+                      >
+                        {r.avatar}
+                      </div>
                       <div>
-                        <div className="font-semibold text-sm" style={{ color: '#1a1a2e' }}>{r.name}</div>
+                        <div
+                          className="font-semibold text-sm"
+                          style={{ color: "#1a1a2e" }}
+                        >
+                          {r.name}
+                        </div>
                         <div className="text-gray-400 text-xs">{r.date}</div>
                       </div>
                     </div>
-                    <p className="text-gray-500 text-sm leading-relaxed">"{r.text}"</p>
+                    <p className="text-gray-500 text-sm leading-relaxed">
+                      "{r.text}"
+                    </p>
                   </div>
                 ))}
               </div>
@@ -238,7 +339,10 @@ export default function PropertyDetails() {
           <div className="lg:col-span-1">
             <div className="sticky top-24 bg-white rounded-3xl shadow-xl border border-gray-100 p-7">
               <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-3xl font-bold" style={{ color: '#3d5496' }}>
+                <span
+                  className="text-3xl font-bold"
+                  style={{ color: "#3d5496" }}
+                >
                   ₦{property.price.toLocaleString()}
                 </span>
                 <span className="text-gray-400 text-sm">/night</span>
@@ -248,35 +352,67 @@ export default function PropertyDetails() {
               <div className="border border-gray-200 rounded-2xl overflow-hidden mb-3">
                 <div className="grid grid-cols-2 divide-x divide-gray-200">
                   <div className="p-3">
-                    <div className="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Check-in</div>
-                    <input type="date" value={checkIn} onChange={e => setCheckIn(e.target.value)}
-                      className="text-sm text-gray-700 w-full focus:outline-none" />
+                    <div className="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">
+                      Check-in
+                    </div>
+                    <input
+                      type="date"
+                      value={checkIn}
+                      onChange={(e) => setCheckIn(e.target.value)}
+                      className="text-sm text-gray-700 w-full focus:outline-none"
+                    />
                   </div>
                   <div className="p-3">
-                    <div className="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Check-out</div>
-                    <input type="date" value={checkOut} onChange={e => setCheckOut(e.target.value)}
-                      className="text-sm text-gray-700 w-full focus:outline-none" />
+                    <div className="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">
+                      Check-out
+                    </div>
+                    <input
+                      type="date"
+                      value={checkOut}
+                      onChange={(e) => setCheckOut(e.target.value)}
+                      className="text-sm text-gray-700 w-full focus:outline-none"
+                    />
                   </div>
                 </div>
                 <div className="border-t border-gray-200 p-3">
-                  <div className="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Guests</div>
+                  <div className="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">
+                    Guests
+                  </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-700">{guests} guest{guests > 1 ? 's' : ''}</span>
+                    <span className="text-sm text-gray-700">
+                      {guests} guest{guests > 1 ? "s" : ""}
+                    </span>
                     <div className="flex items-center gap-2">
-                      <button onClick={() => setGuests(g => Math.max(1, g - 1))}
-                        className="w-7 h-7 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:border-gray-500 transition-colors text-lg leading-none">−</button>
-                      <span className="w-5 text-center text-sm font-medium">{guests}</span>
-                      <button onClick={() => setGuests(g => Math.min(property.beds * 2, g + 1))}
-                        className="w-7 h-7 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:border-gray-500 transition-colors text-lg leading-none">+</button>
+                      <button
+                        onClick={() => setGuests((g) => Math.max(1, g - 1))}
+                        className="w-7 h-7 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:border-gray-500 transition-colors text-lg leading-none"
+                      >
+                        −
+                      </button>
+                      <span className="w-5 text-center text-sm font-medium">
+                        {guests}
+                      </span>
+                      <button
+                        onClick={() =>
+                          setGuests((g) => Math.min(property.beds * 2, g + 1))
+                        }
+                        className="w-7 h-7 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:border-gray-500 transition-colors text-lg leading-none"
+                      >
+                        +
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
 
               <button
-                onClick={() => router.push(`/book/${property.id}?checkIn=${checkIn}&checkOut=${checkOut}&guests=${guests}`)}
+                onClick={() =>
+                  router.push(
+                    `/book/${property.id}?checkIn=${checkIn}&checkOut=${checkOut}&guests=${guests}`,
+                  )
+                }
                 className="w-full py-4 rounded-2xl font-bold text-base transition-opacity hover:opacity-90 mb-4"
-                style={{ background: '#3d5496', color: '#fff' }}
+                style={{ background: "#3d5496", color: "#fff" }}
               >
                 Reserve Now
               </button>
@@ -284,26 +420,34 @@ export default function PropertyDetails() {
               {nights > 0 && (
                 <div className="space-y-3 pt-4 border-t border-gray-100">
                   <div className="flex justify-between text-sm text-gray-500">
-                    <span>₦{property.price.toLocaleString()} × {nights} night{nights > 1 ? 's' : ''}</span>
+                    <span>
+                      ₦{property.price.toLocaleString()} × {nights} night
+                      {nights > 1 ? "s" : ""}
+                    </span>
                     <span>₦{total.toLocaleString()}</span>
                   </div>
                   <div className="flex justify-between text-sm text-gray-500">
                     <span>Service fee (8%)</span>
                     <span>₦{serviceFee.toLocaleString()}</span>
                   </div>
-                  <div className="flex justify-between font-bold text-base pt-3 border-t border-gray-100" style={{ color: '#3d5496' }}>
+                  <div
+                    className="flex justify-between font-bold text-base pt-3 border-t border-gray-100"
+                    style={{ color: "#3d5496" }}
+                  >
                     <span>Total</span>
                     <span>₦{grand.toLocaleString()}</span>
                   </div>
                 </div>
               )}
 
-              <p className="text-center text-gray-400 text-xs mt-4">You won't be charged yet</p>
+              <p className="text-center text-gray-400 text-xs mt-4">
+                You won't be charged yet
+              </p>
             </div>
           </div>
         </div>
       </main>
       <Footer />
     </>
-  )
+  );
 }
