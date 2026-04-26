@@ -648,6 +648,7 @@ export default function BookNow() {
                   <span>🔒</span>
                   <span>Secured by SSL encryption</span>
                   {/* <span>Secured by SSL encryption</span> */}
+                  {/* <span>Secured by SSL encryption</span> */}
                 </div>
               </div>
             </div>
