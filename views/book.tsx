@@ -296,7 +296,8 @@ export default function BookNow() {
                   className="mt-6 w-full py-4 rounded-2xl font-bold text-white transition-opacity hover:opacity-90"
                   style={{ background: "#3d5496" }}
                 >
-                  Continue to Payment →
+                  {/* Continue to Payment → */}
+                  Submit Guest Details →
                 </button>
               </div>
             )}
