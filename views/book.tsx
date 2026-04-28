@@ -175,11 +175,11 @@ export default function BookNow() {
               className="text-2xl font-bold text-white mb-6"
               style={{ fontFamily: "Georgia, serif" }}
             >
-              Complete Your Booking
+              Your Booking
             </h1>
 
             {/* Step Progress */}
-            <div className="flex items-center gap-0">
+            {/* <div className="flex items-center gap-0">
               {steps.map((s, i) => (
                 <div key={s.key} className="flex items-center">
                   <div className="flex flex-col items-center">
@@ -215,7 +215,7 @@ export default function BookNow() {
                   )}
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
 
