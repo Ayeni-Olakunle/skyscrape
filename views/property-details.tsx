@@ -408,7 +408,7 @@ export default function PropertyDetails() {
               <button
                 onClick={() =>
                   router.push(
-                    `/book/${property.id}?checkIn=${checkIn}&checkOut=${checkOut}&guests=${guests}`,
+                    `/booking/${property.id}?checkIn=${checkIn}&checkOut=${checkOut}&guests=${guests}`,
                   )
                 }
                 className="w-full py-4 rounded-2xl font-bold text-base transition-opacity hover:opacity-90 mb-4"
