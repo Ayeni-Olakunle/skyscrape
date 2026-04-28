@@ -371,7 +371,7 @@ export default function PropertiesPage() {
           </div>
 
           {/* Type filter tabs */}
-          <div className="max-w-7xl mx-auto px-6 pb-0">
+          {/* <div className="max-w-7xl mx-auto px-6 pb-0">
             <div className="flex gap-2 overflow-x-auto pb-0 scrollbar-hide">
               {propertyTypes.map((type) => (
                 <button
@@ -392,7 +392,7 @@ export default function PropertiesPage() {
                 </button>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="max-w-7xl mx-auto px-6 py-8">
@@ -419,8 +419,7 @@ export default function PropertiesPage() {
                     </button>
                   )}
                 </div>
-
-                {/* Price Range */}
+                Price Range
                 <div className="mb-7">
                   <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">
                     Price per Night
@@ -492,8 +491,7 @@ export default function PropertiesPage() {
                     </div>
                   </div>
                 </div>
-
-                {/* Bedrooms */}
+                Bedrooms
                 <div className="mb-7">
                   <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">
                     Bedrooms
@@ -518,8 +516,7 @@ export default function PropertiesPage() {
                     ))}
                   </div>
                 </div>
-
-                {/* Min Rating */}
+                Min Rating
                 <div className="mb-7">
                   <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">
                     Minimum Rating
@@ -544,8 +541,7 @@ export default function PropertiesPage() {
                     ))}
                   </div>
                 </div>
-
-                {/* Amenities */}
+                Amenities
                 <div>
                   <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">
                     Amenities
