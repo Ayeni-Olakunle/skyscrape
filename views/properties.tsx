@@ -398,7 +398,7 @@ export default function PropertiesPage() {
         <div className="max-w-7xl mx-auto px-6 py-8">
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Sidebar Filters */}
-            <aside
+            {/* <aside
               className={`lg:w-72 shrink-0 ${filtersOpen ? "block" : "hidden lg:block"}`}
             >
               <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-6 sticky top-24">
@@ -579,7 +579,7 @@ export default function PropertiesPage() {
                   </div>
                 </div>
               </div>
-            </aside>
+            </aside> */}
 
             {/* Main Content */}
             <div className="flex-1 min-w-0">
