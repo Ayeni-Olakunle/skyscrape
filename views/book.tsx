@@ -3,6 +3,7 @@ import { useParams, useSearchParams, useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import Navbar from "@/components/shortlets/Navbar";
 import Footer from "@/components/shortlets/Footer";
+import Link from "next/link";
 
 const properties = [
   { id: 1, name: 'The Grand Penthouse', location: 'Victoria Island, Lagos', price: 85000, emoji: '🏙️', beds: 3, baths: 2 },
@@ -165,12 +166,12 @@ export default function BookNow() {
         {/* Header */}
         <div style={{ background: "#3d5496" }} className="py-10 px-6">
           <div className="max-w-5xl mx-auto">
-            <a
-              href={`/properties/${property.id}`}
+            <Link
+              href={`/shortlets/properties/${property.id}`}
               className="text-white/60 text-sm hover:text-white mb-4 block transition-colors"
             >
               ← Back to property
-            </a>
+            </Link>
             <h1
               className="text-2xl font-bold text-white mb-6"
               style={{ fontFamily: "Georgia, serif" }}
