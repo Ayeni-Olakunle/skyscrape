@@ -861,9 +861,9 @@ export default function PropertiesPage() {
                           <button
                             onClick={(e) => {
                               e.stopPropagation();
-                              router.push(`/properties/${p.id}`);
+                              router.push(`/shortlets/properties/${p.id}`);
                             }}
-                            className="text-xs font-bold px-4 py-2 rounded-xl text-white transition-opacity hover:opacity-80"
+                            className="text-xs font-bold px-4 py-2 rounded-xl text-white transition-opacity hover:opacity-80 cursor-pointer"
                             style={{ background: "#3d5496" }}
                           >
                             View
