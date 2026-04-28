@@ -6,6 +6,7 @@ import pathment3 from "@/public/shortlets/lekki-avana3.jpg";
 import pathment4 from "@/public/shortlets/lekki-avana4.jpg";
 import pathment5 from "@/public/shortlets/lekki-avana5.jpg";
 import pathment6 from "@/public/shortlets/lekki-avana6.jpg";
+import Link from "next/link";
 
 
 const properties = [
@@ -120,13 +121,13 @@ export default function Properties() {
               and convenience.
             </p>
           </div>
-          <a
-            href="#"
+          <Link
+            href="/shortlets/properties"
             className="text-sm font-semibold hover:opacity-70 transition-opacity"
             style={{ color: "#3d5496" }}
           >
             View All Properties →
-          </a>
+          </Link>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
