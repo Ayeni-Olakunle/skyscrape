@@ -293,8 +293,8 @@ export default function BookNow() {
                   </div>
                 </div>
                 <button
-                  onClick={handleNext}
-                  className="mt-6 w-full py-4 rounded-2xl font-bold text-white transition-opacity hover:opacity-90"
+                  // onClick={handleNext}
+                  className="mt-6 w-full py-4 rounded-2xl font-bold text-white transition-opacity hover:opacity-90 cursor-pointer"
                   style={{ background: "#3d5496" }}
                 >
                   {/* Continue to Payment → */}
