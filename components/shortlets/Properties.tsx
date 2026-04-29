@@ -4,6 +4,12 @@ import { useRouter } from "next/navigation";
 import Navbar from "@/components/shortlets/Navbar";
 import Footer from "@/components/shortlets/Footer";
 import Link from "next/link";
+import image1 from "@/public/shortlets/court1.png";
+import image2 from "@/public/shortlets/court2.png";
+import image3 from "@/public/shortlets/court3.png";
+import image4 from "@/public/shortlets/lekki-avana1.jpg";
+import image5 from "@/public/shortlets/lekki-avana2.jpg";
+import image6 from "@/public/shortlets/lekki-avana3.jpg";
 
 const allProperties = [
   {
@@ -16,7 +22,7 @@ const allProperties = [
     beds: 3,
     baths: 2,
     sqft: 180,
-    emoji: "🏙️",
+    emoji: image1,
     tag: "Bestseller",
     type: "Penthouse",
     amenities: ["WiFi", "Pool", "Gym", "Parking", "Balcony"],
@@ -31,7 +37,7 @@ const allProperties = [
     beds: 1,
     baths: 1,
     sqft: 60,
-    emoji: "🌿",
+    emoji: image2,
     tag: "New",
     type: "Studio",
     amenities: ["WiFi", "Parking", "Garden"],
@@ -46,7 +52,7 @@ const allProperties = [
     beds: 4,
     baths: 3,
     sqft: 250,
-    emoji: "✨",
+    emoji: image3,
     tag: "Premium",
     type: "Suite",
     amenities: ["WiFi", "Pool", "Gym", "Cinema", "Staff"],
@@ -61,7 +67,7 @@ const allProperties = [
     beds: 2,
     baths: 1,
     sqft: 90,
-    emoji: "🏡",
+    emoji: image4,
     tag: null,
     type: "Apartment",
     amenities: ["WiFi", "Parking", "Workspace"],
@@ -76,7 +82,7 @@ const allProperties = [
     beds: 3,
     baths: 2,
     sqft: 160,
-    emoji: "🌊",
+    emoji: image5,
     tag: "Trending",
     type: "Villa",
     amenities: ["WiFi", "Beach Access", "BBQ", "Deck"],
@@ -91,7 +97,7 @@ const allProperties = [
     beds: 5,
     baths: 4,
     sqft: 320,
-    emoji: "🏢",
+    emoji: image6,
     tag: "Premium",
     type: "Penthouse",
     amenities: ["WiFi", "Pool", "Gym", "Boardroom", "Concierge"],
@@ -704,7 +710,11 @@ export default function Properties() {
                             "linear-gradient(135deg, #3d5496, #1e2d5a)",
                         }}
                       >
-                        {p.emoji}
+                        <img
+                          src={p.emoji.src}
+                          alt={p.name}
+                          className="w-full h-full object-cover"
+                        />
                         {p.tag && (
                           <span
                             className="absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full"
@@ -818,7 +828,11 @@ export default function Properties() {
                             "linear-gradient(135deg, #3d5496, #1e2d5a)",
                         }}
                       >
-                        {p.emoji}
+                        <img
+                          src={p.emoji.src}
+                          alt={p.name}
+                          className="w-full h-full object-cover"
+                        />
                         {p.tag && (
                           <span
                             className="absolute top-3 left-3 text-xs font-bold px-2.5 py-1 rounded-full"
