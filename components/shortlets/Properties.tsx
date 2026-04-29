@@ -540,7 +540,7 @@ export default function Properties() {
                     href="/shortlets/properties"
                     className="text-sm font-semibold text-gray-600 hover:text-gray-900 transition-colors"
                   >
-                    View Shortlets
+                    View Shortlets →
                   </Link>
                   {/* <button
                     onClick={() => setFiltersOpen((f) => !f)}
