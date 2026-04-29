@@ -3,6 +3,7 @@ import { useParams, useRouter } from 'next/navigation'
 import Navbar from "@/components/shortlets/Navbar";
 import Footer from "@/components/shortlets/Footer";
 import { useState, useEffect } from 'react'
+import Link from "next/link";
 
 const properties = [
   { id: 1, name: 'The Grand Penthouse', location: 'Victoria Island, Lagos', price: 85000, rating: 4.9, reviews: 142, beds: 3, baths: 2, sqft: 180, emoji: '🏙️', tag: 'Bestseller',
@@ -87,21 +88,21 @@ export default function PropertyDetails() {
         {/* Breadcrumb */}
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center gap-2 text-sm text-gray-400">
-            <a
-              href="/"
+            <Link
+              href="/shortlets"
               style={{ color: "#3d5496" }}
               className="hover:underline"
             >
               Home
-            </a>
+            </Link>
             <span>/</span>
-            <a
-              href="/#properties"
+            <Link
+              href="/shortlets/properties"
               style={{ color: "#3d5496" }}
               className="hover:underline"
             >
               Properties
-            </a>
+            </Link>
             <span>/</span>
             <span className="text-gray-600">{property.name}</span>
           </div>
