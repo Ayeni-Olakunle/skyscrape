@@ -943,7 +943,7 @@ export default function Properties() {
           </div>
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
