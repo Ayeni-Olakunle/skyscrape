@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "@/components/shortlets/Navbar";
 import Footer from "@/components/shortlets/Footer";
+import Link from "next/link";
 
 const allProperties = [
   {
@@ -496,23 +497,6 @@ export default function Properties() {
               {/* Toolbar */}
               <div className="flex items-center justify-between mb-6 gap-4 flex-wrap">
                 <div className="flex items-center gap-3">
-                  <button
-                    onClick={() => setFiltersOpen((f) => !f)}
-                    className="lg:hidden flex items-center gap-2 px-4 py-2 rounded-xl border text-sm font-semibold transition-all"
-                    style={{ borderColor: "#3d5496", color: "#3d5496" }}
-                  >
-                    ⚙ Filters{" "}
-                    {activeFilterCount > 0 && `(${activeFilterCount})`}
-                  </button>
-                  <span className="text-sm text-gray-500">
-                    <strong style={{ color: "#1a1a2e" }}>
-                      {sorted.length}
-                    </strong>{" "}
-                    properties found
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-3">
                   {/* Sort */}
                   <select
                     value={sortBy}
@@ -549,6 +533,29 @@ export default function Properties() {
                       ☰
                     </button>
                   </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <Link
+                    href="/shortlets/properties"
+                    className="text-sm font-semibold text-gray-600 hover:text-gray-900 transition-colors"
+                  >
+                    View Shortlets
+                  </Link>
+                  {/* <button
+                    onClick={() => setFiltersOpen((f) => !f)}
+                    className="lg:hidden flex items-center gap-2 px-4 py-2 rounded-xl border text-sm font-semibold transition-all"
+                    style={{ borderColor: "#3d5496", color: "#3d5496" }}
+                  >
+                    ⚙ Filters{" "}
+                    {activeFilterCount > 0 && `(${activeFilterCount})`}
+                  </button>
+                  <span className="text-sm text-gray-500">
+                    <strong style={{ color: "#1a1a2e" }}>
+                      {sorted.length}
+                    </strong>{" "}
+                    properties found
+                  </span> */}
                 </div>
               </div>
 
