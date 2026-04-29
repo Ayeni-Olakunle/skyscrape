@@ -4,15 +4,68 @@ import { useState, useEffect } from 'react'
 import Navbar from "@/components/shortlets/Navbar";
 import Footer from "@/components/shortlets/Footer";
 import Link from "next/link";
+import image2 from "@/public/shortlets/court2.png";
+import image3 from "@/public/shortlets/court3.png";
+import image4 from "@/public/shortlets/lekki-avana1.jpg";
+import image5 from "@/public/shortlets/lekki-avana2.jpg";
+import image1 from "@/public/shortlets/court1.png";
 
 const properties = [
-  { id: 1, name: 'The Grand Penthouse', location: 'Victoria Island, Lagos', price: 85000, emoji: '🏙️', beds: 3, baths: 2 },
-  { id: 2, name: 'Garden View Studio', location: 'Lekki Phase 1, Lagos', price: 45000, emoji: '🌿', beds: 1, baths: 1 },
-  { id: 3, name: 'Luxury Executive Suite', location: 'Ikoyi, Lagos', price: 120000, emoji: '✨', beds: 4, baths: 3 },
-  { id: 4, name: 'Cozy City Apartment', location: 'Ikeja GRA, Lagos', price: 35000, emoji: '🏡', beds: 2, baths: 1 },
-  { id: 5, name: 'Beachfront Retreat', location: 'Elegushi, Lagos', price: 95000, emoji: '🌊', beds: 3, baths: 2 },
-  { id: 6, name: 'Corporate Residence', location: 'Eko Atlantic, Lagos', price: 150000, emoji: '🏢', beds: 5, baths: 4 },
-]
+  {
+    id: 1,
+    name: "The Grand Penthouse",
+    location: "Victoria Island, Lagos",
+    price: 85000,
+    emoji: image1,
+    beds: 3,
+    baths: 2,
+  },
+  {
+    id: 2,
+    name: "Garden View Studio",
+    location: "Lekki Phase 1, Lagos",
+    price: 45000,
+    emoji: image2,
+    beds: 1,
+    baths: 1,
+  },
+  {
+    id: 3,
+    name: "Luxury Executive Suite",
+    location: "Ikoyi, Lagos",
+    price: 120000,
+    emoji: image3,
+    beds: 4,
+    baths: 3,
+  },
+  {
+    id: 4,
+    name: "Cozy City Apartment",
+    location: "Ikeja GRA, Lagos",
+    price: 35000,
+    emoji: image4,
+    beds: 2,
+    baths: 1,
+  },
+  {
+    id: 5,
+    name: "Beachfront Retreat",
+    location: "Elegushi, Lagos",
+    price: 95000,
+    emoji: image5,
+    beds: 3,
+    baths: 2,
+  },
+  {
+    id: 6,
+    name: "Corporate Residence",
+    location: "Eko Atlantic, Lagos",
+    price: 150000,
+    emoji: image1,
+    beds: 5,
+    baths: 4,
+  },
+];
 
 type Step = 'details' | 'payment' | 'confirm'
 
@@ -589,7 +642,11 @@ export default function BookNow() {
                   background: "linear-gradient(135deg, #3d5496, #1e2d5a)",
                 }}
               >
-                {property.emoji}
+                <img
+                  src={property.emoji.src}
+                  alt={property.name}
+                  className="h-full w-full object-cover rounded-t-3xl"
+                />
               </div>
               <div className="p-6">
                 <h3
