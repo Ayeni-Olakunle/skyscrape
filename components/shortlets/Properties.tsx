@@ -214,11 +214,11 @@ export default function Properties() {
       <Navbar />
       <main style={{ background: "#fafaf8", minHeight: "100vh" }}>
         {/* Hero Banner */}
-        {/* <div
+        <div
           style={{
             background: "linear-gradient(135deg, #3d5496 0%, #1e2d5a 100%)",
             paddingTop: 80,
-          }} */}
+          }}
         >
           {/* <div className="max-w-7xl mx-auto px-6 py-14">
             <div className="max-w-2xl">
