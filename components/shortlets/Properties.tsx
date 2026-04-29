@@ -214,13 +214,13 @@ export default function Properties() {
       <Navbar />
       <main style={{ background: "#fafaf8", minHeight: "100vh" }}>
         {/* Hero Banner */}
-        <div
+        {/* <div
           style={{
             background: "linear-gradient(135deg, #3d5496 0%, #1e2d5a 100%)",
             paddingTop: 80,
           }}
-        >
-          {/* <div className="max-w-7xl mx-auto px-6 py-14">
+        > */}
+        {/* <div className="max-w-7xl mx-auto px-6 py-14">
             <div className="max-w-2xl">
               <div
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-5"
@@ -280,8 +280,8 @@ export default function Properties() {
             </div>
           </div> */}
 
-          {/* Type filter tabs */}
-          {/* <div className="max-w-7xl mx-auto px-6 pb-0">
+        {/* Type filter tabs */}
+        {/* <div className="max-w-7xl mx-auto px-6 pb-0">
             <div className="flex gap-2 overflow-x-auto pb-0 scrollbar-hide">
               {propertyTypes.map((type) => (
                 <button
@@ -303,7 +303,7 @@ export default function Properties() {
               ))}
             </div>
           </div> */}
-        </div>
+        {/* </div> */}
 
         <div className="max-w-7xl mx-auto px-6 py-8">
           <div className="flex flex-col lg:flex-row gap-8">
