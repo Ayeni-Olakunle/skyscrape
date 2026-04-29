@@ -95,96 +95,6 @@ const allProperties = [
     type: "Penthouse",
     amenities: ["WiFi", "Pool", "Gym", "Boardroom", "Concierge"],
   },
-  {
-    id: 7,
-    name: "Modern Loft Apartment",
-    location: "Oniru, Lagos",
-    price: 55000,
-    rating: 4.6,
-    reviews: 119,
-    beds: 2,
-    baths: 2,
-    sqft: 110,
-    emoji: "🏗️",
-    tag: null,
-    type: "Apartment",
-    amenities: ["WiFi", "Gym", "Rooftop"],
-  },
-  {
-    id: 8,
-    name: "Island Paradise Suite",
-    location: "Victoria Island, Lagos",
-    price: 78000,
-    rating: 4.8,
-    reviews: 76,
-    beds: 2,
-    baths: 2,
-    sqft: 130,
-    emoji: "🌴",
-    tag: "Trending",
-    type: "Suite",
-    amenities: ["WiFi", "Pool", "Concierge", "Balcony"],
-  },
-  {
-    id: 9,
-    name: "Quiet Suburban Home",
-    location: "Magodo, Lagos",
-    price: 28000,
-    rating: 4.5,
-    reviews: 312,
-    beds: 3,
-    baths: 2,
-    sqft: 200,
-    emoji: "🏘️",
-    tag: null,
-    type: "House",
-    amenities: ["WiFi", "Parking", "Garden", "Generator"],
-  },
-  {
-    id: 10,
-    name: "Skyline Studio",
-    location: "Lekki Phase 2, Lagos",
-    price: 42000,
-    rating: 4.7,
-    reviews: 88,
-    beds: 1,
-    baths: 1,
-    sqft: 55,
-    emoji: "🌃",
-    tag: "New",
-    type: "Studio",
-    amenities: ["WiFi", "Gym", "Rooftop", "Workspace"],
-  },
-  {
-    id: 11,
-    name: "Heritage Manor",
-    location: "Ikoyi, Lagos",
-    price: 110000,
-    rating: 4.9,
-    reviews: 43,
-    beds: 4,
-    baths: 4,
-    sqft: 280,
-    emoji: "🏛️",
-    tag: "Premium",
-    type: "Villa",
-    amenities: ["WiFi", "Pool", "Garden", "Staff", "Parking"],
-  },
-  {
-    id: 12,
-    name: "Budget-Friendly Studio",
-    location: "Surulere, Lagos",
-    price: 18000,
-    rating: 4.3,
-    reviews: 445,
-    beds: 1,
-    baths: 1,
-    sqft: 40,
-    emoji: "🛖",
-    tag: null,
-    type: "Studio",
-    amenities: ["WiFi", "Security", "Generator"],
-  },
 ];
 
 const propertyTypes = [
@@ -310,7 +220,7 @@ export default function Properties() {
             paddingTop: 80,
           }}
         >
-          <div className="max-w-7xl mx-auto px-6 py-14">
+          {/* <div className="max-w-7xl mx-auto px-6 py-14">
             <div className="max-w-2xl">
               <div
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-5"
@@ -337,7 +247,7 @@ export default function Properties() {
                 across Lagos.
               </p>
 
-              {/* Search Bar */}
+              Search Bar
               <div className="bg-white rounded-2xl p-2 flex gap-2 shadow-2xl max-w-xl">
                 <div className="flex-1 flex items-center gap-2 px-3">
                   <span className="text-gray-400">🔍</span>
@@ -368,7 +278,7 @@ export default function Properties() {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Type filter tabs */}
           {/* <div className="max-w-7xl mx-auto px-6 pb-0">
@@ -1024,11 +934,11 @@ export default function Properties() {
               )}
 
               {/* End of results */}
-              {!hasMore && sorted.length > 0 && (
+              {/* {!hasMore && sorted.length > 0 && (
                 <div className="text-center mt-12 text-gray-400 text-sm">
                   You've seen all {sorted.length} properties
                 </div>
-              )}
+              )} */}
             </div>
           </div>
         </div>
