@@ -4,51 +4,268 @@ import Navbar from "@/components/shortlets/Navbar";
 import Footer from "@/components/shortlets/Footer";
 import { useState, useEffect } from 'react'
 import Link from "next/link";
+import image1 from "@/public/shortlets/court1.png";
+import image2 from "@/public/shortlets/court2.png";
+import image3 from "@/public/shortlets/court3.png";
+import image4 from "@/public/shortlets/lekki-avana1.jpg";
+import image5 from "@/public/shortlets/lekki-avana2.jpg";
 
 const properties = [
-  { id: 1, name: 'The Grand Penthouse', location: 'Victoria Island, Lagos', price: 85000, rating: 4.9, reviews: 142, beds: 3, baths: 2, sqft: 180, emoji: '🏙️', tag: 'Bestseller',
-    description: 'Experience the pinnacle of luxury living at The Grand Penthouse. Perched high above Victoria Island with sweeping panoramic views of the Lagos skyline and Atlantic Ocean, this exceptional residence combines contemporary design with world-class amenities. Floor-to-ceiling windows flood every room with natural light, while the open-plan living space flows seamlessly onto a wraparound terrace — perfect for entertaining or unwinding after a busy day.',
-    amenities: ['WiFi', 'Air Conditioning', 'Smart TV', 'Kitchen', 'Washer/Dryer', 'Parking', 'Gym Access', 'Pool', 'Elevator', 'Security', '24/7 Concierge', 'Balcony'],
-    images: ['🏙️', '🛋️', '🛏️', '🍳', '🛁'],
-    host: { name: 'Chidi Okafor', rating: 4.98, stays: 312, avatar: '👨🏾‍💼', joined: '2019' },
-    rules: ['No smoking', 'No parties', 'Pets allowed', 'Check-in: 2PM', 'Check-out: 11AM'],
+  {
+    id: 1,
+    name: "The Grand Penthouse",
+    location: "Victoria Island, Lagos",
+    price: 85000,
+    rating: 4.9,
+    reviews: 142,
+    beds: 3,
+    baths: 2,
+    sqft: 180,
+    emoji: "🏙️",
+    tag: "Bestseller",
+    description:
+      "Experience the pinnacle of luxury living at The Grand Penthouse. Perched high above Victoria Island with sweeping panoramic views of the Lagos skyline and Atlantic Ocean, this exceptional residence combines contemporary design with world-class amenities. Floor-to-ceiling windows flood every room with natural light, while the open-plan living space flows seamlessly onto a wraparound terrace — perfect for entertaining or unwinding after a busy day.",
+    amenities: [
+      "WiFi",
+      "Air Conditioning",
+      "Smart TV",
+      "Kitchen",
+      "Washer/Dryer",
+      "Parking",
+      "Gym Access",
+      "Pool",
+      "Elevator",
+      "Security",
+      "24/7 Concierge",
+      "Balcony",
+    ],
+    images: [image1, image2, image3, image4, image5],
+    host: {
+      name: "Chidi Okafor",
+      rating: 4.98,
+      stays: 312,
+      avatar: "👨🏾‍💼",
+      joined: "2019",
+    },
+    rules: [
+      "No smoking",
+      "No parties",
+      "Pets allowed",
+      "Check-in: 2PM",
+      "Check-out: 11AM",
+    ],
   },
-  { id: 2, name: 'Garden View Studio', location: 'Lekki Phase 1, Lagos', price: 45000, rating: 4.8, reviews: 98, beds: 1, baths: 1, sqft: 60, emoji: '🌿', tag: 'New',
-    description: 'A serene garden-facing studio that perfectly balances minimalist design with lush natural surroundings. Tucked within a gated estate in the heart of Lekki Phase 1, this thoughtfully designed space offers everything you need for a comfortable short stay — from a fully equipped kitchenette to high-speed fibre internet. Wake up to birdsong and the gentle rustling of tropical plants just outside your window.',
-    amenities: ['WiFi', 'Air Conditioning', 'Smart TV', 'Kitchenette', 'Security', 'Garden Access', 'Parking', 'Workspace'],
-    images: ['🌿', '🛋️', '🛏️', '🍳', '🪴'],
-    host: { name: 'Ngozi Eze', rating: 4.95, stays: 187, avatar: '👩🏾‍💼', joined: '2021' },
-    rules: ['No smoking', 'No pets', 'No parties', 'Check-in: 3PM', 'Check-out: 12PM'],
+  {
+    id: 2,
+    name: "Garden View Studio",
+    location: "Lekki Phase 1, Lagos",
+    price: 45000,
+    rating: 4.8,
+    reviews: 98,
+    beds: 1,
+    baths: 1,
+    sqft: 60,
+    emoji: "🌿",
+    tag: "New",
+    description:
+      "A serene garden-facing studio that perfectly balances minimalist design with lush natural surroundings. Tucked within a gated estate in the heart of Lekki Phase 1, this thoughtfully designed space offers everything you need for a comfortable short stay — from a fully equipped kitchenette to high-speed fibre internet. Wake up to birdsong and the gentle rustling of tropical plants just outside your window.",
+    amenities: [
+      "WiFi",
+      "Air Conditioning",
+      "Smart TV",
+      "Kitchenette",
+      "Security",
+      "Garden Access",
+      "Parking",
+      "Workspace",
+    ],
+    images: [image1, image2, image3, image4, image5],
+    host: {
+      name: "Ngozi Eze",
+      rating: 4.95,
+      stays: 187,
+      avatar: "👩🏾‍💼",
+      joined: "2021",
+    },
+    rules: [
+      "No smoking",
+      "No pets",
+      "No parties",
+      "Check-in: 3PM",
+      "Check-out: 12PM",
+    ],
   },
-  { id: 3, name: 'Luxury Executive Suite', location: 'Ikoyi, Lagos', price: 120000, rating: 5.0, reviews: 67, beds: 4, baths: 3, sqft: 250, emoji: '✨', tag: 'Premium',
-    description: 'The Luxury Executive Suite in prestigious Ikoyi is the ultimate address for the discerning corporate traveller or family. With four generously sized bedrooms, three marble bathrooms, a private cinema room, and a fully staffed kitchen, this property redefines what it means to stay in Lagos. Designed by award-winning interior architects, every surface tells a story of refined taste and careful craftsmanship.',
-    amenities: ['WiFi', 'Air Conditioning', 'Smart TV', 'Full Kitchen', 'Washer/Dryer', 'Private Cinema', 'Staff Included', 'Pool', 'Gym', 'Security', 'Driver Available', 'Balcony'],
-    images: ['✨', '🛋️', '🛏️', '🍽️', '🛁'],
-    host: { name: 'Tunde Adeyemi', rating: 5.0, stays: 89, avatar: '👨🏾‍🎩', joined: '2020' },
-    rules: ['No smoking indoors', 'Pets on request', 'Events allowed (fee applies)', 'Check-in: 2PM', 'Check-out: 12PM'],
+  {
+    id: 3,
+    name: "Luxury Executive Suite",
+    location: "Ikoyi, Lagos",
+    price: 120000,
+    rating: 5.0,
+    reviews: 67,
+    beds: 4,
+    baths: 3,
+    sqft: 250,
+    emoji: "✨",
+    tag: "Premium",
+    description:
+      "The Luxury Executive Suite in prestigious Ikoyi is the ultimate address for the discerning corporate traveller or family. With four generously sized bedrooms, three marble bathrooms, a private cinema room, and a fully staffed kitchen, this property redefines what it means to stay in Lagos. Designed by award-winning interior architects, every surface tells a story of refined taste and careful craftsmanship.",
+    amenities: [
+      "WiFi",
+      "Air Conditioning",
+      "Smart TV",
+      "Full Kitchen",
+      "Washer/Dryer",
+      "Private Cinema",
+      "Staff Included",
+      "Pool",
+      "Gym",
+      "Security",
+      "Driver Available",
+      "Balcony",
+    ],
+    images: [image1, image2, image3, image4, image5],
+    host: {
+      name: "Tunde Adeyemi",
+      rating: 5.0,
+      stays: 89,
+      avatar: "👨🏾‍🎩",
+      joined: "2020",
+    },
+    rules: [
+      "No smoking indoors",
+      "Pets on request",
+      "Events allowed (fee applies)",
+      "Check-in: 2PM",
+      "Check-out: 12PM",
+    ],
   },
-  { id: 4, name: 'Cozy City Apartment', location: 'Ikeja GRA, Lagos', price: 35000, rating: 4.7, reviews: 203, beds: 2, baths: 1, sqft: 90, emoji: '🏡', tag: null,
-    description: 'A welcoming two-bedroom apartment nestled in the quiet, tree-lined streets of Ikeja GRA. Ideal for professionals on extended assignments or couples exploring Lagos, this home-away-from-home offers a warm atmosphere, reliable power supply, and easy access to the airport and major business districts. The fully equipped kitchen and comfortable living room make it easy to settle in from day one.',
-    amenities: ['WiFi', 'Air Conditioning', 'Cable TV', 'Full Kitchen', 'Security', 'Parking', 'Generator Backup', 'Workspace'],
-    images: ['🏡', '🛋️', '🛏️', '🍳', '🚿'],
-    host: { name: 'Amaka Obi', rating: 4.93, stays: 256, avatar: '👩🏾‍🦱', joined: '2018' },
-    rules: ['No smoking', 'No pets', 'No loud music after 10PM', 'Check-in: 2PM', 'Check-out: 11AM'],
+  {
+    id: 4,
+    name: "Cozy City Apartment",
+    location: "Ikeja GRA, Lagos",
+    price: 35000,
+    rating: 4.7,
+    reviews: 203,
+    beds: 2,
+    baths: 1,
+    sqft: 90,
+    emoji: "🏡",
+    tag: null,
+    description:
+      "A welcoming two-bedroom apartment nestled in the quiet, tree-lined streets of Ikeja GRA. Ideal for professionals on extended assignments or couples exploring Lagos, this home-away-from-home offers a warm atmosphere, reliable power supply, and easy access to the airport and major business districts. The fully equipped kitchen and comfortable living room make it easy to settle in from day one.",
+    amenities: [
+      "WiFi",
+      "Air Conditioning",
+      "Cable TV",
+      "Full Kitchen",
+      "Security",
+      "Parking",
+      "Generator Backup",
+      "Workspace",
+    ],
+    images: [image1, image2, image3, image4, image5],
+    host: {
+      name: "Amaka Obi",
+      rating: 4.93,
+      stays: 256,
+      avatar: "👩🏾‍🦱",
+      joined: "2018",
+    },
+    rules: [
+      "No smoking",
+      "No pets",
+      "No loud music after 10PM",
+      "Check-in: 2PM",
+      "Check-out: 11AM",
+    ],
   },
-  { id: 5, name: 'Beachfront Retreat', location: 'Elegushi, Lagos', price: 95000, rating: 4.9, reviews: 55, beds: 3, baths: 2, sqft: 160, emoji: '🌊', tag: 'Trending',
-    description: 'Step directly onto the sands of Elegushi Beach from this stunning beachfront retreat. With uninterrupted Atlantic views, a private deck, outdoor shower, and the sound of the ocean as your constant companion, this property is Lagos at its most indulgent. Designed for relaxation, the open-plan interior features rattan furniture, tropical accents, and every modern comfort you could need.',
-    amenities: ['WiFi', 'Air Conditioning', 'Smart TV', 'Full Kitchen', 'Private Deck', 'Beach Access', 'Outdoor Shower', 'BBQ Grill', 'Parking', 'Security'],
-    images: ['🌊', '🏖️', '🛏️', '🍳', '🌅'],
-    host: { name: 'Seun Balogun', rating: 4.97, stays: 74, avatar: '👨🏾‍🌾', joined: '2022' },
-    rules: ['No smoking indoors', 'Pets allowed', 'No loud music after 11PM', 'Check-in: 3PM', 'Check-out: 12PM'],
+  {
+    id: 5,
+    name: "Beachfront Retreat",
+    location: "Elegushi, Lagos",
+    price: 95000,
+    rating: 4.9,
+    reviews: 55,
+    beds: 3,
+    baths: 2,
+    sqft: 160,
+    emoji: "🌊",
+    tag: "Trending",
+    description:
+      "Step directly onto the sands of Elegushi Beach from this stunning beachfront retreat. With uninterrupted Atlantic views, a private deck, outdoor shower, and the sound of the ocean as your constant companion, this property is Lagos at its most indulgent. Designed for relaxation, the open-plan interior features rattan furniture, tropical accents, and every modern comfort you could need.",
+    amenities: [
+      "WiFi",
+      "Air Conditioning",
+      "Smart TV",
+      "Full Kitchen",
+      "Private Deck",
+      "Beach Access",
+      "Outdoor Shower",
+      "BBQ Grill",
+      "Parking",
+      "Security",
+    ],
+    images: [image1, image2, image3, image4, image5],
+    host: {
+      name: "Seun Balogun",
+      rating: 4.97,
+      stays: 74,
+      avatar: "👨🏾‍🌾",
+      joined: "2022",
+    },
+    rules: [
+      "No smoking indoors",
+      "Pets allowed",
+      "No loud music after 11PM",
+      "Check-in: 3PM",
+      "Check-out: 12PM",
+    ],
   },
-  { id: 6, name: 'Corporate Residence', location: 'Eko Atlantic, Lagos', price: 150000, rating: 4.8, reviews: 34, beds: 5, baths: 4, sqft: 320, emoji: '🏢', tag: 'Premium',
-    description: 'Set within the iconic Eko Atlantic City — Lagos\'s newest and most ambitious urban development — this sprawling corporate residence is built for those who demand nothing but the best. Five en-suite bedrooms, a chef\'s kitchen, dedicated boardroom, and stunning sea views across the reclaimed Atlantic make this the most prestigious shortlet address in all of West Africa.',
-    amenities: ['WiFi', 'Air Conditioning', 'Smart TVs', 'Chef\'s Kitchen', 'Boardroom', 'Washer/Dryer', 'Pool', 'Gym', 'Concierge', 'Driver Available', 'Security', 'Sea Views'],
-    images: ['🏢', '🛋️', '🛏️', '🍽️', '🌊'],
-    host: { name: 'Folake Martins', rating: 4.99, stays: 41, avatar: '👩🏾‍💼', joined: '2023' },
-    rules: ['No smoking', 'Pets on request', 'Corporate events allowed', 'Check-in: 2PM', 'Check-out: 1PM'],
+  {
+    id: 6,
+    name: "Corporate Residence",
+    location: "Eko Atlantic, Lagos",
+    price: 150000,
+    rating: 4.8,
+    reviews: 34,
+    beds: 5,
+    baths: 4,
+    sqft: 320,
+    emoji: "🏢",
+    tag: "Premium",
+    description:
+      "Set within the iconic Eko Atlantic City — Lagos's newest and most ambitious urban development — this sprawling corporate residence is built for those who demand nothing but the best. Five en-suite bedrooms, a chef's kitchen, dedicated boardroom, and stunning sea views across the reclaimed Atlantic make this the most prestigious shortlet address in all of West Africa.",
+    amenities: [
+      "WiFi",
+      "Air Conditioning",
+      "Smart TVs",
+      "Chef's Kitchen",
+      "Boardroom",
+      "Washer/Dryer",
+      "Pool",
+      "Gym",
+      "Concierge",
+      "Driver Available",
+      "Security",
+      "Sea Views",
+    ],
+    images: [image1, image2, image3, image4, image5],
+    host: {
+      name: "Folake Martins",
+      rating: 4.99,
+      stays: 41,
+      avatar: "👩🏾‍💼",
+      joined: "2023",
+    },
+    rules: [
+      "No smoking",
+      "Pets on request",
+      "Corporate events allowed",
+      "Check-in: 2PM",
+      "Check-out: 1PM",
+    ],
   },
-]
+];
 
 export default function PropertyDetails() {
   const params = useParams()
@@ -118,7 +335,11 @@ export default function PropertyDetails() {
               }}
               onClick={() => setActiveImage(0)}
             >
-              {property.images[0]}
+              <img
+                src={property.images[0].src}
+                alt={property.name}
+                className="w-full h-full object-cover"
+              />
             </div>
             {property.images.slice(1).map((img, i) => (
               <div
@@ -132,7 +353,11 @@ export default function PropertyDetails() {
                 }}
                 onClick={() => setActiveImage(i + 1)}
               >
-                {img}
+                <img
+                  src={img.src}
+                  alt={property.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
             ))}
           </div>
